@@ -6,10 +6,10 @@ local ItemsFolder = game:GetService("Workspace"):WaitForChild("OtherChars")
 local cache = {}
 
 local ESP_SETTINGS = {
-    Enabled = true,
-    ShowBox = true,
-    ShowName = true,
-    ShowDistance = true,
+    Enabled = false,
+    ShowBox = false,
+    ShowName = false,
+    ShowDistance = false,
     
     BoxColor = Color3.new(0, 1, 0),
     BoxOutlineColor = Color3.new(0, 0, 0),
@@ -167,3 +167,4 @@ function esp_items.SetMaxDistance(distance)
 end
 
 return esp_items
+
