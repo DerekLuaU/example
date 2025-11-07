@@ -1,7 +1,4 @@
--- npc_esp.lua
--- ESP para NPCs dentro de workspace.NPCs
 
---// Variables
 local RunService = game:GetService("RunService")
 local camera = workspace.CurrentCamera
 local NPCFolder = workspace:WaitForChild("NPCs")
@@ -24,12 +21,11 @@ local bones = {
     {"RightLowerLeg", "RightFoot"}
 }
 
---// Configuración
 local ESP_SETTINGS = {
     Enabled = false,
     ShowBox = false,
     ShowName = false,
-    ShowHealthNumber = false, -- 👈 la vida se mostrará aunque el nombre esté desactivado
+    ShowHealthNumber = false, 
     ShowDistance = false,
     ShowSkeletons = false,
     ShowTracer = false,
@@ -42,13 +38,10 @@ local ESP_SETTINGS = {
     TracerPosition = "Bottom"
 }
 
---// Función para limpiar UID del nombre
 local function cleanName(name)
-    -- Elimina patrones tipo 8-4-4-4-12 (UUID)
     return string.gsub(name, "%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%x%x%x%x%x", "")
 end
 
---// Función de creación de objetos Drawing
 local function create(class, props)
     local drawing = Drawing.new(class)
     for i, v in pairs(props) do
@@ -57,7 +50,6 @@ local function create(class, props)
     return drawing
 end
 
---// Crear ESP
 local function createEsp(npc)
     local esp = {
         box = create("Square", {Thickness = 1, Filled = false, Color = ESP_SETTINGS.BoxColor}),
@@ -71,7 +63,6 @@ local function createEsp(npc)
     cache[npc] = esp
 end
 
---// Eliminar ESP
 local function removeEsp(npc)
     local esp = cache[npc]
     if esp then
@@ -88,7 +79,6 @@ local function removeEsp(npc)
     end
 end
 
---// Actualización visual
 RunService.RenderStepped:Connect(function()
     if not ESP_SETTINGS.Enabled then
         for _, esp in pairs(cache) do
@@ -113,12 +103,10 @@ RunService.RenderStepped:Connect(function()
             if hrp and head and hum and hum.Health > 0 then
                 local pos, vis = camera:WorldToViewportPoint(hrp.Position)
                 if vis then
-                    -- Tamaño y posición de caja
                     local height = math.abs(camera:WorldToViewportPoint(hrp.Position - Vector3.new(0,3,0)).Y - camera:WorldToViewportPoint(hrp.Position + Vector3.new(0,2.6,0)).Y)
                     local width = height * 0.6
                     local x, y = pos.X - width/2, pos.Y - height/2
 
-                    -- Caja
                     if ESP_SETTINGS.ShowBox then
                         esp.box.Size = Vector2.new(width, height)
                         esp.box.Position = Vector2.new(x, y)
@@ -131,7 +119,6 @@ RunService.RenderStepped:Connect(function()
                         esp.boxOutline.Visible = false
                     end
 
-                    -- Nombre sin UID
                     local baseName = cleanName(npc.Name)
 
                     if ESP_SETTINGS.ShowName then
@@ -142,7 +129,6 @@ RunService.RenderStepped:Connect(function()
                         esp.name.Visible = false
                     end
 
-                    -- Vida (siempre visible)
                     if ESP_SETTINGS.ShowHealthNumber and hum then
                         local healthText = string.format("[%d/%d]", math.floor(hum.Health), math.floor(hum.MaxHealth))
                         esp.health.Text = ESP_SETTINGS.ShowName and (" " .. healthText) or (baseName .. " " .. healthText)
@@ -154,7 +140,6 @@ RunService.RenderStepped:Connect(function()
                         esp.health.Visible = false
                     end
 
-                    -- Distancia
                     if ESP_SETTINGS.ShowDistance then
                         local dist = (camera.CFrame.Position - hrp.Position).Magnitude
                         esp.distance.Visible = true
@@ -164,7 +149,6 @@ RunService.RenderStepped:Connect(function()
                         esp.distance.Visible = false
                     end
 
-                    -- Tracer
                     if ESP_SETTINGS.ShowTracer then
                         local tracerY = (ESP_SETTINGS.TracerPosition == "Top" and 0)
                             or (ESP_SETTINGS.TracerPosition == "Middle" and camera.ViewportSize.Y / 2)
@@ -176,7 +160,6 @@ RunService.RenderStepped:Connect(function()
                         esp.tracer.Visible = false
                     end
 
-                    -- Skeleton
                     if ESP_SETTINGS.ShowSkeletons then
                         if #esp.skeleton == 0 then
                             for _, bonePair in ipairs(bones) do
@@ -227,7 +210,6 @@ RunService.RenderStepped:Connect(function()
     end
 end)
 
---// Detectar NPCs nuevos
 for _, npc in ipairs(NPCFolder:GetChildren()) do
     if npc:FindFirstChild("HumanoidRootPart") then
         createEsp(npc)
