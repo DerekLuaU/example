@@ -1,2 +1,3871 @@
--- This script was generated using the MoonVeil Obfuscator v1.4.5 [https://moonveil.cc]
-local cf,Ob,Ee,uf,Nc,ea=type,bit32.bxor,getmetatable,pairs local D,ja,aa,oe,Zb,pc,Sb,t_,Fa,B,sa,ke,vd,ne,oc,ae,da,uc,Jd,od,Ed,pf,df,Fc,X,lf,jc,mc,Td,Yb,Fb,i_,ed,ve,La,ta,yf,T,Z,Cc,Ic,Uc,Lb,zc;Fb=(getfenv());Fc,aa,vd=(string.char),(string.byte),(bit32 .bxor);ae=function(Ze,Ab)local ce,cb,sb,Dc,Cd,qf,n_,Ae;Cd,sb=function(sf,he,Wc)sb[he]=Ob(Wc,1609)-Ob(sf,27482)return sb[he]end,{};qf=sb[11687]or Cd(32359,11687,32865)while qf~=59519 do if qf>=25937 then if qf<=28907 then if qf<=25937 then if(n_>=0 and Ae>cb)or((n_<0 or n_~=n_)and Ae<cb)then qf=3192 else qf=sb[29939]or Cd(14861,29939,51913)end else Dc='';Ae,qf,n_,cb=179,sb[31119]or Cd(48507,31119,69945),1,(#Ze-1)+179 end else qf,Dc=sb[18131]or Cd(36584,18131,77291),Dc..Fc(vd(aa(Ze,(ce-179)+1),aa(Ab,(ce-179)%#Ab+1)))end elseif qf<=16719 then if qf>3192 then ce=Ae if cb~=cb then qf=sb[-21041]or Cd(49614,-21041,45381)else qf=25937 end else return Dc end else Ae=Ae+n_;ce=Ae if Ae~=Ae then qf=3192 else qf=25937 end end end end;ja=(select);mc=(function(...)return{[1]={...},[2]=ja('#',...)}end);yf=((function()local function gc(Ub,Q,O)if Q>O then return end return Ub[Q],gc(Ub,Q+1,O)end return gc end)());zc,Td=(string.gsub),(string.char);Z=(function(Ja)Ja=zc(Ja,'[^ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=]','')return(Ja:gsub('.',function(va)if(va=='=')then return''end local Ld,Kc='',(('ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'):find(va)-1)for ff=6,1,-1 do Ld=Ld..(Kc%2^ff-Kc%2^(ff-1)>0 and'1'or'0')end return Ld end):gsub('%d%d%d?%d?%d?%d?%d?%d?',function(P)if(#P~=8)then return''end local hf=0 for Jb=1,8 do hf=hf+(P:sub(Jb,Jb)=='1'and 2^(8-Jb)or 0)end return Td(hf)end))end);oc,Ic,Fa,jc,B,oe,uc,lf=Fb[ae('\29\152}\a\130h','n\236\15')][ae('\179\146\251\167\159\224','\198\252\139')],Fb[ae('\223\163N\197\185[','\172\215<')][ae('\165\163\180','\214')],Fb[ae('\162\49\184\184+\173','\209E\202')][ae('cMuQ','\1\52')],Fb[ae('nmx7>','\f\4')][ae("\"\200\184\'\221\164",'N\187\208')],Fb[ae('\205\230\219\188\157','\175\143')][ae('G\255\159\\\234\131','5\140\247')],Fb[ae('eGs\29\53','\a.')][ae('\150\51\154\54','\244R')],Fb[ae('\239\162\249\175\254','\155\195')][ae('G\185\\G\183F','$\214\50')],{};Yb=(function(z)local h=lf[z]if not(h)then else return h end local Ha,d_,Kd,Xd,Ea=jc(1,11),jc(1,5),1,{},''while Kd<=#z do local Rc=Fa(z,Kd);Kd=Kd+1 for ga=120,(8)+119 do local xe=nil if oe(Rc,1)~=0 then if not(Kd<=#z)then else xe=Ic(z,Kd,Kd);Kd=Kd+1 end else if Kd+1<=#z then local le=oc(ae('w\0{','I'),z,Kd);Kd=Kd+2 local M,p=#Ea-B(le,5),oe(le,(d_-1))+3;xe=Ic(Ea,M,M+p-1)end end Rc=B(Rc,1)if xe then Xd[#Xd+1]=xe;Ea=Ic(Ea..xe,-Ha)end end end local Gf=uc(Xd);lf[z]=Gf return Gf end);ed=(function()local q,sd,H,E,pb,e_,if_,We,Va,Xe,ef,me=Fb[ae('\128\5\150_\208','\226l')][ae('\208h\221b','\178\16')],Fb[ae('\254\135\232\221\174','\156\238')][ae('\129\197\141\192','\227\164')],Fb[ae('\26\247\f\173J','x\158')][ae("\'*7",'E')],Fb[ae('u\164c\254%','\23\205')][ae('\169\162\142\172\183\146','\197\209\230')],Fb[ae('\132\149\146\207\212','\230\252')][ae('\183\128i\172\149u','\197\243\1')],Fb[ae('A\155z[\129o','2\239\b')][ae('\183\177\166','\196')],Fb[ae('}\202\251g\208\238','\14\190\137')][ae('\25\223\n\213','i\190')],Fb[ae('\141(^\151\50K','\254\\,')][ae('rb\237fo\246','\a\f\157')],Fb[ae('\241\217\240\235\195\229','\130\173\130')][ae('\16\a\18','b')],Fb[ae('\127AiLn','\v ')][ae('\130\146\145\152','\242\243')],Fb[ae('*.<#;','^O')][ae('\165\b\155\177\5\128','\208f\235')],Fb[ae('\140\187\154\182\157','\248\218')][ae('\243x\207\255d\200','\154\22\188')]local function kc(b_,bf,lb,wd,rd)local Ef,ac,N,Bc=b_[bf],b_[lb],b_[wd],b_[rd]local xd;Ef=sd(Ef+ac,4294967295);xd=q(Bc,Ef);Bc=sd(H(E(xd,16),pb(xd,16)),4294967295);N=sd(N+Bc,4294967295);xd=q(ac,N);ac=sd(H(E(xd,12),pb(xd,20)),4294967295);Ef=sd(Ef+ac,4294967295);xd=q(Bc,Ef);Bc=sd(H(E(xd,8),pb(xd,24)),4294967295);N=sd(N+Bc,4294967295);xd=q(ac,N);ac=sd(H(E(xd,7),pb(xd,25)),4294967295);b_[bf],b_[lb],b_[wd],b_[rd]=Ef,ac,N,Bc return b_ end local Se,jd={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0},{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0}local zd=function(Ad,Sd,Ta)Se[1],Se[2],Se[3],Se[4]=3162427976,3704041288,1137778961,2128516617 for Vc=25,(8)+24 do Se[(Vc-24)+4]=Ad[(Vc-24)]end Se[13]=Sd for Yc=8,(3)+7 do Se[(Yc-7)+13]=Ta[(Yc-7)]end for ua=156,(16)+155 do jd[(ua-155)]=Se[(ua-155)]end for Ue=129,(10)+128 do kc(jd,1,5,9,13);kc(jd,2,6,10,14);kc(jd,3,7,11,15);kc(jd,4,8,12,16);kc(jd,1,6,11,16);kc(jd,2,7,12,13);kc(jd,3,8,9,14);kc(jd,4,5,10,15)end for R=62,(16)+61 do Se[(R-61)]=sd(Se[(R-61)]+jd[(R-61)],4294967295)end return Se end local function wa(dc,Zc,Gd,Oc,A)local ue=#Oc-A+1 if ue<64 then local ad=e_(Oc,A);Oc=ad..Va(ae('\142','\142'),64-ue);A=1 end Fb[ae('\165\50\239\161\51\232','\196A\156')](#Oc>=64)local ia,ee=Xe(We(ae('\163\204\242\216\165S\to\247\226\220x\231\170|\185\171\204\242\216\165S\to\247\226\220x\231\170|\185\171','\159\133\198\145\145\26=&\195\171\232\49\211\227H\240'),Oc,A)),zd(dc,Zc,Gd)for of=68,(16)+67 do ia[(of-67)]=q(ia[(of-67)],ee[(of-67)])end local Rf=if_(ae('\218\131\153\157\n\227x\18)\160\149\r\129v\1\237\210\131\153\157\n\227x\18)\160\149\r\129v\1\237\210','\230\202\173\212>\170L[\29\233\161D\181?5\164'),ef(ia))if not(ue<64)then else Rf=e_(Rf,1,ue)end return Rf end local function tf(Df)local zb=''for Aa=6,(#Df)+5 do zb=zb..Df[(Aa-5)]end return zb end local function Tc(Ke,rc,C,l_)local Qd,gf,Mc,nf=Xe(We(ae('Ho\254\30\191vYv@o\254\30\191vYv@','t&\202W\139?m?'),Ke)),Xe(We(ae('\211/\2\166R\127\219','\239f6'),C)),{},1 while nf<=#l_ do me(Mc,wa(Qd,rc,gf,l_,nf));nf=nf+64;rc=rc+1 end return tf(Mc)end return function(fc,V,Cb)return Tc(Cb,0,V,fc)end end)();od=(function()local Pe,Gb,ld,Pf,bc,vf,id,Dd,Wd,Ve,Rb=Fb[ae('v\166\96\252&','\20\207')][ae('\212\151\217\141','\182\249')],Fb[ae('\22\149\0\207F','t\252')][ae('\6\151\v\157','d\239')],Fb[ae('\135\216\145\130\215','\229\177')][ae('\142\210\172\149\199\176','\252\161\196')],Fb[ae('\239\17\249K\191','\141x')][ae('W{LRnP',';\b$')],Fb[ae('\144C\134\25\192','\242*')][ae('\206\22\194\19','\172w')],Fb[ae('\200\212\222\142\152','\170\189')][ae('\f\1\28','n')],Fb[ae('v\3\96\14g','\2b')][ae('\172\96\51\160|4','\197\14@')],Fb[ae('\30{\bv\15','j\26')][ae('l\233Zx\228A','\25\135*')],Fb[ae('Z\202o@\208z',')\190\29')][ae('\250\237\248','\136')],Fb[ae('\193u\179\219o\166','\178\1\193')][ae('\222n\220t','\189\6')],Fb[ae('\195\145\230\217\139\243','\176\229\148')][ae('\t\249\31\229','k\128')]local function Ba(Bd,bd)local eb,Lc=ld(Bd,bd),Pf(Bd,32-bd)return bc(vf(eb,Lc),4294967295)end local Rd=function(m)local xf={1116352408,1899447441,3049323471,3921009573,961987163,1508970993,2453635748,2870763221,3624381080,310598401,607225278,1426881987,1925078388,2162078206,2614888103,3248222580,3835390401,4022224774,264347078,604807628,770255983,1249150122,1555081692,1996064986,2554220882,2821834349,2952996808,3210313671,3336571891,3584528711,113926993,338241895,666307205,773529912,1294757372,1396182291,1695183700,1986661051,2177026350,2456956037,2730485921,2820302411,3259730800,3345764771,3516065817,3600352804,4094571909,275423344,430227734,506948616,659060556,883997877,958139571,1322822218,1537002063,1747873779,1955562222,2024104815,2227730452,2361852424,2428436474,2756734187,3204031479,3329325298}local function Ib(fa_)local Bf=#fa_ local Fd=Bf*8;fa_=fa_..ae('\187',';')local Jf=64-((Bf+9)%64)if not(Jf~=64)then else fa_=fa_..Wd(ae('/','/'),Jf)end fa_=fa_..Ve(bc(ld(Fd,56),255),bc(ld(Fd,48),255),bc(ld(Fd,40),255),bc(ld(Fd,32),255),bc(ld(Fd,24),255),bc(ld(Fd,16),255),bc(ld(Fd,8),255),bc(Fd,255))return fa_ end local function wb(Qb)local ze={}for bb=75,(#Qb)+74,64 do id(ze,Qb[ae('\187\189\170','\200')](Qb,(bb-74),(bb-74)+63))end return ze end local function Od(Tb,Qc)local ma={}for md=127,(64)+126 do if not((md-126)<=16)then local _e,Xc=Gb(Ba(ma[(md-126)-15],7),Ba(ma[(md-126)-15],18),ld(ma[(md-126)-15],3)),Gb(Ba(ma[(md-126)-2],17),Ba(ma[(md-126)-2],19),ld(ma[(md-126)-2],10));ma[(md-126)]=bc(ma[(md-126)-16]+_e+ma[(md-126)-7]+Xc,4294967295)else ma[(md-126)]=vf(Pf(Rb(Tb,((md-126)-1)*4+1),24),Pf(Rb(Tb,((md-126)-1)*4+2),16),Pf(Rb(Tb,((md-126)-1)*4+3),8),Rb(Tb,((md-126)-1)*4+4))end end local ib,ab,qc,Pb,u_,hd,lc,j=Dd(Qc)for Te=16,(64)+15 do local cd,Ye=Gb(Ba(u_,6),Ba(u_,11),Ba(u_,25)),Gb(bc(u_,hd),bc(Pe(u_),lc))local _d,gb,Na=bc(j+cd+Ye+xf[(Te-15)]+ma[(Te-15)],4294967295),Gb(Ba(ib,2),Ba(ib,13),Ba(ib,22)),Gb(bc(ib,ab),bc(ib,qc),bc(ab,qc))local Of=bc(gb+Na,4294967295);j=lc;lc=hd;hd=u_;u_=bc(Pb+_d,4294967295);Pb=qc;qc=ab;ab=ib;ib=bc(_d+Of,4294967295)end return bc(Qc[1]+ib,4294967295),bc(Qc[2]+ab,4294967295),bc(Qc[3]+qc,4294967295),bc(Qc[4]+Pb,4294967295),bc(Qc[5]+u_,4294967295),bc(Qc[6]+hd,4294967295),bc(Qc[7]+lc,4294967295),bc(Qc[8]+j,4294967295)end m=Ib(m)local tc,Jc,I=wb(m),{1779033703,3144134277,1013904242,2773480762,1359893119,2600822924,528734635,1541459225},''for Kb,Re in Fb[ae('\30\224\182\30\226\164','w\144\215')](tc)do Jc={Od(Re,Jc)}end for S,fe in Fb[ae('\234z@\234xR','\131\n!')](Jc)do I=I..Ve(bc(ld(fe,24),255));I=I..Ve(bc(ld(fe,16),255));I=I..Ve(bc(ld(fe,8),255));I=I..Ve(bc(fe,255))end return I end return Rd end)()local Vd,yd,Xa,ic,yc,Gc,k,xc,qd,Id,Ne,s_,ya,W,dd,nc,Qf,qe,we,Kf,_c,nd,Za,pd,ra,Fe,Le,g,Vb,Db=Fb[ae('\135\168\131\180','\243\209')],Fb[ae('\189]\172R\161','\205>')],Fb[ae('\213\24\194\5\194','\176j')],Fb[ae('\136}\177\2\145p\186\5','\252\18\223w')],Fb[ae('3\169\223\55\168\216','R\218\172')],Fb[ae('\156\247\177\138\241\169','\239\146\221')],Fb[ae('\30\48\201\194F8\f!\220\205O)','mU\189\175#L')],Fb[ae('\2\204\185\24\214\172','q\184\203')][ae('r\238\20y\224\18','\20\129f')],Fb[ae('E[D_AQ','6/6')][ae('\229\a\159\241\n\132','\144i\239')],Fb[ae('\142\247X\148\237M','\253\131*')][ae('nh\127','\29')],Fb[ae('\225\219e\251\193p','\146\175\23')][ae('\214\247\192\235','\180\142')],Fb[ae('k_3qE&','\24+A')][ae("%d\'~",'F\f')],Fb[ae('\134\152\144\149\151','\242\249')][ae('\232\219\243\209','\133\180')],Fb[ae('\1\196\23\201\16','u\165')][ae('&45>','VU')],Fb[ae('&T0Y7','R5')][ae('\246#\3\244%\3','\149Qf')],Fb[ae('D\239R\226U','0\142')][ae('\181\204\24\185\208\31','\220\162k')],Fb[ae('\22,\0!\a','bM')][ae('\174U)\174[3','\205:G')],Fb[ae('\241\51}\148\231(f\149\247','\146\\\15\251')][ae('\226M\22\224K\22','\129?s')],Fb[ae('\243e\167\18\229~\188\19\245','\144\n\213}')][ae('\221}\193x\192','\164\20')],Fb[ae('\248\185\0\23\238\162\27\22\254','\155\214rx')][ae('$\191\237#\183\251','V\218\158')],Fb[ae('\217\255\162\196\207\228\185\197\223','\186\144\208\171')][ae('\242:\254%\244','\145V')],Fb[ae('\190H\199\191H\221\175','\217-\179')],Fb[ae('\206\198\216\156\158','\172\175')][ae('ZWJ','8')],Fb[ae('\235\"\253x\187','\137K')][ae('\129\174\140\164','\227\214')],Fb[ae('\204\25\218C\156','\174p')][ae('^\179R\182','<\210')],Fb[ae('\194K\212\17\146','\160\"')][ae('\155\250\156\253\141','\249\142')],Fb[ae('3v%,c','Q\31')][ae('fUo}@s','\20&\a')],Fb[ae('\208z\198 \128','\178\19')][ae('!v\225$c\253','M\5\137')],Fb[ae('?\176)\234o',']\217')][ae('\f\25%\27\0\50\29','iaQ')],{[45848]={},[18358]={},[53737]={{9,8,false},{0,4,false},{9,5,false},{1,10,false},{0,10,false},{10,6,false},{10,5,false},{7,8,false},{0,8,true},{1,6,false},{1,8,false},{1,3,false},{0,8,true},{9,10,false},{7,10,false},{1,8,false},{10,2,true},{1,8,true},{9,0,false},{10,1,true},{7,0,true},{6,8,false},{0,8,false},{9,1,false},{10,5,false},{1,8,false},{1,0,true},{1,4,true},{1,8,false},{10,1,false},{0,8,false},{0,0,false},{1,6,false},{0,8,false},{7,8,false},{10,0,true},{6,8,false},{1,8,false},{1,8,false},{0,8,false},{10,4,true},{0,5,true},{0,3,true},{6,0,true},{0,8,false},{0,3,false},{1,6,false},{6,5,true},{1,8,false},{1,8,false},{1,10,false},{6,6,false},{9,10,false},{10,0,true},{1,8,false},{1,8,false},{1,8,false},{0,2,false},{10,5,false},{0,4,true},{0,8,false},{9,4,true},{1,8,false},{6,3,false},{1,8,false},{1,8,true},{6,2,true},{10,2,false},{10,10,false},{1,6,false},{6,1,false},{1,8,false},{6,2,true},{0,3,false},{1,10,false},{1,2,true},{1,10,false},{6,5,true},{1,8,false},{6,6,true},{7,8,false},{6,5,false},{6,10,true},{0,5,false},{7,4,true},{1,4,true},{1,8,false},{10,1,true},{10,4,true},{7,3,true},{6,4,true},{1,4,true},{6,5,true},{0,10,false},{0,8,true},{7,4,true},{1,10,true},{10,5,true},{7,8,true},{9,4,false},{1,5,false},{7,0,true},{9,3,false},{9,4,false},{7,4,true},{1,4,false},{9,2,true},{1,8,false},{1,10,false},{1,8,false},{1,8,false},{1,0,false},{10,2,true},{0,8,false},{6,0,true},{1,8,false},{6,4,false},{0,8,false},{6,1,false},{0,8,false},{1,4,true},{10,8,true},{6,5,true},{7,10,false},{0,2,false},{6,0,true},{6,1,false},{7,1,false},{9,2,false},{1,8,false},{9,8,false},{10,3,true},{6,10,false},{1,7,false},{0,5,true},{1,7,false},{6,5,true},{7,4,false},{0,0,true},{9,8,true},{7,1,false},{10,10,true},{10,1,false},{9,6,false},{1,2,false},{0,8,false},{1,4,true},{9,3,false},{10,0,false},{1,8,false},{1,7,false},{0,8,true},{0,3,true},{1,2,false},{0,0,false},{0,8,false},{0,10,true},{6,8,false},{0,6,true},{1,8,false},{1,4,true},{7,4,false},{1,4,true},{10,10,true},{7,4,true},{9,5,true},{9,2,true},{1,2,true},{6,8,false},{0,1,true},{10,4,true},{7,4,false},{6,10,true},{1,4,true},{7,10,true},{9,4,false},{6,2,false},{0,8,true},{10,3,false},{7,3,false},{10,0,true},{0,2,false},{7,9,false},{6,3,true},{9,3,true},{1,8,false},{7,8,false},{0,10,true},{6,4,false},{1,8,false},{0,2,false},{0,6,true},{10,6,true},{1,0,false},{1,5,true},{10,6,true},{7,5,false},{0,8,false},{6,8,false},{6,8,false},{9,6,true},{7,4,false},{1,8,false},{1,5,true},{7,3,true},{9,2,false},{9,0,true},{1,8,true},{1,8,false},{0,8,false},{0,8,true},{6,3,true},{1,10,false},{10,6,true},{0,1,true},{0,6,true},{0,8,true},{10,6,false},{1,8,false},{10,6,false},{1,0,true},{10,1,true},{0,5,false},{10,1,true},{1,1,true},{7,1,false},{7,8,true},{1,8,true},{6,0,true},{1,8,false},{6,10,true},{0,8,true},{0,8,true},{10,8,false},{6,3,true},{1,8,false},{1,3,false},{1,5,true},{1,7,false},{1,8,false},{7,8,true},{0,10,true},{7,3,false},{1,6,false},{10,5,true},{0,3,false},{1,3,true},{6,10,false},{6,0,true},{1,6,false},{7,0,false},{0,8,true},{6,10,false},{0,8,true},{10,6,true},{9,3,false}}}local Hb=(function(Be)local cc=Db[18358][Be]if(cc)then return cc end local zf=1 local function jb()local Ya,jf,Ie,Ra,Ma,kd,Mb,af,Nf,G,Md,Je,Nb,Nd,Ka,pe,Pc,na,za,Ga,ub,fb,re_,ie,r_,U,pa,He,_f,Pa,Ff,v;Ff,v={},function(Y,ha,a_)Ff[ha]=Ob(Y,40526)-Ob(a_,51563)return Ff[ha]end;za=Ff[-22591]or v(99228,-22591,27941)while za~=61739 do if za>=30674 then if za<46225 then if za<39159 then if za>35131 then if za>37041 then if za<37823 then za,pa=Ff[-26213]or v(22951,-26213,53892),pd(Ma,1813182844)continue elseif za>37823 then r_,za=nil,55669 else _f=qd(ae('\206','\140'),Be,zf);zf,za=zf+1,Ff[162]or v(2154,162,45497)end elseif za>=36428 then if za>=37009 then if za>37009 then za,ie=Ff[18190]or v(99460,18190,15624),yf(Pc[1],1,Pc[2])else if(Ma>=0 and Pa>pa)or((Ma<0 or Ma~=Ma)and Pa<pa)then za=Ff[13873]or v(80890,13873,8263)else za=Ff[-8355]or v(31590,-8355,34435)end end else ub=r_;Ga=Za(Ga,g(ra(ub,127),(fb-213)*7))if not Fe(ub,128)then za=Ff[-1330]or v(102900,-1330,65359)continue end za=Ff[-16146]or v(86846,-16146,4532)end elseif za<=35392 then za,ub=30674,pd(na,228)continue else Ma,za=nil,43251 end elseif za>31873 then if za>=34084 then if za<=34084 then za,Ma=61203,kd continue else re_=Ie;Je=Za(Je,g(ra(re_,127),(Nd-6)*7))if(not Fe(re_,128))then za=Ff[-13922]or v(19247,-13922,57550)continue else za=Ff[2509]or v(112301,2509,1992)continue end za=Ff[-17571]or v(64578,-17571,52903)end elseif za<=32431 then za,Pc=24240,mc(nil)else ub,za=nil,47256 end elseif za<31423 then if za>30674 then He,za=nil,37823 else na=ub if(na==5)then za=Ff[-4879]or v(17999,-4879,2430)continue else za=Ff[12160]or v(113586,12160,9792)continue end za=9831 end elseif za>31434 then Pc,za=mc(pd(kd,1813182844)),37041 continue elseif za<=31423 then r_=fb;ub=ra(r_,255);na=Db[53737][ub+1];ie,Pc,kd=na[1],na[2],na[3];Je={[1345]=0,[25793]=Pc,[11601]=ub,[45272]=nil,[1816]=0,[37926]=0,[54188]=0,[64181]=0,[39052]=0,[15687]=0,[42994]=0,[12739]=0,[1241]=0,[24837]=0,[9118]=0};nc(Nf,Je)if ie==0 then za=Ff[-10555]or v(108204,-10555,5067)continue elseif(ie==1)then za=Ff[-17243]or v(4337,-17243,36488)continue else za=Ff[26863]or v(111640,26863,20199)continue end za=Ff[11496]or v(105141,11496,23850)else pe=qd(ae('\147','\209'),Be,zf);zf,za=zf+1,Ff[-2410]or v(56963,-2410,53405)end elseif za>43331 then if za<=43964 then if za>43787 then if za<=43890 then za,ub[24837]=Ff[-6664]or v(79668,-6664,6204),Pa[ub[1345]+1]else za=Ff[1421]or v(12991,1421,22233)continue end elseif za<43751 then if Nb then za=Ff[6423]or v(104646,6423,37578)continue else za=Ff[26948]or v(31619,26948,37401)continue end za=Ff[-19602]or v(129784,-19602,28535)elseif za<=43751 then za,Nb=Ff[13028]or v(29751,13028,58036),false else Je,af=ra(Le(ie,10),1023),ra(Le(ie,0),1023);ub[64181]=Pa[Je+1];ub[39052],za=Pa[af+1],Ff[-28547]or v(107706,-28547,43962)end elseif za<=45184 then if za>44026 then _f,za,Mb=He,Ff[9726]or v(108649,9726,33562),nil else Ma=pa;fb=dd(Ma);na,r_,za,ub=1,167,Ff[-27340]or v(65806,-27340,2125),(Ma)+166 end else Md=G;Nf,Nb=dd(Md),false;za,jf,Pa,Ga=Ff[-18576]or v(15521,-18576,45583),78,1,(Md)+77 end elseif za>=41674 then if za<42438 then if za<=41674 then if ie==7 then za=Ff[10047]or v(120161,10047,22798)continue end za=Ff[31003]or v(58122,31003,50657)else if(Ya>=0 and af>Ra)or((Ya<0 or Ya~=Ya)and af<Ra)then za=Ff[-26223]or v(23811,-26223,32613)else za=Ff[29768]or v(23526,29768,51438)end end elseif za<43251 then za=Ff[95]or v(121139,95,919)continue elseif za<=43251 then za,fb=Ff[21916]or v(46023,21916,51908),nil else Pa,za=nil,26858 end elseif za<=39770 then if za<39761 then za,af=8232,pd(Ra,510600397)continue elseif za>39761 then za,Pa=Ff[18678]or v(79730,18678,2832),pd(pa,228)continue else fb=Pa if pa~=pa then za=Ff[-1198]or v(119498,-1198,18071)else za=37009 end end else if na==0 then za=Ff[25387]or v(32337,25387,30665)continue end za=Ff[751]or v(28551,751,53453)end elseif za>55331 then if za<59858 then if za<57760 then if za<56079 then if za>55669 then za=Ff[-23063]or v(125832,-23063,28757)continue else ub=qd(ae('\176','\242'),Be,zf);zf,za=zf+1,Ff[-2577]or v(87761,-2577,9467)end elseif za>56079 then ie=r_ if ub~=ub then za=Ff[30469]or v(105295,30469,844)else za=Ff[-3124]or v(54506,-3124,54638)end else r_,za=pd(ub,228),36428 continue end elseif za<59073 then if za<=57760 then za,Nd=29473,pd(Ie,228)continue else na=fb if r_~=r_ then za=Ff[-12508]or v(103496,-12508,49095)else za=6976 end end elseif za<=59073 then pa=Pa;Md=Za(Md,g(ra(pa,127),(Ga-104)*7))if not Fe(pa,128)then za=Ff[-21950]or v(60002,-21950,65168)continue end za=Ff[20932]or v(87173,20932,6595)else za,Pc=Ff[-16537]or v(58738,-16537,54815),mc(af)continue end elseif za<=61203 then if za<=60342 then if za<=60330 then if za>59858 then Mb,za=pd(Ka,228),3241 continue else if na==9 then za=Ff[6611]or v(26334,6611,9599)continue elseif na==7 then za=Ff[9862]or v(109159,9862,13832)continue elseif(na==4)then za=Ff[486]or v(11301,486,53138)continue else za=Ff[-729]or v(69933,-729,9217)continue end za=Ff[-7546]or v(123005,-7546,28539)end else Ka=qd(ae('\228','\166'),Be,zf);zf,za=zf+1,60330 end elseif za>61036 then za,Nb=Ff[28185]or v(115583,28185,22524),Ma else pe,G,za=U,nil,11323 end elseif za<=64035 then if za<=62609 then Pa=Pa+Ma;fb=Pa if Pa~=Pa then za=Ff[26380]or v(128555,26380,25270)else za=37009 end else Nf=Nf+jf;Ga=Nf if Nf~=Nf then za=Ff[-4920]or v(74035,-4920,14653)else za=4756 end end else ub[24837],za=Vb(ub[1345],0,16),Ff[4092]or v(120310,4092,47870)end elseif za<=49268 then if za<47736 then if za<=46934 then if za<46838 then if(Ra>=0 and Je>af)or((Ra<0 or Ra~=Ra)and Je<af)then za=Ff[15231]or v(17881,15231,38525)else za=Ff[-18788]or v(28850,-18788,21067)end elseif za<=46838 then re_=qd(ae('\181','\247'),Be,zf);zf,za=zf+1,Ff[-6523]or v(20878,-6523,19046)else Ga=Nf if Nb~=Nb then za=Ff[11205]or v(88221,11205,16071)else za=4756 end end elseif za<=47256 then na=qd(ae('@','\2'),Be,zf);zf,za=zf+1,Ff[6776]or v(101617,6776,16660)else if na==0 then za=Ff[23098]or v(21671,23098,38653)continue elseif na==2 then za=Ff[3066]or v(4663,3066,37700)continue end za=Ff[-5102]or v(64188,-5102,63456)end elseif za>=48264 then if za<48794 then za,jf=Ff[-8222]or v(12809,-8222,48386),pd(Ga,1813182844)continue elseif za<=48794 then jf=jf+Pa;pa=jf if jf~=jf then za=9996 else za=Ff[-12798]or v(101872,-12798,26219)end else za=Ff[12397]or v(125153,12397,10814)continue end elseif za<=47736 then Je=0;Ra,Ya,za,af=10,1,Ff[18761]or v(99402,18761,268),6 else af,Ra=ra(Le(r_,8),16777215),nil;Ra=if af<8388608 then af else af-16777216;Je[12739],za=Ra,Ff[16313]or v(9003,16313,34240)end elseif za<=53031 then if za<=50211 then if za>50015 then Ie,za=nil,Ff[-5466]or v(22117,-5466,55390)elseif za>49745 then za,af=Ff[-17784]or v(20734,-17784,34),nil else za,ie=Ff[-12330]or v(880,-12330,58344),pd(Pc,228)continue end elseif za<=51101 then Pc=qd(ae('\200','\138'),Be,zf);zf,za=zf+1,Ff[15499]or v(20016,15499,51014)else G,za=pd(Md,1813182844),Ff[-18521]or v(18266,-18521,61439)continue end elseif za>54704 then pa=pa+fb;r_=pa if pa~=pa then za=Ff[-2071]or v(3423,-2071,47606)else za=Ff[-13238]or v(10866,-13238,21556)end elseif za>53536 then za,ie=Ff[-16600]or v(119092,-16600,20150),nil else Je=ra(Le(ie,10),1023);za,ub[64181]=Ff[16267]or v(123527,16267,28109),Pa[Je+1]end elseif za>14033 then if za<23496 then if za<=20893 then if za>15409 then if za>=19635 then if za<=19635 then Ie,za=pd(re_,228),Ff[348]or v(106169,348,48855)continue else Nd=af if Ra~=Ra then za=Ff[-32132]or v(7061,-32132,45559)else za=Ff[3079]or v(110918,3079,17300)end end elseif za>18140 then pa=pa+fb;r_=pa if pa~=pa then za=26854 else za=Ff[7995]or v(105928,7995,602)end else Je[37926]=ra(Le(r_,8),255);Je[1241]=ra(Le(r_,16),255);za,Je[9118]=Ff[6962]or v(4319,6962,54460),ra(Le(r_,24),255)end elseif za>14421 then if za<=15066 then return{[24289]=Nf,[34303]=_f,[23738]=pe,[57267]='',[37527]=Ka,[46318]=fb}else za=Ff[-17234]or v(16863,-17234,55553)continue end elseif za<=14302 then if za>14198 then Ga=jf;Pa=dd(Ga);fb,pa,Ma,za=1,137,(Ga)+136,Ff[17348]or v(40969,17348,57739)else Ma=0;fb,r_,ub,za=165,169,1,58367 end else if(fb>=0 and pa>Ma)or((fb<0 or fb~=fb)and pa<Ma)then za=Ff[-7909]or v(15898,-7909,65029)else za=33796 end end elseif za<21821 then if za>=21105 then if za>21105 then za,Nd=Ff[1613]or v(27515,1613,5224),nil else ub[24837]=Pa[Vb(ub[1345],0,24)+1];za,ub[42994]=Ff[-15593]or v(67435,-15593,2153),Vb(ub[1345],31,1)==1 end else Pc,za=kd,3366 continue end elseif za>=22445 then if za<=22445 then ub[24837],za=Pa[ub[1241]+1],Ff[-30239]or v(77043,-30239,5105)else af=af+Ya;Nd=af if af~=af then za=Ff[-20914]or v(59242,-20914,41614)else za=Ff[17099]or v(108409,17099,23621)end end elseif za>21821 then af,za=nil,Ff[-21653]or v(30137,-21653,48961)else Je=Je+Ra;Ya=Je if Je~=Je then za=Ff[17787]or v(109112,17787,32414)else za=46225 end end elseif za<27475 then if za>25790 then if za>26854 then pa=qd(ae('#','a'),Be,zf);za,zf=Ff[1934]or v(121352,1934,24967),zf+1 elseif za<=26433 then fb,za=pd(r_,510600397),31423 continue else Ma,fb,za,pa=(Md)+39,1,Ff[-12787]or v(49627,-12787,37720),40 end elseif za<24240 then if za>23496 then Je[37926]=ra(Le(r_,8),255);af=ra(Le(r_,16),65535);Je[15687]=af;Ra=nil;Ra=if af<32768 then af else af-65536;za,Je[54188]=Ff[16481]or v(98584,16481,26615),Ra else ie,za=yf(Pc[1],1,Pc[2]),Ff[2298]or v(57396,2298,37240)end elseif za<24942 then kd=0;za,af,Je,Ra=28461,207,203,1 elseif za>24942 then if(Pa>=0 and jf>Ga)or((Pa<0 or Pa~=Pa)and jf<Ga)then za=9996 else za=43493 end else af,za=Ra,Ff[8759]or v(98593,8759,65106)continue end elseif za<=29371 then if za<=28461 then if za>27662 then Ya=Je if af~=af then za=Ff[-8500]or v(107038,-8500,30372)else za=46225 end elseif za<=27475 then za,Pc=Ff[15192]or v(56787,15192,65444),mc(nil)else ub=Nf[(r_-39)];na=ub[25793]if(na==2)then za=Ff[31576]or v(3000,31576,16603)continue else za=Ff[24945]or v(6045,24945,20466)continue end za=Ff[10619]or v(125133,10619,22283)end elseif za>28858 then Pc=ie;Ma=Za(Ma,g(ra(Pc,127),(na-165)*7))if not Fe(Pc,128)then za=Ff[9651]or v(127928,9651,25833)continue end za=Ff[17496]or v(101882,17496,21932)else if kd then za=Ff[29036]or v(110047,29036,5169)continue end za=Ff[30120]or v(128841,30120,10888)end elseif za<30157 then if za<=29437 then Ga=0;Pa,pa,za,Ma=213,217,39761,1 else Ie=Nd;kd=Za(kd,g(ra(Ie,127),(Ya-203)*7))if not Fe(Ie,128)then za=Ff[13151]or v(126289,13151,1074)continue end za=Ff[-12381]or v(31128,-12381,23538)end elseif za<=30157 then Ra=qd(ae('\145\228\153','\173'),Be,zf);za,zf=Ff[-18256]or v(25196,-18256,43584),zf+4 else fb=fb+ub;na=fb if fb~=fb then za=Ff[-20323]or v(25503,-20323,41756)else za=Ff[-28358]or v(31004,-28358,1401)end end elseif za>=6124 then if za<9943 then if za>7506 then if za>=8820 then if za>8820 then Pa[(r_-136)],za=ie,Ff[21893]or v(19706,21893,20003)else za,pa=Ff[-30521]or v(7989,-30521,33646),nil end elseif za<=8232 then Ra=af;Je[1345]=Ra;nc(Nf,{});za=Ff[14136]or v(8379,14136,61626)else ie=ub[1345];Pc,kd=Le(ie,30),ra(Le(ie,20),1023);ub[24837]=Pa[kd+1];ub[1816]=Pc if Pc==2 then za=Ff[7708]or v(77691,7708,10622)continue elseif(Pc==3)then za=Ff[-14758]or v(68941,-14758,11923)continue else za=Ff[-20901]or v(127011,-20901,24353)continue end za=Ff[-29]or v(130132,-29,16540)end elseif za<6976 then if za>6124 then Ie=qd(ae('\140','\206'),Be,zf);za,zf=57760,zf+1 else za,ie=Ff[-16234]or v(11191,-16234,18169),nil end elseif za<=7189 then if za<=6976 then if(ub>=0 and fb>r_)or((ub<0 or ub~=ub)and fb<r_)then za=Ff[-14216]or v(129296,-14216,7535)else za=Ff[25696]or v(75550,25696,10955)end else Pc,za=mc'',Ff[-30453]or v(15880,-30453,36117)continue end else He,za=pd(_f,228),45184 continue end elseif za<11323 then if za<=10123 then if za<=9996 then if za>9943 then jf,za=nil,Ff[-23240]or v(24735,-23240,17087)else U,za=pd(pe,228),61036 continue end else pa=jf if Ga~=Ga then za=Ff[-9962]or v(49952,-9962,65289)else za=Ff[11356]or v(104644,11356,26791)end end else r_=qd(ae('F3N','z'),Be,zf);za,zf=26433,zf+4 end elseif za>=12874 then if za<13510 then Pc,za=nil,1269 elseif za>13510 then if(na==4)then za=Ff[-13604]or v(8589,-13604,34943)continue else za=Ff[-9195]or v(73372,-9195,4028)continue end za=Ff[23335]or v(105875,23335,5149)else ub[24837],za=Pa[ub[37926]+1],Ff[-4317]or v(87728,-4317,14768)end elseif za<=11323 then Md=0;za,jf,Nf,Nb=46934,1,104,108 else if(na>=0 and r_>ub)or((na<0 or na~=na)and r_<ub)then za=15066 else za=158 end end elseif za<=3241 then if za<1383 then if za>1269 then r_=pa if Ma~=Ma then za=Ff[-22145]or v(99118,-22145,13191)else za=Ff[-7192]or v(105378,-7192,9828)end elseif za<826 then fb[(ie-166)],za=jb(),Ff[-16635]or v(24532,-16635,31492)elseif za<=826 then if na==6 then za=Ff[-10800]or v(13954,-10800,39028)continue elseif(na==5)then za=Ff[5238]or v(729,5238,33613)continue else za=Ff[6060]or v(57886,6060,47472)continue end za=Ff[-8594]or v(122459,-8594,44697)else kd=qd(ae('\235\179','\215'),Be,zf);za,zf=21071,zf+8 end elseif za>=3142 then if za>=3196 then if za>3196 then Ka,U,za=Mb,nil,31434 else za,ub[24837]=Ff[-26897]or v(70763,-26897,31593),Pa[ub[12739]+1]end else za,ub[24837]=Ff[-32413]or v(129775,-32413,17685),Pa[ub[54188]+1]end elseif za>1383 then if(na==1)then za=Ff[11339]or v(75136,11339,30275)continue else za=Ff[23993]or v(105022,23993,54261)continue end za=Ff[-20011]or v(71153,-20011,31479)else Ra=qd(ae('\183','\212')..Je,Be,zf);za,zf=Ff[1079]or v(108178,1079,7685),zf+Je end elseif za>4756 then if za>=5853 then if za>5853 then Je=kd if Je==0 then za=Ff[-27185]or v(32878,-27185,52064)continue else za=Ff[21406]or v(74674,21406,13302)continue end za=Ff[8029]or v(54936,8029,62819)else if(fb>=0 and pa>Ma)or((fb<0 or fb~=fb)and pa<Ma)then za=Ff[-17640]or v(29396,-17640,845)else za=27662 end end else r_=pa if Ma~=Ma then za=26854 else za=Ff[-12613]or v(51694,-12613,54816)end end elseif za>=3391 then if za<=3883 then if za>3391 then r_=r_+na;ie=r_ if r_~=r_ then za=15066 else za=11935 end else za,kd=Ff[13648]or v(18993,13648,29754),pd(Je,1813182844)continue end else if(jf>=0 and Nf>Nb)or((jf<0 or jf~=jf)and Nf<Nb)then za=Ff[-17205]or v(102167,-17205,35673)else za=43331 end end elseif za>3278 then ie,za=Pc,Ff[-26084]or v(103003,-26084,11461)else za,kd=47736,nil end end end local Oe=jb();Db[18358][Be]=Oe return Oe end)local vc=(function(Wa,Hc)Wa=Hb(Wa)local kf=nd()local function Mf(De,Me)local wc=(function(...)return{...},Gc('#',...)end)local Wb;Wb=(function(sc,rf,Sc)if rf>Sc then return end return sc[rf],Wb(sc,rf+1,Sc)end)local function vb(Ce,nb,ba,se_)local If,Pd,Ge,Xb,Qa,Af,Bb,xa,Zd,Hf,f_,w_,Eb,ye,mf,kb,ka,te,tb,Ec,hc,db,ca,o_;If,mf={},function(xb,hb,_b)If[hb]=Ob(xb,59263)-Ob(_b,27680)return If[hb]end;ka=If[7759]or mf(32406,7759,63976)repeat if ka>34177 then if ka<=49653 then if ka<42852 then if ka>=39375 then if ka>40917 then if ka>=41860 then if ka>42539 then Qa,ka=Ec,55931 continue elseif ka>42185 then Xb,ka=Xb..s_(pd(Ne(Qa,(Eb-161)+1),Ne(xa,(Eb-161)%#xa+1))),If[-25166]or mf(1903,-25166,59310)elseif ka>41860 then Bb=Zd[24837];Ce[Zd[9118]][Bb]=Ce[Zd[1241]];Af+=1;ka=If[-17898]or mf(63560,-17898,30455)else kb,ka=Xb,If[28312]or mf(32099,28312,30907)continue end elseif ka>=41729 then if ka>41729 then if(hc>15)then ka=If[24926]or mf(16058,24926,21968)continue else ka=If[-12791]or mf(76585,-12791,38221)continue end ka=If[-6075]or mf(3414,-6075,35305)else Af-=1;ka,ba[Af]=If[27173]or mf(12245,27173,43114),{[11601]=38,[37926]=pd(Zd[37926],246),[1241]=pd(Zd[1241],125),[9118]=0}end else ka,Qa=29025,Ec continue end elseif ka<39979 then if ka<=39772 then if ka>=39392 then if ka>39392 then Af+=Zd[54188];ka=If[31494]or mf(34213,31494,12890)else db,kb,Qa=uf(db);ka=If[25303]or mf(31313,25303,29634)end else Bb=Ee(db)if(Bb~=nil and Bb[ae('\165\144:\142\170!','\250\207S')]~=nil)then ka=If[24116]or mf(70409,24116,37195)continue else ka=If[-15938]or mf(125777,-15938,19603)continue end ka=If[12396]or mf(13493,12396,10213)end else if(Xb[3]>=Zd[37926])then ka=If[-16390]or mf(31551,-16390,26281)continue else ka=If[-12713]or mf(55515,-12713,29873)continue end ka=If[-2149]or mf(5000,-2149,41412)end elseif ka>=40744 then if ka>40744 then Bb,db,kb=Zd[1241],Zd[37926],Zd[9118]-1 if kb==-1 then ka=If[28141]or mf(126262,28141,38128)continue end ka=If[25375]or mf(109886,25375,40493)else Eb=Ec if Hf~=Hf then ka=If[-24702]or mf(23468,-24702,30063)else ka=If[-27446]or mf(118989,-27446,45213)end end elseif ka<=39979 then Qa,xa=db[24837],Zd[24837];xa=ae('\208\222','\156')..xa;Xb='';Hf,Ec,ca,ka=(#Qa-1)+161,161,1,40744 else xa={kb(Ce[Bb+1],Ce[Bb+2])};ya(xa,1,db,Bb+3,Ce)if Ce[Bb+3]~=nil then ka=If[32454]or mf(17053,32454,11438)continue else ka=If[26596]or mf(101602,26596,48677)continue end ka=If[-20365]or mf(27292,-20365,58787)end elseif ka>=35728 then if ka<36800 then if ka<=35848 then if ka<35759 then Qa=Qa+Xb;Ec=Qa if Qa~=Qa then ka=If[4788]or mf(8546,4788,44445)else ka=52264 end elseif ka>35759 then if(hc>37)then ka=If[11559]or mf(5871,11559,24806)continue else ka=If[27153]or mf(112588,27153,61198)continue end ka=If[-6750]or mf(35469,-6750,1458)else if hc>145 then ka=If[21407]or mf(10090,21407,25294)continue else ka=If[-22437]or mf(99579,-22437,57221)continue end ka=If[27130]or mf(44702,27130,10657)end else if Zd[9118]==15 then ka=If[-30866]or mf(118656,-30866,48776)continue elseif(Zd[9118]==162)then ka=If[-13311]or mf(20396,-13311,9745)continue else ka=If[-12455]or mf(21779,-12455,49896)continue end ka=If[-15022]or mf(6253,-15022,38546)end elseif ka<=38892 then if ka<=37303 then if ka<=36800 then return Wb(Ce,Bb,Bb+Qa-1)else Xb[2]=Xb[1][Xb[3]];Xb[1]=Xb;Xb[3]=2;w_[xa],ka=nil,If[-6081]or mf(48699,-6081,24081)end else Ec,ka=Ec..s_(pd(Ne(xa,(te-9)+1),Ne(Xb,(te-9)%#Xb+1))),If[598]or mf(36673,598,24866)end else Af+=1;ka=If[-26710]or mf(16312,-26710,47175)end elseif ka>34821 then if ka<35034 then if Zd[9118]==37 then ka=If[12179]or mf(19042,12179,9236)continue elseif Zd[9118]==154 then ka=If[-28030]or mf(116377,-28030,40710)continue elseif Zd[9118]==248 then ka=If[5364]or mf(13663,5364,32330)continue else ka=If[7756]or mf(37655,7756,27718)continue end ka=If[6439]or mf(64478,6439,29793)elseif ka>35034 then ca=Xb if Ec~=Ec then ka=If[-11005]or mf(110495,-11005,5852)else ka=If[26773]or mf(104773,26773,60848)end else if Bb==2 then ka=If[-1119]or mf(27604,-1119,28768)continue elseif(Bb==3)then ka=If[-30459]or mf(99036,-30459,52158)continue else ka=If[-3707]or mf(1936,-3707,55139)continue end ka=If[23811]or mf(11504,23811,51651)end elseif ka>34606 then xa,Xb=db(kb,Qa);Qa=xa if Qa==nil then ka=If[13658]or mf(105448,13658,49377)else ka=If[-9381]or mf(37490,-9381,1526)end elseif ka<=34396 then if ka>34322 then f_={[2]=Ce[te[1241]],[3]=2};f_[1]=f_;ka,Xb[(Eb-98)]=If[21278]or mf(106294,21278,60298),f_ else if(Ce[Zd[37926]]<=Ce[Zd[1345]])then ka=If[24435]or mf(75601,24435,37639)continue else ka=If[26175]or mf(3679,26175,62800)continue end ka=If[5828]or mf(2194,5828,34733)end else if hc>109 then ka=If[-18375]or mf(60529,-18375,26700)continue else ka=If[-25972]or mf(117411,-25972,3548)continue end ka=If[-9932]or mf(28654,-9932,59409)end elseif ka<46891 then if ka<44946 then if ka<=43679 then if ka>=43383 then if ka<=43383 then if(ca==2)then ka=If[-7567]or mf(122135,-7567,11216)continue else ka=If[-22741]or mf(118511,-22741,61984)continue end ka=If[901]or mf(106236,901,33235)else Bb,db=Zd[37926],Zd[1241]-1 if db==-1 then ka=If[-16666]or mf(105217,-16666,54825)continue end ka=6147 end elseif ka>42852 then if(hc>149)then ka=If[16335]or mf(42804,16335,20266)continue else ka=If[4214]or mf(130558,4214,14000)continue end ka=If[-13891]or mf(33145,-13891,3462)else Ec,ka=Ec..s_(pd(Ne(xa,(te-41)+1),Ne(Xb,(te-41)%#Xb+1))),If[-6646]or mf(91009,-6646,49602)end elseif ka<=43888 then if ka>43848 then Eb={[2]=Ce[Hf[1241]],[3]=2};Eb[1]=Eb;ka,kb[(Ec-210)]=If[-25572]or mf(13172,-25572,9307),Eb else Ce[Zd[37926]]=Zd[9118]==1;Af+=Zd[1241];ka=If[-5080]or mf(63826,-5080,30189)end else ye=ca if Eb~=Eb then ka=If[-5887]or mf(122216,-5887,45321)else ka=If[-9403]or mf(19275,-9403,19193)end end elseif ka<=45500 then if ka>=45351 then if ka<45374 then if(hc>162)then ka=If[-32108]or mf(5079,-32108,11834)continue else ka=If[-19795]or mf(124817,-19795,15740)continue end ka=If[25987]or mf(22909,25987,54658)elseif ka>45374 then Ce[Zd[37926]],ka=#Ce[Zd[1241]],If[19700]or mf(42783,19700,20512)else if(hc>60)then ka=If[31934]or mf(127951,31934,967)continue else ka=If[24449]or mf(110900,24449,52473)continue end ka=If[17916]or mf(51148,17916,28787)end elseif ka>44946 then if hc>134 then ka=If[24483]or mf(116540,24483,35548)continue else ka=If[26854]or mf(98341,26854,5569)continue end ka=If[-25492]or mf(6373,-25492,38682)else if(hc>151)then ka=If[-4074]or mf(99726,-4074,62356)continue else ka=If[12708]or mf(91582,12708,46512)continue end ka=If[-6789]or mf(29648,-6789,64623)end elseif ka>=46199 then if ka<=46199 then Qa..=Ce[Hf];ka=If[13583]or mf(23489,13583,9402)else if(hc>57)then ka=If[25186]or mf(123921,25186,64231)continue else ka=If[24630]or mf(125381,24630,56317)continue end ka=If[-14959]or mf(11502,-14959,43793)end else if hc>168 then ka=If[-1301]or mf(29748,-1301,60391)continue else ka=If[434]or mf(61633,434,32638)continue end ka=If[-20862]or mf(41416,-20862,11895)end elseif ka>49133 then if ka<=49415 then if ka>49412 then Af+=1;ka=If[-20675]or mf(54708,-20675,16971)elseif ka>49179 then ka=If[-11650]or mf(24914,-11650,4824)continue elseif ka<=49137 then Bb,db,kb=pd(Zd[1241],236),pd(Zd[9118],37),pd(Zd[37926],240);Qa,xa=db==0 and tb-Bb or db-1,Ce[Bb];Xb,Ec=wc(xa(Wb(Ce,Bb+1,Bb+Qa)))if(kb==0)then ka=If[-21568]or mf(18398,-21568,11486)continue else ka=If[4648]or mf(74918,4648,33908)continue end ka=55964 else if(hc>182)then ka=If[22203]or mf(31049,22203,62966)continue else ka=If[12666]or mf(12237,12666,59841)continue end ka=If[-21470]or mf(18206,-21470,61473)end elseif ka<=49629 then if ka<=49466 then if(hc>55)then ka=If[2439]or mf(108640,2439,4807)continue else ka=If[-28130]or mf(45375,-28130,8248)continue end ka=If[17007]or mf(28919,17007,65288)else if hc>44 then ka=If[-21777]or mf(16736,-21777,60429)continue else ka=If[27216]or mf(33442,27216,24299)continue end ka=If[2906]or mf(33755,2906,3172)end else if(Eb>=0 and Hf>ca)or((Eb<0 or Eb~=Eb)and Hf<ca)then ka=If[-19681]or mf(6555,-19681,12766)else ka=38892 end end elseif ka>48218 then if ka>=49078 then if ka<=49078 then Af-=1;ka,ba[Af]=If[-21601]or mf(245,-21601,36618),{[11601]=208,[37926]=pd(Zd[37926],9),[1241]=pd(Zd[1241],137),[9118]=0}else te=Hf if ca~=ca then ka=If[19589]or mf(98630,19589,43379)else ka=49653 end end else Ce[Zd[37926]],ka=kb[Zd[64181]][Zd[39052]],If[26322]or mf(47768,26322,21531)end elseif ka>47818 then if ka>48154 then if(hc>17)then ka=If[-1588]or mf(33408,-1588,17127)continue else ka=If[-5055]or mf(3367,-5055,11060)continue end ka=If[23182]or mf(57746,23182,28333)else db,kb,Qa=w_ if cf(db)~=ae('\249\218\177\1\235\198\176\f','\159\175\223b')then ka=If[18548]or mf(14377,18548,10663)continue end ka=If[-18497]or mf(115852,-18497,63438)end elseif ka>=46928 then if ka>46928 then Af+=Zd[54188];ka=If[-8402]or mf(62600,-8402,25527)else Ce[Zd[9118]],ka=Ce[Zd[37926]]-Zd[24837],If[16201]or mf(5793,16201,33118)end else Bb=Me[Zd[1241]+1];Ce[Zd[37926]],ka=Bb[1][Bb[3]],If[-30056]or mf(45469,-30056,16034)end elseif ka>=57272 then if ka<61329 then if ka>=58890 then if ka>=60083 then if ka<=60692 then if ka>60283 then if(hc>25)then ka=If[32048]or mf(12456,32048,43330)continue else ka=If[-17856]or mf(10060,-17856,13158)continue end ka=If[19546]or mf(54739,19546,17004)elseif ka>60083 then if cf(db)==ae('\28J\nG\r','h+')then ka=If[-5976]or mf(116334,-5976,17364)continue end ka=If[30523]or mf(17803,30523,30415)else db[39052],ka=xa,If[25088]or mf(33663,25088,3864)end else if(hc>129)then ka=If[11453]or mf(84014,11453,41913)continue else ka=If[15408]or mf(85296,15408,43366)continue end ka=If[12898]or mf(49773,12898,19602)end elseif ka<=59220 then if ka<=58890 then if hc>189 then ka=If[31406]or mf(123905,31406,56926)continue else ka=If[9570]or mf(7361,9570,4118)continue end ka=If[9703]or mf(4999,9703,40120)else Af-=1;ba[Af],ka={[11601]=86,[37926]=pd(Zd[37926],167),[1241]=pd(Zd[1241],154),[9118]=0},If[-3177]or mf(18557,-3177,50818)end else if(hc>48)then ka=If[20331]or mf(106365,20331,57159)continue else ka=If[-28777]or mf(94734,-28777,64458)continue end ka=If[-21482]or mf(123682,-21482,37853)end elseif ka<=58264 then if ka>=57602 then if ka>57602 then if(cf(db)==ae('\187\170\173\167\170','\207\203'))then ka=If[13494]or mf(45527,13494,27663)continue else ka=If[889]or mf(128049,889,32795)continue end ka=If[13947]or mf(41327,13947,29405)else Xb=Xb+Hf;ca=Xb if Xb~=Xb then ka=If[-3996]or mf(2565,-3996,29622)else ka=If[30422]or mf(120798,30422,24535)end end elseif ka>57272 then Xa'';ka=If[-23094]or mf(102528,-23094,50004)else Bb,db,kb=Zd[24837],Zd[42994],Ce[Zd[37926]]if((kb==Bb)~=db)then ka=If[-4877]or mf(11919,-4877,1853)continue else ka=If[8376]or mf(11587,8376,57033)continue end ka=If[15708]or mf(64638,15708,31361)end elseif ka>58570 then if hc>120 then ka=If[261]or mf(103674,261,42013)continue else ka=If[-1959]or mf(13485,-1959,54662)continue end ka=If[27970]or mf(30551,27970,59368)elseif ka>58398 then if Zd[9118]==232 then ka=If[-1012]or mf(113633,-1012,34830)continue else ka=If[-11399]or mf(122007,-11399,47434)continue end ka=If[-6366]or mf(22394,-6366,51077)else ca=ca+te;ye=ca if ca~=ca then ka=If[-13945]or mf(26896,-13945,23969)else ka=34139 end end elseif ka<=63130 then if ka>62354 then if ka>63049 then if(hc>86)then ka=If[5002]or mf(125710,5002,21344)continue else ka=If[20715]or mf(15187,20715,9202)continue end ka=If[10781]or mf(9786,10781,53445)elseif ka<=62539 then ka,Ce[Zd[37926]]=If[-11862]or mf(18216,-11862,5771),kb else Bb=Ee(db)if(Bb~=nil and Bb[ae('\158\222\15\181\228\20','\193\129f')]~=nil)then ka=If[11735]or mf(7319,11735,16855)continue else ka=If[15749]or mf(114485,15749,6290)continue end ka=If[5587]or mf(38291,5587,10233)end elseif ka>61725 then if ka>62072 then Af+=1;ka=If[12045]or mf(42908,12045,20643)else ka,kb[(Ec-210)]=If[17120]or mf(22637,17120,24482),Me[Hf[1241]+1]end elseif ka<=61599 then if ka<=61329 then db,kb,Qa=Bb[ae('T\153I\127\163R','\v\198 ')](db);ka=If[79]or mf(7069,79,5046)else Ec=Ec+ca;Eb=Ec if Ec~=Ec then ka=If[20588]or mf(48512,20588,15039)else ka=55890 end end else db,kb,Qa=uf(db);ka=If[-17232]or mf(6821,-17232,6645)end elseif ka<64487 then if ka<=63243 then if ka<=63135 then Bb=Ee(db)if(Bb~=nil and Bb[ae('\214\224;\253\218 ','\137\191R')]~=nil)then ka=If[27163]or mf(102980,27163,59786)continue else ka=If[-2724]or mf(118987,-2724,36934)continue end ka=If[18414]or mf(99521,18414,35410)else db,kb,Qa=Bb[ae('gQ\141Lk\150','8\14\228')](db);ka=If[-12138]or mf(111468,-12138,41006)end else Qa,ka=tb-Bb+1,If[19185]or mf(128801,19185,60606)end elseif ka<64903 then if ka>64487 then if(Hf>=0 and Xb>Ec)or((Hf<0 or Hf~=Hf)and Xb<Ec)then ka=If[30189]or mf(123662,30189,23213)else ka=29763 end else Xb,Ec=db[39052],Zd[39052];Ec=ae('Q_','\29')..Ec;Hf='';Eb,ca,te,ka=(#Xb-1)+97,97,1,44318 end elseif ka<=64903 then ka,Ce[Zd[37926]]=If[-17816]or mf(31966,-17816,64353),Ce[Zd[9118]]-Ce[Zd[1241]]else ka,Hf=If[16929]or mf(89440,16929,47649),Hf..s_(pd(Ne(Xb,(ye-97)+1),Ne(Ec,(ye-97)%#Ec+1)))end elseif ka<53206 then if ka<=52192 then if ka>=50850 then if ka>51644 then if(hc>94)then ka=If[24787]or mf(87890,24787,36194)continue else ka=If[6394]or mf(85066,6394,55483)continue end ka=If[-15079]or mf(38563,-15079,348)elseif ka>51339 then Bb=Ce[Zd[1241]];ka,Ce[Zd[9118]]=If[29855]or mf(56106,29855,23509),if Bb then Bb else Zd[24837]or false elseif ka<=50850 then Qa=Ce[Bb];ka,Xb,xa,Ec=56880,db,Bb+1,1 else Af+=Zd[54188];ka=If[-13181]or mf(10222,-13181,53265)end elseif ka<50331 then if ka<=49781 then db=se_[49000];tb,ka=Bb+db-1,If[24461]or mf(28724,24461,4968)else kf[Zd[24837]]=Ce[Zd[1241]];Af+=1;ka=If[26735]or mf(25379,26735,5084)end elseif ka>50331 then Af+=1;ka=If[11803]or mf(48784,11803,14767)else ka,Ce[Zd[1241]]=If[2734]or mf(37737,2734,918),Ce[Zd[9118]][Ce[Zd[37926]]]end elseif ka>52708 then if ka>52721 then ka,Ce[Zd[9118]][Ce[Zd[37926]]]=If[-14148]or mf(57845,-14148,28170),Ce[Zd[1241]]else db,kb,Qa=Bb[ae('\130p\145\169J\138','\221/\248')](db);ka=If[-14209]or mf(31642,-14209,6642)end elseif ka<52613 then if ka>52264 then if Ce[Zd[37926]]==Ce[Zd[1345]]then ka=If[-29171]or mf(107417,-29171,58940)continue else ka=If[-3412]or mf(123896,-3412,63760)continue end ka=If[18619]or mf(23717,18619,56154)else if(Xb>=0 and Qa>xa)or((Xb<0 or Xb~=Xb)and Qa<xa)then ka=If[-7468]or mf(44292,-7468,10811)else ka=If[31516]or mf(24526,31516,60286)end end elseif ka<=52613 then ka,Ce[Zd[9118]][Zd[37926]+1]=If[-31361]or mf(2894,-31361,35825),Ce[Zd[1241]]else ka,db=20600,xa continue end elseif ka<55641 then if ka<=54832 then if ka<53993 then if ka<=53206 then db,kb,Qa=Pd if cf(db)~=ae('\185W\v\153\171K\n\148','\223\"e\250')then ka=If[-2059]or mf(116397,-2059,18195)continue end ka=If[-23491]or mf(125919,-23491,58228)else Bb,db=Zd[37926],Zd[9118];kb,Qa=yd(Qf,Ce,'',Bb,db)if not kb then ka=If[-2907]or mf(74532,-2907,37273)continue end ka=If[7168]or mf(116983,7168,41974)end elseif ka>53993 then Bb=Me[Zd[1241]+1];ka,Bb[1][Bb[3]]=If[19737]or mf(8662,19737,44649),Ce[Zd[37926]]else if hc>10 then ka=If[-10790]or mf(15397,-10790,16015)continue else ka=If[8587]or mf(115073,8587,6498)continue end ka=If[21593]or mf(9595,21593,53636)end elseif ka>55247 then if(Eb>=0 and Hf>ca)or((Eb<0 or Eb~=Eb)and Hf<ca)then ka=If[8429]or mf(22906,8429,31451)else ka=42852 end elseif ka<=55068 then Hf=Hf+Eb;te=Hf if Hf~=Hf then ka=If[31351]or mf(112522,31351,50635)else ka=55539 end else if(Ce[Zd[37926]]==Ce[Zd[1345]])then ka=If[29086]or mf(28745,29086,61211)continue else ka=If[-10604]or mf(29594,-10604,6595)continue end ka=If[-10161]or mf(13664,-10161,41375)end elseif ka<=55964 then if ka<=55890 then if ka<=55783 then if ka>55641 then if(hc>214)then ka=If[-29458]or mf(128658,-29458,8261)continue else ka=If[3292]or mf(108466,3292,48014)continue end ka=If[28390]or mf(11282,28390,43821)else Pd[Zd]=nil;Af+=1;ka=If[-15678]or mf(36382,-15678,2337)end else if(ca>=0 and Ec>Hf)or((ca<0 or ca~=ca)and Ec<Hf)then ka=If[21924]or mf(8676,21924,44571)else ka=2779 end end elseif ka>55931 then ya(Xb,1,Ec,Bb,Ce);ka=If[-14331]or mf(31293,-14331,62658)else db[64181],ka=Qa,If[-25345]or mf(56932,-25345,21619)end elseif ka>=56741 then if ka>56741 then Hf=xa if Xb~=Xb then ka=If[18842]or mf(7694,18842,62879)else ka=21860 end else te=Hf if ca~=ca then ka=If[30882]or mf(130163,30882,6178)else ka=55539 end end else ka,Ec=If[-23087]or mf(115171,-23087,8224),kb-1 end elseif ka>18545 then if ka>=25833 then if ka>=29698 then if ka<=31987 then if ka>31346 then if ka>=31638 then if ka>31638 then Ce[Zd[9118]]=dd(Zd[1345]);Af+=1;ka=If[-4058]or mf(6819,-4058,38236)else if(hc>20)then ka=If[17400]or mf(108138,17400,41233)continue else ka=If[-30661]or mf(2799,-30661,23830)continue end ka=If[26632]or mf(48902,26632,14393)end else if(hc>46)then ka=If[-15500]or mf(18174,-15500,62354)continue else ka=If[8726]or mf(22959,8726,4015)continue end ka=If[19747]or mf(124261,19747,37274)end elseif ka>29763 then if ka>30832 then Af-=1;ka,ba[Af]=If[-19726]or mf(1361,-19726,45550),{[11601]=189,[37926]=pd(Zd[37926],84),[1241]=pd(Zd[1241],28),[9118]=0}else Af-=1;ka,ba[Af]=If[-20281]or mf(31091,-20281,62860),{[11601]=25,[37926]=pd(Zd[37926],74),[1241]=pd(Zd[1241],73),[9118]=0}end elseif ka<=29732 then if ka<=29698 then Ce[Zd[37926]],ka=Ce[Zd[1241]],If[29207]or mf(26422,29207,6089)else xa=xa+Ec;Hf=xa if xa~=xa then ka=If[11701]or mf(6856,11701,61989)else ka=If[-23033]or mf(38997,-23033,17894)end end else ka,xa=If[-31743]or mf(98375,-31743,59926),xa..s_(pd(Ne(kb,(ca-57)+1),Ne(Qa,(ca-57)%#Qa+1)))end elseif ka<32648 then if ka<=32310 then if ka<=32076 then xa,Xb=db(kb,Qa);Qa=xa if Qa==nil then ka=49412 else ka=29233 end else if(Xb==-2)then ka=If[6445]or mf(76139,6445,39067)continue else ka=If[-30954]or mf(16678,-30954,19343)continue end ka=If[12469]or mf(21310,12469,50113)end else ya(Xb,1,db,Bb+3,Ce);Ce[Bb+2]=Ce[Bb+3];Af+=Zd[54188];ka=If[28659]or mf(20813,28659,56818)end elseif ka>34139 then db[24837]=kb if Bb==2 then ka=If[-31924]or mf(122366,-31924,33682)continue elseif Bb==3 then ka=If[-5944]or mf(2893,-5944,46498)continue end ka=200 elseif ka>=33603 then if ka<=33603 then Qa=(function(...)for Qe,oa,fd,_a,Ca,ob,x,F,rb,yb,Ia,Cf,Da,L,ud,Ac,Lf,de,gd,K in...do we{Qe,oa,fd,_a,Ca,ob,x,F,rb,yb,Ia,Cf,Da,L,ud,Ac,Lf,de,gd,K}end we(-2)end);Pd[kb],ka=qe(Qa),If[-4659]or mf(30054,-4659,2756)else if(te>=0 and ca>Eb)or((te<0 or te~=te)and ca<Eb)then ka=If[15233]or mf(12157,15233,1844)else ka=65497 end end else if(hc>185)then ka=If[-753]or mf(94770,-753,54077)continue else ka=If[23339]or mf(84731,23339,33097)continue end ka=If[-13771]or mf(21982,-13771,49761)end elseif ka>28097 then if ka<29025 then if ka>=28503 then if ka>28503 then ka,Ce[Zd[37926]]=If[19645]or mf(12395,19645,56648),kb[Zd[64181]]else Af+=1;ka=If[-22297]or mf(49989,-22297,29690)end else o_=false;Af+=1 if hc>115 then ka=If[26664]or mf(29408,26664,15207)continue else ka=If[21301]or mf(107487,21301,42402)continue end ka=If[1546]or mf(64298,1546,31701)end elseif ka>=29439 then if ka<=29439 then kb=ba[Af+Zd[54188]]if(Pd[kb]==nil)then ka=If[21990]or mf(109899,21990,43729)continue else ka=If[-17128]or mf(33347,-17128,22055)continue end ka=If[24376]or mf(10432,24376,51370)else if(hc>27)then ka=If[-31319]or mf(124114,-31319,41140)continue else ka=If[1495]or mf(114794,1495,22049)continue end ka=If[25721]or mf(38352,25721,623)end elseif ka<=29025 then db[64181]=Qa;xa,ka=nil,If[-15225]or mf(6516,-15225,28164)else _c(Xb);Pd[xa],ka=nil,If[-10514]or mf(21701,-10514,23118)end elseif ka>26911 then if ka<27815 then xa,Xb=db[64181],Zd[64181];Xb=ae('mc','!')..Xb;Ec='';Hf,Eb,ka,ca=41,1,If[-7700]or mf(1847,-7700,28291),(#xa-1)+41 elseif ka>27815 then Af+=Zd[54188];ka=If[-20506]or mf(97,-20506,36510)else Bb,db=nil,pd(Zd[15687],42772);Bb=if db<32768 then db else db-65536;kb=Bb;Qa=nb[kb+1];xa=Qa[23738];Xb=dd(xa);Ce[pd(Zd[37926],238)]=Mf(Qa,Xb);ca,ka,Ec,Hf=1,9079,99,(xa)+98 end elseif ka>26238 then if ka<=26503 then if hc>38 then ka=If[-16993]or mf(116065,-16993,45450)continue else ka=If[24997]or mf(8429,24997,22442)continue end ka=If[5657]or mf(16654,5657,52785)else Bb,db=Zd[37926],Zd[24837];tb=Bb+6;kb,Qa=Ce[Bb],nil;Qa=Vd(kb)==ae('\151K\30\156\133W\31\145','\241>p\255')if Qa then ka=If[2995]or mf(16449,2995,25861)continue else ka=If[-21131]or mf(42682,-21131,24073)continue end ka=If[-1075]or mf(38488,-1075,231)end elseif ka>25940 then ka,Ce[Zd[37926]]=If[24288]or mf(53217,24288,18462),nil elseif ka>25833 then Ce[Bb+2]=Ce[Bb+3];Af+=Zd[54188];ka=If[27092]or mf(6586,27092,38469)else Af-=1;ba[Af],ka={[11601]=54,[37926]=pd(Zd[37926],1),[1241]=pd(Zd[1241],106),[9118]=0},If[13761]or mf(9708,13761,53779)end elseif ka<22580 then if ka>=21255 then if ka>=21860 then if ka>=22137 then if ka<=22137 then db,kb,Qa=uf(db);ka=If[27791]or mf(44246,27791,18614)else ka,Ce[Zd[37926]]=If[13211]or mf(54616,13211,16871),Zd[24837]end elseif ka<=21860 then if(Ec>=0 and xa>Xb)or((Ec<0 or Ec~=Ec)and xa<Xb)then ka=If[-30373]or mf(16920,-30373,10645)else ka=46199 end else Af-=1;ba[Af],ka={[11601]=15,[37926]=pd(Zd[37926],170),[1241]=pd(Zd[1241],122),[9118]=0},If[4846]or mf(34048,4846,12863)end elseif ka<=21304 then if ka<=21255 then Bb,db,kb=Zd[24837],Zd[42994],Ce[Zd[37926]]if((kb==Bb)~=db)then ka=If[29652]or mf(29026,29652,17532)continue else ka=If[-3141]or mf(120551,-3141,21030)continue end ka=If[27020]or mf(34907,27020,1764)else Bb,db=Zd[1816],Zd[24837];kb=kf[db]or Db[45848][db]if(Bb==1)then ka=If[-21270]or mf(111411,-21270,3105)continue else ka=If[-26392]or mf(116092,-26392,62729)continue end ka=9644 end else Ec=Ec+ca;Eb=Ec if Ec~=Ec then ka=If[21514]or mf(116561,21514,4234)else ka=If[-45]or mf(12282,-45,432)end end elseif ka<=20400 then if ka>19552 then Af+=Zd[54188];ka=If[-31858]or mf(35802,-31858,1125)elseif ka>19151 then if(ye==1)then ka=If[-13238]or mf(5336,-13238,47549)continue else ka=If[-22457]or mf(116550,-22457,39793)continue end ka=If[1601]or mf(109654,1601,13994)elseif ka<=18997 then Af+=Zd[54188];ka=If[5924]or mf(52407,5924,19272)else ka,Qa=27072,nil end elseif ka>20736 then Af+=Zd[54188];ka=If[-6168]or mf(25661,-6168,4802)elseif ka<=20600 then Bb[24837]=db;Zd[11601],ka=168,If[24781]or mf(40903,24781,6264)else if not Ce[Zd[37926]]then ka=If[-11274]or mf(130495,-11274,38229)continue end ka=If[-31491]or mf(45294,-31491,16145)end elseif ka<=24226 then if ka>=23790 then if ka<24139 then if ka>23790 then Ge={[3]=f_,[1]=Ce};w_[f_],ka=Ge,If[8405]or mf(3214,8405,34248)else xa,ka=Hf,60083 continue end elseif ka>24139 then Af-=1;ka,ba[Af]=If[17506]or mf(59640,17506,26375),{[11601]=55,[37926]=pd(Zd[37926],219),[1241]=pd(Zd[1241],147),[9118]=0}else Ec=Qa if xa~=xa then ka=If[-13585]or mf(4759,-13585,40360)else ka=If[-13664]or mf(98525,-13664,63322)end end elseif ka>23356 then if hc>30 then ka=If[-13519]or mf(14603,-13519,44821)continue else ka=If[-15795]or mf(124544,-15795,59977)continue end ka=If[9702]or mf(38460,9702,195)elseif ka>23285 then Hf=Hf+Eb;te=Hf if Hf~=Hf then ka=If[6687]or mf(106727,6687,51858)else ka=If[25149]or mf(103530,25149,56576)end elseif ka>22580 then if(ca>=0 and Ec>Hf)or((ca<0 or ca~=ca)and Ec<Hf)then ka=If[19514]or mf(22954,19514,30577)else ka=If[23535]or mf(117509,23535,60015)end else ya(Ce,db,db+kb-1,Zd[1345],Ce[Bb]);Af+=1;ka=If[-2766]or mf(28676,-2766,65339)end elseif ka<24498 then if ka>=24483 then if ka<=24483 then ka,tb=If[-21774]or mf(124725,-21774,18830),Bb+Ec-1 else if hc>249 then ka=If[26953]or mf(97121,26953,43119)continue else ka=If[-16568]or mf(11975,-16568,32328)continue end ka=If[-1042]or mf(124904,-1042,36887)end else Af+=Zd[54188];ka=If[-22154]or mf(56942,-22154,22673)end elseif ka<25293 then if ka>24498 then db,kb,Qa=w_ if cf(db)~=ae('\255,Y4\237\48X9','\153Y7W')then ka=If[-26244]or mf(101044,-26244,7074)continue end ka=If[20572]or mf(3519,20572,44941)else ka,Ce[Zd[1241]]=If[3633]or mf(30652,3633,57411),Qa end elseif ka>25293 then Xa(Xb);ka=If[-20501]or mf(99085,-20501,35356)else if hc>210 then ka=If[17370]or mf(1370,17370,54403)continue else ka=If[-3833]or mf(125144,-3833,45372)continue end ka=If[2225]or mf(31400,2225,62807)end elseif ka>8523 then if ka>13074 then if ka<=15960 then if ka>14663 then if ka>=15786 then if ka<=15786 then xa,Xb=db[64181],Zd[64181];Xb=ae('EK','\t')..Xb;Ec='';Hf,Eb,ka,ca=9,1,If[-10027]or mf(125950,-10027,8372),(#xa-1)+9 else if hc>181 then ka=If[-11045]or mf(25258,-11045,20264)continue else ka=If[4568]or mf(108160,4568,55920)continue end ka=If[6149]or mf(2727,6149,34136)end else if(cf(db)==ae('\168\143\190\130\185','\220\238'))then ka=If[-3700]or mf(19518,-3700,32065)continue else ka=If[7988]or mf(112622,7988,48997)continue end ka=If[-15420]or mf(14962,-15420,13281)end elseif ka>14136 then if ka<=14468 then Af-=1;ba[Af],ka={[11601]=115,[37926]=pd(Zd[37926],236),[1241]=pd(Zd[1241],67),[9118]=0},If[-23815]or mf(52577,-23815,18846)else if(hc>138)then ka=If[5717]or mf(39176,5717,7067)continue else ka=If[-11007]or mf(46262,-11007,26561)continue end ka=If[31330]or mf(3018,31330,33909)end elseif ka<14105 then ka,Ce[Zd[1241]]=If[-23286]or mf(17763,-23286,61852),Ce[Zd[37926]]*Ce[Zd[9118]]elseif ka>14105 then Bb,ka,db,kb=Zd[1816],If[10948]or mf(23842,10948,29202),ba[Af+1],nil else if Ce[Zd[37926]]then ka=If[20641]or mf(1617,20641,58215)continue end ka=If[15385]or mf(6106,15385,32869)end elseif ka>=17524 then if ka>=18408 then if ka<=18408 then if(hc>135)then ka=If[24616]or mf(1155,24616,64740)continue else ka=If[30728]or mf(117272,30728,3979)continue end ka=If[-30495]or mf(51702,-30495,17929)else ka,Qa=If[8449]or mf(1903,8449,15472),db-1 end else Bb,db=nil,pd(Zd[15687],54378);Bb=if db<32768 then db else db-65536;kb=Bb;Ce[pd(Zd[37926],179)],ka=kb,If[-26391]or mf(55846,-26391,21721)end elseif ka<=17105 then if ka>16857 then Bb,ka,db=ba[Af],If[32707]or mf(37531,32707,7512),nil else Xb[(Eb-98)],ka=Me[te[1241]+1],If[-18621]or mf(111271,-18621,2329)end else if Zd[9118]==14 then ka=If[29859]or mf(7620,29859,60521)continue elseif Zd[9118]==71 then ka=If[-18198]or mf(46200,-18198,30371)continue elseif Zd[9118]==229 then ka=If[1663]or mf(76787,1663,35096)continue else ka=If[-8241]or mf(52438,-8241,18145)continue end ka=If[-10813]or mf(4312,-10813,40807)end elseif ka<10626 then if ka>=10003 then if ka>=10472 then if ka>10472 then Ce[Zd[1241]],ka=Ce[Zd[37926]]+Ce[Zd[9118]],If[4839]or mf(41338,4839,11653)else if ye==2 then ka=If[-2264]or mf(41030,-2264,26944)continue end ka=If[-23525]or mf(91220,-23525,65196)end elseif ka<=10003 then xa,Xb=db(kb,Qa);Qa=xa if Qa==nil then ka=If[-31880]or mf(30629,-31880,57434)else ka=39925 end else if(hc>39)then ka=If[20124]or mf(31293,20124,9755)continue else ka=If[4741]or mf(23158,4741,14754)continue end ka=If[-28493]or mf(10497,-28493,42558)end elseif ka>=9644 then if ka>9644 then Ce[Zd[9118]],ka=Ce[Zd[37926]]+Zd[24837],If[21651]or mf(18998,21651,50377)else Af+=1;ka=If[17938]or mf(9291,17938,54004)end else Eb=Ec if Hf~=Hf then ka=If[14895]or mf(51782,14895,17657)else ka=If[22049]or mf(92646,22049,55399)end end elseif ka<11968 then if ka<=11189 then if ka>=11061 then if ka<=11061 then Af+=Zd[54188];ka=If[18623]or mf(46363,18623,8740)else if hc>202 then ka=If[-13686]or mf(6884,-13686,7081)continue else ka=If[-2812]or mf(42044,-2812,30189)continue end ka=If[-3272]or mf(26279,-3272,4440)end else if hc>227 then ka=If[-9718]or mf(110522,-9718,34102)continue else ka=If[-8780]or mf(46254,-8780,19336)continue end ka=If[30574]or mf(13582,30574,41521)end else if(hc>226)then ka=If[2071]or mf(117740,2071,50048)continue else ka=If[-26451]or mf(108199,-26451,3025)continue end ka=If[31826]or mf(56347,31826,23332)end elseif ka<=12939 then if ka<12627 then Af-=1;ba[Af],ka={[11601]=10,[37926]=pd(Zd[37926],126),[1241]=pd(Zd[1241],204),[9118]=0},If[-6763]or mf(27691,-6763,60116)elseif ka<=12627 then Hf=ba[Af];Af+=1;ca=Hf[37926]if(ca==0)then ka=If[-28198]or mf(85554,-28198,37373)continue else ka=If[17124]or mf(94850,17124,32934)continue end ka=If[30688]or mf(114977,30688,63214)else if(hc>197)then ka=If[-26893]or mf(117831,-26893,37795)continue else ka=If[704]or mf(118882,704,15667)continue end ka=If[-9007]or mf(51409,-9007,18286)end else Bb,db=nil,Ce[Zd[37926]];Bb=Vd(db)==ae(':\175\129p(\179\128}','\\\218\239\19')if not Bb then ka=If[-14430]or mf(101375,-14430,59330)continue end ka=51339 end elseif ka>=3996 then if ka<=6147 then if ka<=4784 then if ka<4711 then if ka<=3996 then xa,Xb=Kf(Pd[Zd],kb,Ce[Bb+1],Ce[Bb+2])if not xa then ka=If[17565]or mf(27588,17565,19395)continue end ka=If[9786]or mf(11674,9786,8335)else kb,ka=tb-db+1,If[3271]or mf(120795,3271,46160)end elseif ka>=4725 then if ka>4725 then ka,Qa=If[-18070]or mf(48981,-18070,30368),nil else Bb=Zd[24837];Ce[Zd[1241]]=Ce[Zd[37926]][Bb];Af+=1;ka=If[-26830]or mf(20744,-26830,56887)end else Af+=1;ka=If[9542]or mf(21270,9542,56361)end elseif ka<5971 then if ka>4872 then Af+=1;ka=If[15040]or mf(46890,15040,10197)else Bb,db,kb=Zd[37926],Zd[9118],Zd[24837];Qa=Ce[db];Ce[Bb+1]=Qa;Ce[Bb]=Qa[kb];Af+=1;ka=If[24262]or mf(38802,24262,173)end elseif ka<=5971 then Af+=1;ka=If[19732]or mf(124306,19732,37549)else ya(se_[23967],1,db,Bb,Ce);ka=If[31993]or mf(124569,31993,37286)end elseif ka<=7690 then if ka<7489 then if ka>6700 then if hc>41 then ka=If[29674]or mf(105722,29674,54664)continue else ka=If[-10773]or mf(8852,-10773,62033)continue end ka=If[-13568]or mf(61595,-13568,32676)else if hc>117 then ka=If[18977]or mf(35758,18977,13801)continue else ka=If[-29420]or mf(108479,-29420,51524)continue end ka=If[9924]or mf(23605,9924,56010)end elseif ka>7489 then f_=te[1241];Ge=w_[f_]if(Ge==nil)then ka=If[-16639]or mf(22201,-16639,14354)continue else ka=If[-30085]or mf(52302,-30085,17672)continue end ka=If[14271]or mf(13735,14271,48367)else if(Ce[Zd[37926]]<Ce[Zd[1345]])then ka=If[-29647]or mf(28099,-29647,5237)continue else ka=If[-9843]or mf(13719,-9843,58515)continue end ka=If[9436]or mf(39732,9436,7115)end elseif ka>8457 then Af+=Zd[54188];ka=If[20936]or mf(33463,20936,3400)elseif ka<=7938 then Af+=Zd[54188];ka=If[17376]or mf(40074,17376,7093)else if hc>56 then ka=If[32144]or mf(6957,32144,10036)continue else ka=If[1677]or mf(332,1677,18649)continue end ka=If[940]or mf(51363,940,18268)end elseif ka<1120 then if ka>521 then if ka<932 then Zd=ba[Af];ka,hc=If[-3819]or mf(26466,-3819,32144),Zd[11601]elseif ka<=932 then if Zd[9118]==168 then ka=If[-11578]or mf(24536,-11578,31110)continue else ka=If[-16777]or mf(13203,-16777,18029)continue end ka=If[15653]or mf(124291,15653,37564)else tb,Af,ka,w_,Pd,o_=-1,1,1120,k({},{[ae('\4\153\130\52\162\138','[\198\239')]=ae('\204\201','\186')}),k({},{[ae("\'\223\156\23\228\148",'x\128\241')]=ae(')1','B')}),false end elseif ka>463 then Xb[(Eb-98)],ka=Ge,If[-27810]or mf(120714,-27810,11382)elseif ka<=232 then if ka>200 then Bb,db=Zd[37926],Zd[1241];kb=db-1 if(kb==-1)then ka=If[-11380]or mf(110100,-11380,15474)continue else ka=If[17626]or mf(937,17626,61509)continue end ka=36800 else Zd[11601]=226;Af+=1;ka=If[10092]or mf(46795,10092,8564)end else if hc>85 then ka=If[11165]or mf(114633,11165,48552)continue else ka=If[24175]or mf(3824,24175,42150)continue end ka=If[-29107]or mf(2202,-29107,34725)end elseif ka<=2600 then if ka>1698 then if ka<=1724 then Bb,db=Ce[Zd[37926]],nil;db=Vd(Bb)==ae('7\22\209A%\n\208L','Qc\191\"')if(not db)then ka=If[-7083]or mf(116205,-7083,50099)continue else ka=If[-29176]or mf(128256,-29176,35690)continue end ka=If[-31846]or mf(45323,-31846,18207)else if(hc>49)then ka=If[-13698]or mf(40320,-13698,23226)continue else ka=If[-8351]or mf(75515,-8351,47835)continue end ka=If[-13476]or mf(53491,-13476,24332)end elseif ka<=1132 then if ka>1120 then kb,Qa=Bb[24837],Zd[24837];Qa=ae('\26\20','V')..Qa;xa='';Xb,ka,Ec,Hf=57,If[16015]or mf(2394,16015,3732),(#kb-1)+57,1 else if(not o_)then ka=If[25126]or mf(15111,25126,46616)continue else ka=If[28976]or mf(108682,28976,36264)continue end ka=28269 end else if(hc>110)then ka=If[-9152]or mf(90291,-9152,48257)continue else ka=If[27448]or mf(23796,27448,60070)continue end ka=If[-17504]or mf(578,-17504,36093)end elseif ka<=2871 then if ka<=2779 then te=ba[Af];Af+=1;ye=te[37926]if(ye==0)then ka=If[-8060]or mf(12730,-8060,15433)continue else ka=If[27593]or mf(19674,27593,13157)continue end ka=If[9676]or mf(75600,9676,41904)else Xb[2]=Xb[1][Xb[3]];Xb[1]=Xb;Xb[3]=2;ka,w_[xa]=If[27329]or mf(27145,27329,26961),nil end else Bb=nb[Zd[24837]+1];db=Bb[23738];kb=dd(db);Ce[Zd[37926]]=Mf(Bb,kb);Xb,ka,xa,Qa=1,24139,(db)+210,211 end until ka==1845 end return function(...)local qb,J,Sa,Hd,Ud,ge,be,la,Ua,qa,mb;Sa,qa=function(td,Yd,ec)qa[Yd]=Ob(td,58095)-Ob(ec,65243)return qa[Yd]end,{};J=qa[-12887]or Sa(27432,-12887,54969)repeat if J>=37390 then if J>53157 then J=qa[2058]or Sa(18221,2058,53657)continue elseif J<=50444 then if J<=37390 then mb,Hd=De[37527]+1,la[ae('\244','\154')]-De[37527];ge[49000]=Hd;ya(la,mb,mb+Hd-1,1,ge[23967]);J=qa[27461]or Sa(103653,27461,20005)else mb,Hd=wc(yd(vb,be,De[46318],De[24289],ge))if mb[1]then J=qa[-14151]or Sa(14895,-14151,63424)continue else J=qa[4645]or Sa(32676,4645,47612)continue end J=qa[20498]or Sa(3672,20498,60902)end else return Wb(mb,2,Hd)end elseif J<=22052 then if J>=13922 then if J<=13922 then Ua,J=Vd(Ua),qa[16925]or Sa(25717,16925,34879)else Ua,Ud=mb[2],nil;qb=Ua;Ud=Vd(qb)==ae('\206\180\53\212\174 ','\189\192G')if Ud==false then J=qa[30065]or Sa(19951,30065,34373)continue end J=4022 end else return Xa(Ua,0)end else la,be,ge=W(...),dd(De[34303]),{[49000]=0,[23967]={}};ya(la,1,De[37527],0,be)if(De[37527]<la[ae('\\','2')])then J=qa[18216]or Sa(16723,18216,61301)continue else J=qa[-28296]or Sa(125778,-28296,47722)continue end J=qa[14391]or Sa(5816,14391,53648)end until J==30336 end end return Mf(Wa,Hc)end)local Oa;Oa,Nc={[0]=0},function()Oa[0]=Oa[0]+1 return{[3]=Oa[0],[1]=Oa}end;ea=vc return(function()local y,je,c,wf;je={[3]=2,[2]=ea};je[1]=je;c={[3]=2,[2]=Yb};c[1]=c;y={[3]=2,[2]=ed};y[1]=y;wf={[2]=od,[3]=2};wf[1]=wf return ea(Z'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',{[3]=y,[4]=wf,[2]=c,[1]=je})end)()(...)
+local cloneref = cloneref or function(a) return a; end;
+local InputService =  cloneref(game:GetService('UserInputService'));
+local TextService =   cloneref(game:GetService('TextService'));
+local CoreGui =       cloneref(game:GetService("CoreGui"));
+local Teams =         cloneref(game:GetService('Teams'));
+local Players =       cloneref(game:GetService('Players'));
+local RunService =    cloneref(game:GetService('RunService'));
+local TweenService =  cloneref(game:GetService('TweenService'));
+local RenderStepped = RunService.RenderStepped;
+local LocalPlayer =   cloneref(Players.LocalPlayer);
+local Mouse =         cloneref(LocalPlayer:GetMouse());
+local getgenv = getgenv or function() return {}; end;
+local uiOpen = false;
+local ProtectGui = protectgui or (syn and syn.protect_gui) or (function() end);
+
+local ScreenGui = Instance.new('ScreenGui');
+ProtectGui(ScreenGui);
+
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Global;
+ScreenGui.Parent = gethui and gethui() or CoreGui;
+
+RainToggles = {};
+RainOptions = {};
+getgenv().RainToggles = RainToggles;
+getgenv().RainOptions = RainOptions;
+
+local Library = {
+	Registry = {};
+	RegistryMap = {};
+
+	HudRegistry = {};
+
+	FontColor = Color3.fromRGB(255, 255, 255);
+	MainColor = Color3.fromRGB(28, 28, 28);
+	BackgroundColor = Color3.fromRGB(20, 20, 20);
+	AccentColor = Color3.fromRGB(0, 85, 255);
+	OutlineColor = Color3.fromRGB(50, 50, 50);
+	RiskColor = Color3.fromRGB(255, 50, 50),
+
+	Black = Color3.new(0, 0, 0);
+	Font = Enum.Font.Code,
+
+	OpenedFrames = {};
+	DependencyBoxes = {};
+
+	Signals = {};
+	ScreenGui = ScreenGui;
+};
+
+local function GetPlayersString()
+	local PlayerList = Players:GetPlayers();
+
+	for i = 1, #PlayerList do
+		PlayerList[i] = PlayerList[i].Name;
+	end;
+
+	table.sort(PlayerList, function(str1, str2) return str1 < str2 end);
+
+	return PlayerList;
+end;
+
+local function GetTeamsString()
+	local TeamList = Teams:GetTeams();
+
+	for i = 1, #TeamList do
+		TeamList[i] = TeamList[i].Name;
+	end;
+
+	table.sort(TeamList, function(str1, str2) return str1 < str2 end);
+
+	return TeamList;
+end;
+
+function Library:SafeCallback(f, ...)
+	if (not f) then
+		return;
+	end;
+
+
+
+	local success, event = pcall(f, ...);
+
+	if not success then
+		local _, i = event:find(":%d+: ");
+
+		if not i then
+			return Library:Notify(event);
+		end;
+
+		return Library:Notify(event:sub(i + 1), 3);
+	end;
+end;
+
+function Library:AttemptSave()
+	if Library.SaveManager then
+		Library.SaveManager:Save();
+	end;
+end;
+
+function Library:Create(Class, Properties)
+	local _Instance = Class;
+
+	if type(Class) == 'string' then
+		_Instance = Instance.new(Class);
+	end;
+
+	for Property, Value in next, Properties do
+		_Instance[Property] = Value;
+	end;
+
+	return _Instance;
+end;
+
+function Library:ApplyTextStroke(Inst)
+	Inst.TextStrokeTransparency = 1;
+
+	Library:Create('UIStroke', {
+		Color = Color3.new(0, 0, 0);
+		Thickness = 1;
+		LineJoinMode = Enum.LineJoinMode.Miter;
+		Parent = Inst;
+	});
+end;
+
+function Library:CreateLabel(Properties, IsHud)
+	local _Instance = Library:Create('TextLabel', {
+		BackgroundTransparency = 1;
+		Font = Library.Font;
+		TextColor3 = Library.FontColor;
+		AutoLocalize = false;
+		TextSize = 16;
+		TextStrokeTransparency = 0;
+	});
+
+	Library:ApplyTextStroke(_Instance);
+
+	Library:AddToRegistry(_Instance, {
+		TextColor3 = 'FontColor';
+	}, IsHud);
+
+	return Library:Create(_Instance, Properties);
+end;
+
+function Library:MakeDraggable(Instance, Cutoff)
+	Instance.Active = true;
+
+	Instance.InputBegan:Connect(function(Input)
+		if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+			local ObjPos = Vector2.new(
+				Mouse.X - Instance.AbsolutePosition.X,
+				Mouse.Y - Instance.AbsolutePosition.Y
+			);
+
+			if ObjPos.Y > (Cutoff or 40) then
+				return;
+			end;
+
+			while InputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+				Instance.Position = UDim2.new(
+					0,
+					Mouse.X - ObjPos.X + (Instance.Size.X.Offset * Instance.AnchorPoint.X),
+					0,
+					Mouse.Y - ObjPos.Y + (Instance.Size.Y.Offset * Instance.AnchorPoint.Y)
+				);
+
+				RenderStepped:Wait();
+			end;
+		end;
+	end)
+end;
+
+function Library:AddToolTip(InfoStr, HoverInstance)
+	local X, Y = Library:GetTextBounds(InfoStr, Library.Font, 14);
+	local Tooltip = Library:Create('Frame', {
+		BackgroundColor3 = Library.MainColor,
+		BorderColor3 = Library.OutlineColor,
+
+		Size = UDim2.fromOffset(X + 5, Y + 4),
+		ZIndex = 100,
+		Parent = Library.ScreenGui,
+
+		Visible = false,
+	})
+
+	local Label = Library:CreateLabel({
+		Position = UDim2.fromOffset(3, 1),
+		Size = UDim2.fromOffset(X, Y);
+		TextSize = 14;
+		Text = InfoStr,
+		TextColor3 = Library.FontColor,
+		TextXAlignment = Enum.TextXAlignment.Left;
+		ZIndex = Tooltip.ZIndex + 1,
+
+		Parent = Tooltip;
+	});
+
+	Library:AddToRegistry(Tooltip, {
+		BackgroundColor3 = 'MainColor';
+		BorderColor3 = 'OutlineColor';
+	});
+
+	Library:AddToRegistry(Label, {
+		TextColor3 = 'FontColor',
+	});
+
+	local IsHovering = false
+
+	HoverInstance.MouseEnter:Connect(function()
+		if Library:MouseIsOverOpenedFrame() then
+			return
+		end
+
+		IsHovering = true
+
+		Tooltip.Position = UDim2.fromOffset(Mouse.X + 15, Mouse.Y + 12)
+		Tooltip.Visible = true
+
+		while IsHovering and uiOpen do
+			RunService.Heartbeat:Wait()
+			Tooltip.Position = UDim2.fromOffset(Mouse.X + 15, Mouse.Y + 12)
+		end
+		IsHovering = false;
+		Tooltip.Visible = false;
+	end)
+
+	HoverInstance.MouseLeave:Connect(function()
+		IsHovering = false
+		Tooltip.Visible = false
+	end)
+end
+
+function Library:OnHighlight(HighlightInstance, Instance, Properties, PropertiesDefault)
+	HighlightInstance.MouseEnter:Connect(function()
+		local Reg = Library.RegistryMap[Instance];
+
+		for Property, ColorIdx in next, Properties do
+			Instance[Property] = Library[ColorIdx] or ColorIdx;
+
+			if Reg and Reg.Properties[Property] then
+				Reg.Properties[Property] = ColorIdx;
+			end;
+		end;
+	end)
+
+	HighlightInstance.MouseLeave:Connect(function()
+		local Reg = Library.RegistryMap[Instance];
+
+		for Property, ColorIdx in next, PropertiesDefault do
+			Instance[Property] = Library[ColorIdx] or ColorIdx;
+
+			if Reg and Reg.Properties[Property] then
+				Reg.Properties[Property] = ColorIdx;
+			end;
+		end;
+	end)
+end;
+
+function Library:MouseIsOverOpenedFrame()
+	for Frame, _ in next, Library.OpenedFrames do
+		local AbsPos, AbsSize = Frame.AbsolutePosition, Frame.AbsoluteSize;
+
+		if Mouse.X >= AbsPos.X and Mouse.X <= AbsPos.X + AbsSize.X
+			and Mouse.Y >= AbsPos.Y and Mouse.Y <= AbsPos.Y + AbsSize.Y then
+
+			return true;
+		end;
+	end;
+end;
+
+function Library:IsMouseOverFrame(Frame)
+	local AbsPos, AbsSize = Frame.AbsolutePosition, Frame.AbsoluteSize;
+
+	if Mouse.X >= AbsPos.X and Mouse.X <= AbsPos.X + AbsSize.X
+		and Mouse.Y >= AbsPos.Y and Mouse.Y <= AbsPos.Y + AbsSize.Y then
+
+		return true;
+	end;
+end;
+
+function Library:UpdateDependencyBoxes()
+	for _, Depbox in next, Library.DependencyBoxes do
+		Depbox:Update();
+	end;
+end;
+
+function Library:MapValue(Value, MinA, MaxA, MinB, MaxB)
+	return (1 - ((Value - MinA) / (MaxA - MinA))) * MinB + ((Value - MinA) / (MaxA - MinA)) * MaxB;
+end;
+
+function Library:GetTextBounds(Text, Font, Size, Resolution)
+	local Bounds = TextService:GetTextSize(Text, Size, Font, Resolution or Vector2.new(1920, 1080))
+	return Bounds.X, Bounds.Y
+end;
+
+function Library:GetDarkerColor(Color)
+	local H, S, V = Color3.toHSV(Color);
+	return Color3.fromHSV(H, S, V / 1.5);
+end;
+Library.AccentColorDark = Library:GetDarkerColor(Library.AccentColor);
+
+function Library:AddToRegistry(Instance, Properties, IsHud)
+	local Idx = #Library.Registry + 1;
+	local Data = {
+		Instance = Instance;
+		Properties = Properties;
+		Idx = Idx;
+	};
+
+	table.insert(Library.Registry, Data);
+	Library.RegistryMap[Instance] = Data;
+
+	if IsHud then
+		table.insert(Library.HudRegistry, Data);
+	end;
+end;
+
+function Library:RemoveFromRegistry(Instance)
+	local Data = Library.RegistryMap[Instance];
+
+	if Data then
+		for Idx = #Library.Registry, 1, -1 do
+			if Library.Registry[Idx] == Data then
+				table.remove(Library.Registry, Idx);
+			end;
+		end;
+
+		for Idx = #Library.HudRegistry, 1, -1 do
+			if Library.HudRegistry[Idx] == Data then
+				table.remove(Library.HudRegistry, Idx);
+			end;
+		end;
+
+		Library.RegistryMap[Instance] = nil;
+	end;
+end;
+
+function Library:UpdateColorsUsingRegistry()
+	-- TODO: Could have an 'active' list of objects
+	-- where the active list only contains Visible objects.
+
+	-- IMPL: Could setup .Changed events on the AddToRegistry function
+	-- that listens for the 'Visible' propert being changed.
+	-- Visible: true => Add to active list, and call UpdateColors function
+	-- Visible: false => Remove from active list.
+
+	-- The above would be especially efficient for a rainbow menu color or live color-changing.
+
+	for Idx, Object in next, Library.Registry do
+		for Property, ColorIdx in next, Object.Properties do
+			if type(ColorIdx) == 'string' then
+				Object.Instance[Property] = Library[ColorIdx];
+			elseif type(ColorIdx) == 'function' then
+				Object.Instance[Property] = ColorIdx()
+			end
+		end;
+	end;
+end;
+
+function Library:GiveSignal(Signal)
+	-- Only used for signals not attached to library instances, as those should be cleaned up on object destruction by Roblox
+	table.insert(Library.Signals, Signal)
+end
+
+function Library:Unload()
+	-- Unload all of the signals
+	for Idx = #Library.Signals, 1, -1 do
+		local Connection = table.remove(Library.Signals, Idx)
+		Connection:Disconnect()
+	end
+
+	-- Call our unload callback, maybe to undo some hooks etc
+	if Library.OnUnload then
+		Library.OnUnload()
+	end
+
+	ScreenGui:Destroy()
+end
+
+function Library:OnUnload(Callback)
+	Library.OnUnload = Callback
+end
+
+Library:GiveSignal(ScreenGui.DescendantRemoving:Connect(function(Instance)
+	if Library.RegistryMap[Instance] then
+		Library:RemoveFromRegistry(Instance);
+	end;
+end))
+
+local BaseAddons = {};
+
+do
+	local Funcs = {};
+
+	function Funcs:AddColorPicker(Idx, Info)
+		local ToggleLabel = self.TextLabel;
+		-- local Container = self.Container;
+
+		assert(Info.Default, 'AddColorPicker: Missing default value.');
+
+		local ColorPicker = {
+			Value = Info.Default;
+			Transparency = Info.Transparency or 0;
+			Type = 'ColorPicker';
+			Title = type(Info.Title) == 'string' and Info.Title or 'Color picker',
+			Callback = Info.Callback or function(Color) end;
+		};
+
+		function ColorPicker:SetHSVFromRGB(Color)
+			local H, S, V = Color3.toHSV(Color);
+
+			ColorPicker.Hue = H;
+			ColorPicker.Sat = S;
+			ColorPicker.Vib = V;
+		end;
+
+		ColorPicker:SetHSVFromRGB(ColorPicker.Value);
+
+		local DisplayFrame = Library:Create('Frame', {
+			BackgroundColor3 = ColorPicker.Value;
+			BorderColor3 = Library:GetDarkerColor(ColorPicker.Value);
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(0, 28, 0, 14);
+			ZIndex = 6;
+			Parent = ToggleLabel;
+		});
+
+		-- Transparency image taken from https://github.com/matas3535/SplixPrivateDrawingLibrary/blob/main/Library.lua cus i'm lazy
+		local CheckerFrame = Library:Create('ImageLabel', {
+			BorderSizePixel = 0;
+			Size = UDim2.new(0, 27, 0, 13);
+			ZIndex = 5;
+			Image = 'http://www.roblox.com/asset/?id=12977615774';
+			Visible = not not Info.Transparency;
+			Parent = DisplayFrame;
+		});
+
+		-- 1/16/23
+		-- Rewrote this to be placed inside the Library ScreenGui
+		-- There was some issue which caused RelativeOffset to be way off
+		-- Thus the color picker would never show
+
+		local PickerFrameOuter = Library:Create('Frame', {
+			Name = 'Color';
+			BackgroundColor3 = Color3.new(1, 1, 1);
+			BorderColor3 = Color3.new(0, 0, 0);
+			Position = UDim2.fromOffset(DisplayFrame.AbsolutePosition.X, DisplayFrame.AbsolutePosition.Y + 18),
+			Size = UDim2.fromOffset(230, Info.Transparency and 271 or 253);
+			Visible = false;
+			ZIndex = 15;
+			Parent = ScreenGui,
+		});
+
+		DisplayFrame:GetPropertyChangedSignal('AbsolutePosition'):Connect(function()
+			PickerFrameOuter.Position = UDim2.fromOffset(DisplayFrame.AbsolutePosition.X, DisplayFrame.AbsolutePosition.Y + 18);
+		end)
+
+		local PickerFrameInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.BackgroundColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 16;
+			Parent = PickerFrameOuter;
+		});
+
+		local Highlight = Library:Create('Frame', {
+			BackgroundColor3 = Library.AccentColor;
+			BorderSizePixel = 0;
+			Size = UDim2.new(1, 0, 0, 2);
+			ZIndex = 17;
+			Parent = PickerFrameInner;
+		});
+
+		local SatVibMapOuter = Library:Create('Frame', {
+			BorderColor3 = Color3.new(0, 0, 0);
+			Position = UDim2.new(0, 4, 0, 25);
+			Size = UDim2.new(0, 200, 0, 200);
+			ZIndex = 17;
+			Parent = PickerFrameInner;
+		});
+
+		local SatVibMapInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.BackgroundColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 18;
+			Parent = SatVibMapOuter;
+		});
+
+		local SatVibMap = Library:Create('ImageLabel', {
+			BorderSizePixel = 0;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 18;
+			Image = 'rbxassetid://4155801252';
+			Parent = SatVibMapInner;
+		});
+
+		local HueSelectorOuter = Library:Create('Frame', {
+			BorderColor3 = Color3.new(0, 0, 0);
+			Position = UDim2.new(0, 208, 0, 25);
+			Size = UDim2.new(0, 15, 0, 200);
+			ZIndex = 17;
+			Parent = PickerFrameInner;
+		});
+
+		local HueSelectorInner = Library:Create('Frame', {
+			BackgroundColor3 = Color3.new(1, 1, 1);
+			BorderSizePixel = 0;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 18;
+			Parent = HueSelectorOuter;
+		});
+
+		local HueCursor = Library:Create('Frame', { 
+			BackgroundColor3 = Color3.new(1, 1, 1);
+			AnchorPoint = Vector2.new(0, 0.5);
+			BorderColor3 = Color3.new(0, 0, 0);
+			Size = UDim2.new(1, 0, 0, 1);
+			ZIndex = 18;
+			Parent = HueSelectorInner;
+		});
+
+		local HueBoxOuter = Library:Create('Frame', {
+			BorderColor3 = Color3.new(0, 0, 0);
+			Position = UDim2.fromOffset(4, 228),
+			Size = UDim2.new(0.5, -6, 0, 20),
+			ZIndex = 18,
+			Parent = PickerFrameInner;
+		});
+
+		local HueBoxInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.MainColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 18,
+			Parent = HueBoxOuter;
+		});
+
+		Library:Create('UIGradient', {
+			Color = ColorSequence.new({
+				ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)),
+				ColorSequenceKeypoint.new(1, Color3.fromRGB(212, 212, 212))
+			});
+			Rotation = 90;
+			Parent = HueBoxInner;
+		});
+
+		local HueBox = Library:Create('TextBox', {
+			BackgroundTransparency = 1;
+			Position = UDim2.new(0, 5, 0, 0);
+			Size = UDim2.new(1, -5, 1, 0);
+			Font = Library.Font;
+			PlaceholderColor3 = Color3.fromRGB(190, 190, 190);
+			PlaceholderText = 'Hex color',
+			Text = '#FFFFFF',
+			TextColor3 = Library.FontColor;
+			TextSize = 14;
+			TextStrokeTransparency = 0;
+			TextXAlignment = Enum.TextXAlignment.Left;
+			ZIndex = 20,
+			Parent = HueBoxInner;
+		});
+
+		Library:ApplyTextStroke(HueBox);
+
+		local RgbBoxBase = Library:Create(HueBoxOuter:Clone(), {
+			Position = UDim2.new(0.5, 2, 0, 228),
+			Size = UDim2.new(0.5, -6, 0, 20),
+			Parent = PickerFrameInner
+		});
+
+		local RgbBox = Library:Create(RgbBoxBase.Frame:FindFirstChild('TextBox'), {
+			Text = '255, 255, 255',
+			PlaceholderText = 'RGB color',
+			TextColor3 = Library.FontColor
+		});
+
+		local TransparencyBoxOuter, TransparencyBoxInner, TransparencyCursor;
+
+		if Info.Transparency then 
+			TransparencyBoxOuter = Library:Create('Frame', {
+				BorderColor3 = Color3.new(0, 0, 0);
+				Position = UDim2.fromOffset(4, 251);
+				Size = UDim2.new(1, -8, 0, 15);
+				ZIndex = 19;
+				Parent = PickerFrameInner;
+			});
+
+			TransparencyBoxInner = Library:Create('Frame', {
+				BackgroundColor3 = ColorPicker.Value;
+				BorderColor3 = Library.OutlineColor;
+				BorderMode = Enum.BorderMode.Inset;
+				Size = UDim2.new(1, 0, 1, 0);
+				ZIndex = 19;
+				Parent = TransparencyBoxOuter;
+			});
+
+			Library:AddToRegistry(TransparencyBoxInner, { BorderColor3 = 'OutlineColor' });
+
+			Library:Create('ImageLabel', {
+				BackgroundTransparency = 1;
+				Size = UDim2.new(1, 0, 1, 0);
+				Image = 'http://www.roblox.com/asset/?id=12978095818';
+				ZIndex = 20;
+				Parent = TransparencyBoxInner;
+			});
+
+			TransparencyCursor = Library:Create('Frame', { 
+				BackgroundColor3 = Color3.new(1, 1, 1);
+				AnchorPoint = Vector2.new(0.5, 0);
+				BorderColor3 = Color3.new(0, 0, 0);
+				Size = UDim2.new(0, 1, 1, 0);
+				ZIndex = 21;
+				Parent = TransparencyBoxInner;
+			});
+		end;
+
+		local DisplayLabel = Library:CreateLabel({
+			Size = UDim2.new(1, 0, 0, 14);
+			Position = UDim2.fromOffset(5, 5);
+			TextXAlignment = Enum.TextXAlignment.Left;
+			TextSize = 14;
+			Text = ColorPicker.Title,--Info.Default;
+			TextWrapped = false;
+			ZIndex = 16;
+			Parent = PickerFrameInner;
+		});
+
+
+		local ContextMenu = {}
+		do
+			ContextMenu.RainOptions = {}
+			ContextMenu.Container = Library:Create('Frame', {
+				BorderColor3 = Color3.new(),
+				ZIndex = 14,
+
+				Visible = false,
+				Parent = ScreenGui
+			})
+
+			ContextMenu.Inner = Library:Create('Frame', {
+				BackgroundColor3 = Library.BackgroundColor;
+				BorderColor3 = Library.OutlineColor;
+				BorderMode = Enum.BorderMode.Inset;
+				Size = UDim2.fromScale(1, 1);
+				ZIndex = 15;
+				Parent = ContextMenu.Container;
+			});
+
+			Library:Create('UIListLayout', {
+				Name = 'Layout',
+				FillDirection = Enum.FillDirection.Vertical;
+				SortOrder = Enum.SortOrder.LayoutOrder;
+				Parent = ContextMenu.Inner;
+			});
+
+			Library:Create('UIPadding', {
+				Name = 'Padding',
+				PaddingLeft = UDim.new(0, 4),
+				Parent = ContextMenu.Inner,
+			});
+
+			local function updateMenuPosition()
+				ContextMenu.Container.Position = UDim2.fromOffset(
+					(DisplayFrame.AbsolutePosition.X + DisplayFrame.AbsoluteSize.X) + 4,
+					DisplayFrame.AbsolutePosition.Y + 1
+				)
+			end
+
+			local function updateMenuSize()
+				local menuWidth = 60
+				for i, label in next, ContextMenu.Inner:GetChildren() do
+					if label:IsA('TextLabel') then
+						menuWidth = math.max(menuWidth, label.TextBounds.X)
+					end
+				end
+
+				ContextMenu.Container.Size = UDim2.fromOffset(
+					menuWidth + 8,
+					ContextMenu.Inner.Layout.AbsoluteContentSize.Y + 4
+				)
+			end
+
+			DisplayFrame:GetPropertyChangedSignal('AbsolutePosition'):Connect(updateMenuPosition)
+			ContextMenu.Inner.Layout:GetPropertyChangedSignal('AbsoluteContentSize'):Connect(updateMenuSize)
+
+			task.spawn(updateMenuPosition)
+			task.spawn(updateMenuSize)
+
+			Library:AddToRegistry(ContextMenu.Inner, {
+				BackgroundColor3 = 'BackgroundColor';
+				BorderColor3 = 'OutlineColor';
+			});
+
+			function ContextMenu:Show()
+				self.Container.Visible = true
+			end
+
+			function ContextMenu:Hide()
+				self.Container.Visible = false
+			end
+
+			function ContextMenu:AddOption(Str, Callback)
+				if type(Callback) ~= 'function' then
+					Callback = function() end
+				end
+
+				local Button = Library:CreateLabel({
+					Active = false;
+					Size = UDim2.new(1, 0, 0, 15);
+					TextSize = 13;
+					Text = Str;
+					ZIndex = 16;
+					Parent = self.Inner;
+					TextXAlignment = Enum.TextXAlignment.Left,
+				});
+
+				Library:OnHighlight(Button, Button, 
+					{ TextColor3 = 'AccentColor' },
+					{ TextColor3 = 'FontColor' }
+				);
+
+				Button.InputBegan:Connect(function(Input)
+					if Input.UserInputType ~= Enum.UserInputType.MouseButton1 then
+						return
+					end
+
+					Callback()
+				end)
+			end
+
+			ContextMenu:AddOption('Copy color', function()
+				Library.ColorClipboard = ColorPicker.Value
+				Library:Notify('Copied color!', 2)
+			end)
+
+			ContextMenu:AddOption('Paste color', function()
+				if not Library.ColorClipboard then
+					return Library:Notify('You have not copied a color!', 2)
+				end
+				ColorPicker:SetValueRGB(Library.ColorClipboard)
+			end)
+
+
+			ContextMenu:AddOption('Copy HEX', function()
+				pcall(setclipboard, ColorPicker.Value:ToHex())
+				Library:Notify('Copied hex code to clipboard!', 2)
+			end)
+
+			ContextMenu:AddOption('Copy RGB', function()
+				pcall(setclipboard, table.concat({ math.floor(ColorPicker.Value.R * 255), math.floor(ColorPicker.Value.G * 255), math.floor(ColorPicker.Value.B * 255) }, ', '))
+				Library:Notify('Copied RGB values to clipboard!', 2)
+			end)
+
+		end
+
+		Library:AddToRegistry(PickerFrameInner, { BackgroundColor3 = 'BackgroundColor'; BorderColor3 = 'OutlineColor'; });
+		Library:AddToRegistry(Highlight, { BackgroundColor3 = 'AccentColor'; });
+		Library:AddToRegistry(SatVibMapInner, { BackgroundColor3 = 'BackgroundColor'; BorderColor3 = 'OutlineColor'; });
+
+		Library:AddToRegistry(HueBoxInner, { BackgroundColor3 = 'MainColor'; BorderColor3 = 'OutlineColor'; });
+		Library:AddToRegistry(RgbBoxBase.Frame, { BackgroundColor3 = 'MainColor'; BorderColor3 = 'OutlineColor'; });
+		Library:AddToRegistry(RgbBox, { TextColor3 = 'FontColor', });
+		Library:AddToRegistry(HueBox, { TextColor3 = 'FontColor', });
+
+		local SequenceTable = {};
+
+		for Hue = 0, 1, 0.1 do
+			table.insert(SequenceTable, ColorSequenceKeypoint.new(Hue, Color3.fromHSV(Hue, 1, 1)));
+		end;
+
+		local HueSelectorGradient = Library:Create('UIGradient', {
+			Color = ColorSequence.new(SequenceTable);
+			Rotation = 90;
+			Parent = HueSelectorInner;
+		});
+
+		HueBox.FocusLost:Connect(function(enter)
+			if enter then
+				local success, result = pcall(Color3.fromHex, HueBox.Text)
+				if success and typeof(result) == 'Color3' then
+					ColorPicker.Hue, ColorPicker.Sat, ColorPicker.Vib = Color3.toHSV(result)
+				end
+			end
+
+			ColorPicker:Display()
+		end)
+
+		RgbBox.FocusLost:Connect(function(enter)
+			if enter then
+				local r, g, b = RgbBox.Text:match('(%d+),%s*(%d+),%s*(%d+)')
+				if r and g and b then
+					ColorPicker.Hue, ColorPicker.Sat, ColorPicker.Vib = Color3.toHSV(Color3.fromRGB(r, g, b))
+				end
+			end
+
+			ColorPicker:Display()
+		end)
+
+		function ColorPicker:Display()
+			ColorPicker.Value = Color3.fromHSV(ColorPicker.Hue, ColorPicker.Sat, ColorPicker.Vib);
+			SatVibMap.BackgroundColor3 = Color3.fromHSV(ColorPicker.Hue, 1, 1);
+
+			Library:Create(DisplayFrame, {
+				BackgroundColor3 = ColorPicker.Value;
+				BackgroundTransparency = ColorPicker.Transparency;
+				BorderColor3 = Library:GetDarkerColor(ColorPicker.Value);
+			});
+
+			if TransparencyBoxInner then
+				TransparencyBoxInner.BackgroundColor3 = ColorPicker.Value;
+				TransparencyCursor.Position = UDim2.new(1 - ColorPicker.Transparency, 0, 0, 0);
+			end;
+
+			HueCursor.Position = UDim2.new(0, 0, ColorPicker.Hue, 0);
+
+			HueBox.Text = '#' .. ColorPicker.Value:ToHex()
+			RgbBox.Text = table.concat({ math.floor(ColorPicker.Value.R * 255), math.floor(ColorPicker.Value.G * 255), math.floor(ColorPicker.Value.B * 255) }, ', ')
+
+			Library:SafeCallback(ColorPicker.Callback, ColorPicker.Value);
+			Library:SafeCallback(ColorPicker.Changed, ColorPicker.Value);
+		end;
+
+		function ColorPicker:OnChanged(Func)
+			ColorPicker.Changed = Func;
+			Func(ColorPicker.Value)
+		end;
+
+		function ColorPicker:Show()
+			for Frame, Val in next, Library.OpenedFrames do
+				if Frame.Name == 'Color' then
+					Frame.Visible = false;
+					Library.OpenedFrames[Frame] = nil;
+				end;
+			end;
+
+			PickerFrameOuter.Visible = true;
+			Library.OpenedFrames[PickerFrameOuter] = true;
+		end;
+
+		function ColorPicker:Hide()
+			PickerFrameOuter.Visible = false;
+			Library.OpenedFrames[PickerFrameOuter] = nil;
+		end;
+
+		function ColorPicker:SetValue(HSV, Transparency)
+			local Color = Color3.fromHSV(HSV[1], HSV[2], HSV[3]);
+
+			ColorPicker.Transparency = Transparency or 0;
+			ColorPicker:SetHSVFromRGB(Color);
+			ColorPicker:Display();
+		end;
+
+		function ColorPicker:SetValueRGB(Color, Transparency)
+			ColorPicker.Transparency = Transparency or 0;
+			ColorPicker:SetHSVFromRGB(Color);
+			ColorPicker:Display();
+		end;
+
+		SatVibMap.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+				while InputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+					local MinX = SatVibMap.AbsolutePosition.X;
+					local MaxX = MinX + SatVibMap.AbsoluteSize.X;
+					local MouseX = math.clamp(Mouse.X, MinX, MaxX);
+
+					local MinY = SatVibMap.AbsolutePosition.Y;
+					local MaxY = MinY + SatVibMap.AbsoluteSize.Y;
+					local MouseY = math.clamp(Mouse.Y, MinY, MaxY);
+
+					ColorPicker.Sat = (MouseX - MinX) / (MaxX - MinX);
+					ColorPicker.Vib = 1 - ((MouseY - MinY) / (MaxY - MinY));
+					ColorPicker:Display();
+
+					RenderStepped:Wait();
+				end;
+
+				Library:AttemptSave();
+			end;
+		end);
+
+		HueSelectorInner.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+				while InputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+					local MinY = HueSelectorInner.AbsolutePosition.Y;
+					local MaxY = MinY + HueSelectorInner.AbsoluteSize.Y;
+					local MouseY = math.clamp(Mouse.Y, MinY, MaxY);
+
+					ColorPicker.Hue = ((MouseY - MinY) / (MaxY - MinY));
+					ColorPicker:Display();
+
+					RenderStepped:Wait();
+				end;
+
+				Library:AttemptSave();
+			end;
+		end);
+
+		DisplayFrame.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 and not Library:MouseIsOverOpenedFrame() then
+				if PickerFrameOuter.Visible then
+					ColorPicker:Hide()
+				else
+					ContextMenu:Hide()
+					ColorPicker:Show()
+				end;
+			elseif Input.UserInputType == Enum.UserInputType.MouseButton2 and not Library:MouseIsOverOpenedFrame() then
+				ContextMenu:Show()
+				ColorPicker:Hide()
+			end
+		end);
+
+		if TransparencyBoxInner then
+			TransparencyBoxInner.InputBegan:Connect(function(Input)
+				if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+					while InputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+						local MinX = TransparencyBoxInner.AbsolutePosition.X;
+						local MaxX = MinX + TransparencyBoxInner.AbsoluteSize.X;
+						local MouseX = math.clamp(Mouse.X, MinX, MaxX);
+
+						ColorPicker.Transparency = 1 - ((MouseX - MinX) / (MaxX - MinX));
+
+						ColorPicker:Display();
+
+						RenderStepped:Wait();
+					end;
+
+					Library:AttemptSave();
+				end;
+			end);
+		end;
+
+		Library:GiveSignal(InputService.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+				local AbsPos, AbsSize = PickerFrameOuter.AbsolutePosition, PickerFrameOuter.AbsoluteSize;
+
+				if Mouse.X < AbsPos.X or Mouse.X > AbsPos.X + AbsSize.X
+					or Mouse.Y < (AbsPos.Y - 20 - 1) or Mouse.Y > AbsPos.Y + AbsSize.Y then
+
+					ColorPicker:Hide();
+				end;
+
+				if not Library:IsMouseOverFrame(ContextMenu.Container) then
+					ContextMenu:Hide()
+				end
+			end;
+
+			if Input.UserInputType == Enum.UserInputType.MouseButton2 and ContextMenu.Container.Visible then
+				if not Library:IsMouseOverFrame(ContextMenu.Container) and not Library:IsMouseOverFrame(DisplayFrame) then
+					ContextMenu:Hide()
+				end
+			end
+		end))
+
+		ColorPicker:Display();
+		ColorPicker.DisplayFrame = DisplayFrame
+
+		RainOptions[Idx] = ColorPicker;
+
+		return self;
+	end;
+
+	function Funcs:AddKeyPicker(Idx, Info)
+		local ParentObj = self;
+		local ToggleLabel = self.TextLabel;
+		local Container = self.Container;
+
+		assert(Info.Default, 'AddKeyPicker: Missing default value.');
+
+		local KeyPicker = {
+			Value = Info.Default;
+			Toggled = false;
+			Mode = Info.Mode or 'Toggle'; -- Always, Toggle, Hold
+			Type = 'KeyPicker';
+			Callback = Info.Callback or function(Value) end;
+			ChangedCallback = Info.ChangedCallback or function(New) end;
+
+			SyncToggleState = Info.SyncToggleState or false;
+		};
+
+		if KeyPicker.SyncToggleState then
+			Info.Modes = { 'Toggle' }
+			Info.Mode = 'Toggle'
+		end
+
+		local PickOuter = Library:Create('Frame', {
+			BackgroundColor3 = Color3.new(0, 0, 0);
+			BorderColor3 = Color3.new(0, 0, 0);
+			Size = UDim2.new(0, 28, 0, 15);
+			ZIndex = 6;
+			Parent = ToggleLabel;
+		});
+
+		local PickInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.BackgroundColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 7;
+			Parent = PickOuter;
+		});
+
+		Library:AddToRegistry(PickInner, {
+			BackgroundColor3 = 'BackgroundColor';
+			BorderColor3 = 'OutlineColor';
+		});
+
+		local DisplayLabel = Library:CreateLabel({
+			Size = UDim2.new(1, 0, 1, 0);
+			TextSize = 13;
+			Text = Info.Default;
+			TextWrapped = true;
+			ZIndex = 8;
+			Parent = PickInner;
+		});
+
+		local ModeSelectOuter = Library:Create('Frame', {
+			BorderColor3 = Color3.new(0, 0, 0);
+			Position = UDim2.fromOffset(ToggleLabel.AbsolutePosition.X + ToggleLabel.AbsoluteSize.X + 4, ToggleLabel.AbsolutePosition.Y + 1);
+			Size = UDim2.new(0, 60, 0, 45 + 2);
+			Visible = false;
+			ZIndex = 14;
+			Parent = ScreenGui;
+		});
+
+		ToggleLabel:GetPropertyChangedSignal('AbsolutePosition'):Connect(function()
+			ModeSelectOuter.Position = UDim2.fromOffset(ToggleLabel.AbsolutePosition.X + ToggleLabel.AbsoluteSize.X + 4, ToggleLabel.AbsolutePosition.Y + 1);
+		end);
+
+		local ModeSelectInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.BackgroundColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 15;
+			Parent = ModeSelectOuter;
+		});
+
+		Library:AddToRegistry(ModeSelectInner, {
+			BackgroundColor3 = 'BackgroundColor';
+			BorderColor3 = 'OutlineColor';
+		});
+
+		Library:Create('UIListLayout', {
+			FillDirection = Enum.FillDirection.Vertical;
+			SortOrder = Enum.SortOrder.LayoutOrder;
+			Parent = ModeSelectInner;
+		});
+
+		local ContainerLabel = Library:CreateLabel({
+			TextXAlignment = Enum.TextXAlignment.Left;
+			Size = UDim2.new(1, 0, 0, 18);
+			TextSize = 13;
+			Visible = false;
+			ZIndex = 110;
+			Parent = Library.KeybindContainer;
+		},  true);
+
+		local Modes = Info.Modes or { 'Always', 'Toggle', 'Hold' };
+		local ModeButtons = {};
+
+		for Idx, Mode in next, Modes do
+			local ModeButton = {};
+
+			local Label = Library:CreateLabel({
+				Active = false;
+				Size = UDim2.new(1, 0, 0, 15);
+				TextSize = 13;
+				Text = Mode;
+				ZIndex = 16;
+				Parent = ModeSelectInner;
+			});
+
+			function ModeButton:Select()
+				for _, Button in next, ModeButtons do
+					Button:Deselect();
+				end;
+
+				KeyPicker.Mode = Mode;
+
+				Label.TextColor3 = Library.AccentColor;
+				Library.RegistryMap[Label].Properties.TextColor3 = 'AccentColor';
+
+				ModeSelectOuter.Visible = false;
+			end;
+
+			function ModeButton:Deselect()
+				KeyPicker.Mode = nil;
+
+				Label.TextColor3 = Library.FontColor;
+				Library.RegistryMap[Label].Properties.TextColor3 = 'FontColor';
+			end;
+
+			Label.InputBegan:Connect(function(Input)
+				if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+					ModeButton:Select();
+					Library:AttemptSave();
+				end;
+			end);
+
+			if Mode == KeyPicker.Mode then
+				ModeButton:Select();
+			end;
+
+			ModeButtons[Mode] = ModeButton;
+		end;
+
+		function KeyPicker:Update()
+			if Info.NoUI then
+				return;
+			end;
+
+			local State = KeyPicker:GetState();
+
+			ContainerLabel.Text = string.format('[%s] %s (%s)', KeyPicker.Value, Info.Text, KeyPicker.Mode);
+
+			ContainerLabel.Visible = true;
+			ContainerLabel.TextColor3 = State and Library.AccentColor or Library.FontColor;
+			if not State and RainToggles.OnlyShowEnabledKeybinds and RainToggles.OnlyShowEnabledKeybinds.Value then
+				ContainerLabel.Visible = false;
+			end;
+			Library.RegistryMap[ContainerLabel].KEYBINDLABEL = true;
+			Library.RegistryMap[ContainerLabel].Properties.TextColor3 = State and 'AccentColor' or 'FontColor';
+
+			local YSize = 0
+			local XSize = 0
+
+			for _, Label in next, Library.KeybindContainer:GetChildren() do
+				if Label:IsA('TextLabel') and Label.Visible then
+					YSize = YSize + 18;
+					if (Label.TextBounds.X > XSize) then
+						XSize = Label.TextBounds.X
+					end
+				end;
+			end;
+
+			Library.KeybindFrame.Size = UDim2.new(0, math.max(XSize + 10, 210), 0, YSize + 23)
+		end;
+
+		function KeyPicker:GetState()
+			if KeyPicker.Mode == 'Always' then
+				return true;
+			elseif KeyPicker.Mode == 'Hold' then
+				if KeyPicker.Value == 'None' then
+					return false;
+				end
+
+				local Key = KeyPicker.Value;
+
+				if Key == 'MB1' or Key == 'MB2' then
+					return Key == 'MB1' and InputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1)
+						or Key == 'MB2' and InputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton2);
+				else
+					return InputService:IsKeyDown(Enum.KeyCode[KeyPicker.Value]);
+				end;
+			else
+				return KeyPicker.Toggled;
+			end;
+		end;
+
+		function KeyPicker:SetValue(Data)
+			local Key, Mode = Data[1], Data[2];
+			DisplayLabel.Text = Key;
+			KeyPicker.Value = Key;
+			ModeButtons[Mode]:Select();
+			KeyPicker:Update();
+		end;
+
+		function KeyPicker:OnClick(Callback)
+			KeyPicker.Clicked = Callback
+		end
+
+		function KeyPicker:OnChanged(Callback)
+			KeyPicker.Changed = Callback
+			Callback(KeyPicker.Value)
+		end
+
+		if ParentObj.Addons then
+			table.insert(ParentObj.Addons, KeyPicker)
+		end
+
+		function KeyPicker:DoClick()
+			if ParentObj.Type == 'Toggle' and KeyPicker.SyncToggleState then
+				ParentObj:SetValue(not ParentObj.Value)
+			end
+
+			Library:SafeCallback(KeyPicker.Callback, KeyPicker.Toggled)
+			Library:SafeCallback(KeyPicker.Clicked, KeyPicker.Toggled)
+		end
+
+		local Picking = false;
+
+		PickOuter.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 and not Library:MouseIsOverOpenedFrame() then
+				pcall(function()
+					Picking = true;
+					DisplayLabel.Text = '';
+					local Break;
+					local Text = '';
+					task.spawn(function()
+						pcall(function()
+							while (not Break) do
+								if Text == '...' then
+									Text = '';
+								end;
+								Text = Text .. '.';
+								DisplayLabel.Text = Text;
+								wait(0.4);
+							end;
+						end)
+					end);
+					wait(0.2);
+					local Event;
+					Event = InputService.InputBegan:Connect(function(Input)
+						local Key;
+						local kc = Input.KeyCode;
+						if Input.UserInputType == Enum.UserInputType.Keyboard then
+							Key = Input.KeyCode.Name;
+							if kc == Enum.KeyCode.Backspace or kc == Enum.KeyCode.Escape then
+								Key = 'None'
+								kc = Enum.KeyCode.Unknown;
+								print("YES!! CHAIR STOP SHAKING")
+
+							end;
+						elseif Input.UserInputType == Enum.UserInputType.MouseButton1 then
+							Key = 'MB1';
+						elseif Input.UserInputType == Enum.UserInputType.MouseButton2 then
+							Key = 'MB2';
+						end;
+						Break = true;
+						Picking = false;
+						DisplayLabel.Text = Key;
+						KeyPicker.Value = Key;
+						Library:SafeCallback(KeyPicker.ChangedCallback, kc or Input.UserInputType)
+						Library:SafeCallback(KeyPicker.Changed, kc or Input.UserInputType)
+						Library:AttemptSave();
+						Event:Disconnect();
+					end);
+				end);
+			elseif Input.UserInputType == Enum.UserInputType.MouseButton2 and not Library:MouseIsOverOpenedFrame() then
+				ModeSelectOuter.Visible = true;
+			end;
+		end);
+
+		Library:GiveSignal(InputService.InputBegan:Connect(function(Input,t)
+			if getgenv().IGNOREALLINPUTS then return; end
+			if (not Picking) then
+				if KeyPicker.Mode == 'Toggle' then
+					local Key = KeyPicker.Value;
+
+					if Key == 'MB1' or Key == 'MB2' then
+						if Key == 'MB1' and Input.UserInputType == Enum.UserInputType.MouseButton1
+							or Key == 'MB2' and Input.UserInputType == Enum.UserInputType.MouseButton2 then
+							KeyPicker.Toggled = not KeyPicker.Toggled
+							KeyPicker:DoClick();
+							KeyPicker:Update();
+						end;
+					elseif Input.UserInputType == Enum.UserInputType.Keyboard and not t then
+						if Input.KeyCode.Name == Key then
+							KeyPicker.Toggled = not KeyPicker.Toggled;
+							KeyPicker:DoClick();
+							KeyPicker:Update();
+						end;
+					end;
+				end;
+			end;
+
+			if not Toggled then
+				return;
+			end;
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+				local AbsPos, AbsSize = ModeSelectOuter.AbsolutePosition, ModeSelectOuter.AbsoluteSize;
+
+				if Mouse.X < AbsPos.X or Mouse.X > AbsPos.X + AbsSize.X
+					or Mouse.Y < (AbsPos.Y - 20 - 1) or Mouse.Y > AbsPos.Y + AbsSize.Y then
+
+					ModeSelectOuter.Visible = false;
+				end;
+			end;
+		end))
+
+		Library:GiveSignal(InputService.InputEnded:Connect(function(Input)
+			if (not Picking) then
+				KeyPicker:Update();
+			end;
+		end))
+
+		KeyPicker:Update();
+
+		RainOptions[Idx] = KeyPicker;
+
+		return self;
+	end;
+
+	BaseAddons.__index = Funcs;
+	BaseAddons.__namecall = function(Table, Key, ...)
+		return Funcs[Key](...);
+	end;
+end;
+
+local BaseGroupbox = {};
+
+do
+	local Funcs = {};
+	function Funcs:AddBlank(Size)
+		local Groupbox = self;
+		local Container = Groupbox.Container;
+
+		return Library:Create('Frame', {
+			BackgroundTransparency = 1;
+			Size = UDim2.new(1, 0, 0, Size);
+			ZIndex = 1;
+			Parent = Container;
+		});
+	end;
+
+	function Funcs:AddLabel(Text, DoesWrap)
+		local Label = {};
+
+		local Groupbox = self;
+		local Container = Groupbox.Container;
+
+		local TextLabel = Library:CreateLabel({
+			Size = UDim2.new(1, -4, 0, 15);
+			TextSize = 14;
+			Text = Text;
+			TextWrapped = DoesWrap or false,
+			TextXAlignment = Enum.TextXAlignment.Left;
+			ZIndex = 5;
+			AutoLocalize = false;
+			Parent = Container;
+		});
+
+		if DoesWrap then
+			local Y = select(2, Library:GetTextBounds(Text, Library.Font, 14, Vector2.new(TextLabel.AbsoluteSize.X, math.huge)))
+			TextLabel.Size = UDim2.new(1, -4, 0, Y)
+		else
+			Library:Create('UIListLayout', {
+				Padding = UDim.new(0, 4);
+				FillDirection = Enum.FillDirection.Horizontal;
+				HorizontalAlignment = Enum.HorizontalAlignment.Right;
+				SortOrder = Enum.SortOrder.LayoutOrder;
+				Parent = TextLabel;
+			});
+		end
+
+		Label.TextLabel = TextLabel;
+		Label.Container = Container;
+
+		function Label:SetText(Text)
+			TextLabel.Text = Text
+
+			if DoesWrap then
+				local Y = select(2, Library:GetTextBounds(Text, Library.Font, 14, Vector2.new(TextLabel.AbsoluteSize.X, math.huge)))
+				TextLabel.Size = UDim2.new(1, -4, 0, Y)
+			end
+
+			Groupbox:Resize();
+		end
+		local blank = Groupbox:AddBlank(5);
+		function Label:Destroy()
+			TextLabel:Destroy();
+			blank:Destroy();
+			Groupbox:Resize();
+		end;
+
+		function Label:SetColor(color)
+			TextLabel.TextColor3 = color;
+		end;
+
+		if (not DoesWrap) then
+			setmetatable(Label, BaseAddons);
+		end
+
+		Groupbox:Resize();
+
+		return Label;
+	end;
+	function Funcs:AddButton(...)
+		-- TODO: Eventually redo this
+		local Button = {};
+		local function ProcessButtonParams(Class, Obj, ...)
+			local Props = select(1, ...)
+			if type(Props) == 'table' then
+				Obj.Text = Props.Text
+				Obj.Func = Props.Func
+				Obj.DoubleClick = Props.DoubleClick
+				Obj.Tooltip = Props.Tooltip
+			else
+				Obj.Text = select(1, ...)
+				Obj.Func = select(2, ...)
+			end
+
+			assert(type(Obj.Func) == 'function', 'AddButton: `Func` callback is missing.');
+		end
+
+		ProcessButtonParams('Button', Button, ...)
+
+		local Groupbox = self;
+		local Container = Groupbox.Container;
+
+		local function CreateBaseButton(Button)
+			local Outer = Library:Create('Frame', {
+				BackgroundColor3 = Color3.new(0, 0, 0);
+				BorderColor3 = Color3.new(0, 0, 0);
+				Size = UDim2.new(1, -4, 0, 20);
+				ZIndex = 5;
+			});
+
+			local Inner = Library:Create('Frame', {
+				BackgroundColor3 = Library.MainColor;
+				BorderColor3 = Library.OutlineColor;
+				BorderMode = Enum.BorderMode.Inset;
+				Size = UDim2.new(1, 0, 1, 0);
+				ZIndex = 6;
+				Parent = Outer;
+			});
+
+			local Label = Library:CreateLabel({
+				Size = UDim2.new(1, 0, 1, 0);
+				TextSize = 14;
+				Text = Button.Text;
+				ZIndex = 6;
+				Parent = Inner;
+			});
+
+			Library:Create('UIGradient', {
+				Color = ColorSequence.new({
+					ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)),
+					ColorSequenceKeypoint.new(1, Color3.fromRGB(212, 212, 212))
+				});
+				Rotation = 90;
+				Parent = Inner;
+			});
+
+			Library:AddToRegistry(Outer, {
+				BorderColor3 = 'Black';
+			});
+
+			Library:AddToRegistry(Inner, {
+				BackgroundColor3 = 'MainColor';
+				BorderColor3 = 'OutlineColor';
+			});
+
+			Library:OnHighlight(Outer, Outer,
+				{ BorderColor3 = 'AccentColor' },
+				{ BorderColor3 = 'Black' }
+			);
+
+			return Outer, Inner, Label
+		end
+
+		local function InitEvents(Button)
+			local function WaitForEvent(event, timeout, validator)
+				local bindable = Instance.new('BindableEvent')
+				local connection = event:Once(function(...)
+
+					if type(validator) == 'function' and validator(...) then
+						bindable:Fire(true)
+					else
+						bindable:Fire(false)
+					end
+				end)
+				task.delay(timeout, function()
+					connection:disconnect()
+					bindable:Fire(false)
+				end)
+				return bindable.Event:Wait()
+			end
+
+			local function ValidateClick(Input)
+				if Library:MouseIsOverOpenedFrame() then
+					return false
+				end
+
+				if Input.UserInputType ~= Enum.UserInputType.MouseButton1 then
+					return false
+				end
+
+				return true
+			end
+
+			Button.Outer.InputBegan:Connect(function(Input)
+				if not ValidateClick(Input) then return end
+				if Button.Locked then return end
+
+				if Button.DoubleClick then
+					Library:RemoveFromRegistry(Button.Label)
+					Library:AddToRegistry(Button.Label, { TextColor3 = 'AccentColor' })
+
+					Button.Label.TextColor3 = Library.AccentColor
+					Button.Label.Text = 'Are you sure?'
+					Button.Locked = true
+
+					local clicked = WaitForEvent(Button.Outer.InputBegan, 0.5, ValidateClick)
+
+					Library:RemoveFromRegistry(Button.Label)
+					Library:AddToRegistry(Button.Label, { TextColor3 = 'FontColor' })
+
+					Button.Label.TextColor3 = Library.FontColor
+					Button.Label.Text = Button.Text
+					task.defer(rawset, Button, 'Locked', false)
+
+					if clicked then
+						Library:SafeCallback(Button.Func)
+					end
+
+					return
+				end
+
+				Library:SafeCallback(Button.Func);
+			end)
+		end
+
+		Button.Outer, Button.Inner, Button.Label = CreateBaseButton(Button)
+		Button.Outer.Parent = Container
+
+		InitEvents(Button)
+
+		function Button:AddTooltip(tooltip)
+			if type(tooltip) == 'string' then
+				Library:AddToolTip(tooltip, self.Outer)
+			end
+			return self
+		end
+
+
+		function Button:AddButton(...)
+			local SubButton = {}
+
+			ProcessButtonParams('SubButton', SubButton, ...)
+
+			self.Outer.Size = UDim2.new(0.5, -2, 0, 20)
+
+			SubButton.Outer, SubButton.Inner, SubButton.Label = CreateBaseButton(SubButton)
+
+			SubButton.Outer.Position = UDim2.new(1, 3, 0, 0)
+			SubButton.Outer.Size = UDim2.fromOffset(self.Outer.AbsoluteSize.X - 2, self.Outer.AbsoluteSize.Y)
+			SubButton.Outer.Parent = self.Outer
+
+			function SubButton:AddTooltip(tooltip)
+				if type(tooltip) == 'string' then
+					Library:AddToolTip(tooltip, self.Outer)
+				end
+				return SubButton
+			end
+
+			if type(SubButton.Tooltip) == 'string' then
+				SubButton:AddTooltip(SubButton.Tooltip)
+			end
+
+			InitEvents(SubButton)
+			return SubButton
+		end
+
+		if type(Button.Tooltip) == 'string' then
+			Button:AddTooltip(Button.Tooltip)
+		end
+
+		Groupbox:AddBlank(5);
+		Groupbox:Resize();
+
+		return Button;
+	end;
+
+	function Funcs:AddDivider()
+		local Groupbox = self;
+		local Container = self.Container
+
+		local Divider = {
+			Type = 'Divider',
+		}
+
+		Groupbox:AddBlank(2);
+		local DividerOuter = Library:Create('Frame', {
+			BackgroundColor3 = Color3.new(0, 0, 0);
+			BorderColor3 = Color3.new(0, 0, 0);
+			Size = UDim2.new(1, -4, 0, 5);
+			ZIndex = 5;
+			Parent = Container;
+		});
+
+		local DividerInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.MainColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 6;
+			Parent = DividerOuter;
+		});
+
+		Library:AddToRegistry(DividerOuter, {
+			BorderColor3 = 'Black';
+		});
+
+		Library:AddToRegistry(DividerInner, {
+			BackgroundColor3 = 'MainColor';
+			BorderColor3 = 'OutlineColor';
+		});
+
+		Groupbox:AddBlank(9);
+		Groupbox:Resize();
+	end
+
+	function Funcs:AddInput(Idx, Info)
+		assert(Info.Text, 'AddInput: Missing `Text` string.')
+
+		local Textbox = {
+			Value = Info.Default or '';
+			Numeric = Info.Numeric or false;
+			Finished = Info.Finished or false;
+			Type = 'Input';
+			Callback = Info.Callback or function(Value) end;
+		};
+
+		local Groupbox = self;
+		local Container = Groupbox.Container;
+
+		local InputLabel = Library:CreateLabel({
+			Size = UDim2.new(1, 0, 0, 15);
+			TextSize = 14;
+			Text = Info.Text;
+			TextXAlignment = Enum.TextXAlignment.Left;
+			ZIndex = 5;
+			Parent = Container;
+		});
+
+		Groupbox:AddBlank(1);
+
+		local TextBoxOuter = Library:Create('Frame', {
+			BackgroundColor3 = Color3.new(0, 0, 0);
+			BorderColor3 = Color3.new(0, 0, 0);
+			Size = UDim2.new(1, -4, 0, 20);
+			ZIndex = 5;
+			Parent = Container;
+		});
+
+		local TextBoxInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.MainColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 6;
+			Parent = TextBoxOuter;
+		});
+
+		Library:AddToRegistry(TextBoxInner, {
+			BackgroundColor3 = 'MainColor';
+			BorderColor3 = 'OutlineColor';
+		});
+
+		Library:OnHighlight(TextBoxOuter, TextBoxOuter,
+			{ BorderColor3 = 'AccentColor' },
+			{ BorderColor3 = 'Black' }
+		);
+
+		if type(Info.Tooltip) == 'string' then
+			Library:AddToolTip(Info.Tooltip, TextBoxOuter)
+		end
+
+		Library:Create('UIGradient', {
+			Color = ColorSequence.new({
+				ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)),
+				ColorSequenceKeypoint.new(1, Color3.fromRGB(212, 212, 212))
+			});
+			Rotation = 90;
+			Parent = TextBoxInner;
+		});
+
+		local Container = Library:Create('Frame', {
+			BackgroundTransparency = 1;
+			ClipsDescendants = true;
+
+			Position = UDim2.new(0, 5, 0, 0);
+			Size = UDim2.new(1, -5, 1, 0);
+
+			ZIndex = 7;
+			Parent = TextBoxInner;
+		})
+
+		local Box = Library:Create('TextBox', {
+			BackgroundTransparency = 1;
+
+			Position = UDim2.fromOffset(0, 0),
+			Size = UDim2.fromScale(5, 1),
+
+			Font = Library.Font;
+			PlaceholderColor3 = Color3.fromRGB(190, 190, 190);
+			PlaceholderText = Info.Placeholder or '';
+
+			Text = Info.Default or '';
+			TextColor3 = Library.FontColor;
+			TextSize = 14;
+			TextStrokeTransparency = 0;
+			TextXAlignment = Enum.TextXAlignment.Left;
+
+			ZIndex = 7;
+			Parent = Container;
+		});
+
+		Library:ApplyTextStroke(Box);
+
+		function Textbox:SetValue(Text)
+			if Info.MaxLength and #Text > Info.MaxLength then
+				Text = Text:sub(1, Info.MaxLength);
+			end;
+
+			if Textbox.Numeric then
+				if (not tonumber(Text)) and Text:len() > 0 then
+					Text = Textbox.Value
+				end
+			end
+
+			Textbox.Value = Text;
+			Box.Text = Text;
+
+			Library:SafeCallback(Textbox.Callback, Textbox.Value);
+			Library:SafeCallback(Textbox.Changed, Textbox.Value);
+		end;
+
+		if Textbox.Finished then
+			Box.FocusLost:Connect(function(enter)
+				if not enter then return end
+
+				Textbox:SetValue(Box.Text);
+				Library:AttemptSave();
+			end)
+		else
+			Box:GetPropertyChangedSignal('Text'):Connect(function()
+				Textbox:SetValue(Box.Text);
+				Library:AttemptSave();
+			end);
+		end
+
+		-- https://devforum.roblox.com/t/how-to-make-textboxes-follow-current-cursor-position/1368429/6
+		-- thank you nicemike40 :)
+
+		local function Update()
+			local PADDING = 2
+			local reveal = Container.AbsoluteSize.X
+
+			if not Box:IsFocused() or Box.TextBounds.X <= reveal - 2 * PADDING then
+				-- we aren't focused, or we fit so be normal
+				Box.Position = UDim2.new(0, PADDING, 0, 0)
+			else
+				-- we are focused and don't fit, so adjust position
+				local cursor = Box.CursorPosition
+				if cursor ~= -1 then
+					-- calculate pixel width of text from start to cursor
+					local subtext = string.sub(Box.Text, 1, cursor-1)
+					local width = TextService:GetTextSize(subtext, Box.TextSize, Box.Font, Vector2.new(math.huge, math.huge)).X
+
+					-- check if we're inside the box with the cursor
+					local currentCursorPos = Box.Position.X.Offset + width
+
+					-- adjust if necessary
+					if currentCursorPos < PADDING then
+						Box.Position = UDim2.fromOffset(PADDING-width, 0)
+					elseif currentCursorPos > reveal - PADDING - 1 then
+						Box.Position = UDim2.fromOffset(reveal-width-PADDING-1, 0)
+					end
+				end
+			end
+		end
+
+		task.spawn(function() pcall(Update) end)
+
+		Box:GetPropertyChangedSignal('Text'):Connect(Update)
+		Box:GetPropertyChangedSignal('CursorPosition'):Connect(Update)
+		Box.FocusLost:Connect(Update)
+		Box.Focused:Connect(Update)
+
+		Library:AddToRegistry(Box, {
+			TextColor3 = 'FontColor';
+		});
+
+		function Textbox:OnChanged(Func)
+			Textbox.Changed = Func;
+			Func(Textbox.Value);
+		end;
+
+		Groupbox:AddBlank(5);
+		Groupbox:Resize();
+
+		RainOptions[Idx] = Textbox;
+
+		return Textbox;
+	end;
+
+	function Funcs:AddToggle(Idx, Info)
+		assert(Info.Text, 'AddInput: Missing `Text` string.')
+
+		local Toggle = {
+			Value = Info.Default or false;
+			Type = 'Toggle';
+
+			Callback = Info.Callback or function(Value) end;
+			Addons = {},
+			Risky = Info.Risky,
+		};
+
+		local Groupbox = self;
+		local Container = Groupbox.Container;
+
+		local ToggleOuter = Library:Create('Frame', {
+			BackgroundColor3 = Color3.new(0, 0, 0);
+			BorderColor3 = Color3.new(0, 0, 0);
+			Size = UDim2.new(0, 13, 0, 13);
+			ZIndex = 5;
+			Parent = Container;
+		});
+
+		Library:AddToRegistry(ToggleOuter, {
+			BorderColor3 = 'Black';
+		});
+
+		local ToggleInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.MainColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 6;
+			Parent = ToggleOuter;
+		});
+
+		Library:AddToRegistry(ToggleInner, {
+			BackgroundColor3 = 'MainColor';
+			BorderColor3 = 'OutlineColor';
+		});
+
+		local ToggleLabel = Library:CreateLabel({
+			Size = UDim2.new(0, 216, 1, 0);
+			Position = UDim2.new(1, 6, 0, 0);
+			TextSize = 14;
+			Text = Info.Text;
+			TextXAlignment = Enum.TextXAlignment.Left;
+			ZIndex = 6;
+			Parent = ToggleInner;
+		});
+
+		Library:Create('UIListLayout', {
+			Padding = UDim.new(0, 4);
+			FillDirection = Enum.FillDirection.Horizontal;
+			HorizontalAlignment = Enum.HorizontalAlignment.Right;
+			SortOrder = Enum.SortOrder.LayoutOrder;
+			Parent = ToggleLabel;
+		});
+
+		local ToggleRegion = Library:Create('Frame', {
+			BackgroundTransparency = 1;
+			Size = UDim2.new(0, 170, 1, 0);
+			ZIndex = 8;
+			Parent = ToggleOuter;
+		});
+
+		Library:OnHighlight(ToggleRegion, ToggleOuter,
+			{ BorderColor3 = 'AccentColor' },
+			{ BorderColor3 = 'Black' }
+		);
+
+		function Toggle:UpdateColors()
+			Toggle:Display();
+		end;
+
+		if type(Info.Tooltip) == 'string' then
+			Library:AddToolTip(Info.Tooltip, ToggleRegion)
+		end
+
+		function Toggle:Display()
+			ToggleInner.BackgroundColor3 = Toggle.Value and Library.AccentColor or Library.MainColor;
+			ToggleInner.BorderColor3 = Toggle.Value and Library.AccentColorDark or Library.OutlineColor;
+
+			Library.RegistryMap[ToggleInner].Properties.BackgroundColor3 = Toggle.Value and 'AccentColor' or 'MainColor';
+			Library.RegistryMap[ToggleInner].Properties.BorderColor3 = Toggle.Value and 'AccentColorDark' or 'OutlineColor';
+		end;
+
+		function Toggle:OnChanged(Func)
+			Toggle.Changed = Func;
+			pcall(Func,Toggle.Value);
+		end;
+
+		function Toggle:SetValue(Bool)
+			Bool = (not not Bool);
+
+			Toggle.Value = Bool;
+			Toggle:Display();
+
+			for _, Addon in next, Toggle.Addons do
+				if Addon.Type == 'KeyPicker' and Addon.SyncToggleState then
+					Addon.Toggled = Bool
+					Addon:Update()
+				end
+			end
+			pcall(function()
+				Library:SafeCallback(Toggle.Callback, Toggle.Value);
+				Library:SafeCallback(Toggle.Changed, Toggle.Value);
+			end)
+			Library:UpdateDependencyBoxes();
+		end;
+
+		ToggleRegion.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 and not Library:MouseIsOverOpenedFrame() then
+				Toggle:SetValue(not Toggle.Value) -- Why was it not like this from the start?
+				Library:AttemptSave();
+			end;
+		end);
+
+		if Toggle.Risky then
+			Library:RemoveFromRegistry(ToggleLabel)
+			ToggleLabel.TextColor3 = Library.RiskColor
+			Library:AddToRegistry(ToggleLabel, { TextColor3 = 'RiskColor' })
+		end
+
+		Toggle:Display();
+		Groupbox:AddBlank(Info.BlankSize or 5 + 2);
+		Groupbox:Resize();
+
+		Toggle.TextLabel = ToggleLabel;
+		Toggle.Container = Container;
+		setmetatable(Toggle, BaseAddons);
+
+		RainToggles[Idx] = Toggle;
+
+		Library:UpdateDependencyBoxes();
+
+		return Toggle;
+	end;
+
+	function Funcs:AddSlider(Idx, Info)
+		assert(Info.Default, 'AddSlider: Missing default value.')
+		assert(Info.Text,    'AddSlider: Missing slider text.')
+		assert(Info.Min,     'AddSlider: Missing minimum value.')
+		assert(Info.Max,     'AddSlider: Missing maximum value.')
+		assert(Info.Rounding ~= nil, 'AddSlider: Missing rounding value.')
+
+		local Slider = {
+			Value    = Info.Default;
+			Min      = Info.Min;
+			Max      = Info.Max;
+			Rounding = Info.Rounding;
+			MaxSize  = 232;
+			Type     = 'Slider';
+
+			Text     = Info.Text;
+			Prefix   = type(Info.Prefix) == "string" and Info.Prefix or "";
+			Suffix   = type(Info.Suffix) == "string" and Info.Suffix or "";
+
+			Visible  = (type(Info.Visible)  == "boolean") and Info.Visible  or true;
+			Disabled = (type(Info.Disabled) == "boolean") and Info.Disabled or false;
+
+			Callback = Info.Callback or function(_) end;
+			Changed  = Info.Changed  or function(_) end;
+			Compact  = not not Info.Compact;
+			HideMax  = not not Info.HideMax;
+			Tooltip  = Info.Tooltip;
+		}
+
+		local Groupbox  = self
+		local Container = Groupbox.Container
+
+		if not Slider.Compact then
+			local SliderText = Library:CreateLabel({
+				Size = UDim2.new(1, 0, 0, 10);
+				TextSize = 14;
+				Text = Slider.Text;
+				TextXAlignment = Enum.TextXAlignment.Left;
+				TextYAlignment = Enum.TextYAlignment.Bottom;
+				Visible = Slider.Visible;
+				ZIndex = 5;
+				Parent = Container;
+			})
+			Groupbox:AddBlank(3, Slider.Visible);
+		end
+
+		local SliderOuter = Library:Create('Frame', {
+			BackgroundColor3 = Color3.new(0, 0, 0);
+			BorderColor3 = Color3.new(0, 0, 0);
+			Size = UDim2.new(1, -4, 0, 13);
+			Visible = Slider.Visible;
+			ZIndex = 5;
+			Parent = Container;
+		})
+
+		-- dynamic width like linoarialib
+		SliderOuter:GetPropertyChangedSignal('AbsoluteSize'):Connect(function()
+			Slider.MaxSize = math.max(0, SliderOuter.AbsoluteSize.X - 2)
+		end)
+
+		Library:AddToRegistry(SliderOuter, { BorderColor3 = 'Black' })
+
+		local SliderInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.MainColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 6;
+			Parent = SliderOuter;
+		})
+
+		Library:AddToRegistry(SliderInner, {
+			BackgroundColor3 = 'MainColor';
+			BorderColor3 = 'OutlineColor';
+		})
+
+		local Fill = Library:Create('Frame', {
+			BackgroundColor3 = Library.AccentColor;
+			BorderColor3 = Library.AccentColorDark;
+			Size = UDim2.new(0, 0, 1, 0);
+			ZIndex = 7;
+			Parent = SliderInner;
+		})
+
+		Library:AddToRegistry(Fill, {
+			BackgroundColor3 = 'AccentColor';
+			BorderColor3 = 'AccentColorDark';
+		})
+
+		local HideBorderRight = Library:Create('Frame', {
+			BackgroundColor3 = Library.AccentColor;
+			BorderSizePixel = 0;
+			Position = UDim2.new(1, 0, 0, 0);
+			Size = UDim2.new(0, 1, 1, 0);
+			ZIndex = 8;
+			Parent = Fill;
+		})
+
+		Library:AddToRegistry(HideBorderRight, { BackgroundColor3 = 'AccentColor' })
+
+		local DisplayLabel = Library:CreateLabel({
+			Size = UDim2.new(1, 0, 1, 0);
+			TextSize = 14;
+			Text = 'Infinite';
+			ZIndex = 9;
+			Parent = SliderInner;
+		})
+
+		Library:OnHighlight(SliderOuter, SliderOuter,
+			{ BorderColor3 = 'AccentColor' },
+			{ BorderColor3 = 'Black' }
+		)
+
+		if type(Slider.Tooltip) == 'string' then
+			Library:AddToolTip(Slider.Tooltip, SliderOuter)
+		end
+
+		function Slider:UpdateColors()
+			Fill.BackgroundColor3 = Library.AccentColor
+			Fill.BorderColor3     = Library.AccentColorDark
+		end
+
+		local function Round(Value)
+			if Slider.Rounding == 0 then
+				return math.floor(Value)
+			end
+			return tonumber(string.format('%.' .. tostring(Slider.Rounding) .. 'f', Value))
+		end
+
+		function Slider:GetValueFromXScale(scale)
+			return Round(Library:MapValue(scale, 0, 1, Slider.Min, Slider.Max))
+		end
+
+		function Slider:GetValueFromXOffset(px)
+			return Round(Library:MapValue(px, 0, Slider.MaxSize, Slider.Min, Slider.Max))
+		end
+
+		function Slider:Display()
+			local left  = (Slider.Prefix or "")
+			local right = (Slider.Suffix or "")
+
+			if Slider.Compact then
+				DisplayLabel.Text = string.format('%s%s%s', Slider.Text .. ': ', tostring(Slider.Value), right)
+			elseif Slider.HideMax then
+				DisplayLabel.Text = string.format('%s%s', tostring(Slider.Value), right)
+			else
+				DisplayLabel.Text = string.format('%s%s/%s%s',
+					left, tostring(Slider.Value), tostring(Slider.Max), right)
+			end
+
+			local X = math.ceil(Library:MapValue(Slider.Value, Slider.Min, Slider.Max, 0, Slider.MaxSize))
+			Fill.Size = UDim2.new(0, X, 1, 0)
+			HideBorderRight.Visible = not (X == Slider.MaxSize or X == 0)
+
+			SliderInner.Visible = Slider.Visible
+			SliderOuter.Visible = Slider.Visible
+		end
+
+		function Slider:SetValue(numOrStr)
+			local Num = tonumber(numOrStr)
+			if not Num then return end
+			Num = math.clamp(Num, Slider.Min, Slider.Max)
+			local old = Slider.Value
+			Slider.Value = Num
+			Slider:Display()
+			if not Slider.Disabled and Num ~= old then
+				Library:SafeCallback(Slider.Callback, Slider.Value)
+				Library:SafeCallback(Slider.Changed,  Slider.Value)
+			end
+		end
+
+		-- linoarialib-style helpers
+		function Slider:SetText(t)     if type(t) == "string" then Slider.Text = t; Slider:Display() end end
+		function Slider:SetPrefix(p)   if type(p) == "string" then Slider.Prefix = p; Slider:Display() end end
+		function Slider:SetSuffix(s)   if type(s) == "string" then Slider.Suffix = s; Slider:Display() end end
+		function Slider:SetVisible(v)  Slider.Visible = not not v; Slider:Display(); Groupbox:Resize() end
+		function Slider:SetDisabled(d) Slider.Disabled = not not d; Slider:UpdateColors() end
+
+		function Slider:OnChanged(Func)
+			Slider.Changed = Func
+			pcall(Func, Slider.Value)
+		end
+
+		-- drag loop
+		SliderInner.InputBegan:Connect(function(Input)
+			if Slider.Disabled then return end
+			if Input.UserInputType == Enum.UserInputType.MouseButton1
+				and not Library:MouseIsOverOpenedFrame() then
+
+				local mPos = Mouse.X
+				local gPos = Fill.Size.X.Offset
+				local Diff = mPos - (Fill.AbsolutePosition.X + gPos)
+
+				while InputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
+					local nMPos   = Mouse.X
+					local nX      = math.clamp(gPos + (nMPos - mPos) + Diff, 0, Slider.MaxSize)
+					local nValue  = Slider:GetValueFromXOffset(nX)
+					local old     = Slider.Value
+					Slider.Value  = nValue
+
+					Slider:Display()
+
+					if nValue ~= old then
+						Library:SafeCallback(Slider.Callback, Slider.Value)
+						Library:SafeCallback(Slider.Changed,  Slider.Value)
+					end
+
+					RenderStepped:Wait()
+				end
+
+				Library:AttemptSave()
+			end
+		end)
+
+		Slider:Display()
+		Groupbox:AddBlank(Info.BlankSize or 6)
+		Groupbox:Resize()
+
+		RainOptions[Idx] = Slider
+		return Slider
+	end
+
+	function Funcs:AddDropdown(Idx, Info)
+		if Info.SpecialType == 'Player' then
+			Info.Values = GetPlayersString();
+			Info.AllowNull = true;
+		elseif Info.SpecialType == 'Team' then
+			Info.Values = GetTeamsString();
+			Info.AllowNull = true;
+		end;
+
+		assert(Info.Values, 'AddDropdown: Missing dropdown value list.');
+		assert(Info.AllowNull or Info.Default, 'AddDropdown: Missing default value. Pass `AllowNull` as true if this was intentional.')
+
+		if (not Info.Text) then
+			Info.Compact = true;
+		end;
+
+		local Dropdown = {
+			Values = Info.Values;
+			Value = Info.Multi and {};
+			Multi = Info.Multi;
+			Type = 'Dropdown';
+			SpecialType = Info.SpecialType; -- can be either 'Player' or 'Team'
+			Callback = Info.Callback or function(Value) end;
+		};
+
+		local Groupbox = self;
+		local Container = Groupbox.Container;
+
+		local RelativeOffset = 0;
+
+		if not Info.Compact then
+			local DropdownLabel = Library:CreateLabel({
+				Size = UDim2.new(1, 0, 0, 10);
+				TextSize = 14;
+				Text = Info.Text;
+				TextXAlignment = Enum.TextXAlignment.Left;
+				TextYAlignment = Enum.TextYAlignment.Bottom;
+				ZIndex = 5;
+				Parent = Container;
+			});
+
+			Groupbox:AddBlank(3);
+		end
+
+		for _, Element in next, Container:GetChildren() do
+			if not Element:IsA('UIListLayout') then
+				RelativeOffset = RelativeOffset + Element.Size.Y.Offset;
+			end;
+		end;
+
+		local DropdownOuter = Library:Create('Frame', {
+			BackgroundColor3 = Color3.new(0, 0, 0);
+			BorderColor3 = Color3.new(0, 0, 0);
+			Size = UDim2.new(1, -4, 0, 20);
+			ZIndex = 5;
+			Parent = Container;
+		});
+
+		Library:AddToRegistry(DropdownOuter, {
+			BorderColor3 = 'Black';
+		});
+
+		local DropdownInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.MainColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 6;
+			Parent = DropdownOuter;
+		});
+
+		Library:AddToRegistry(DropdownInner, {
+			BackgroundColor3 = 'MainColor';
+			BorderColor3 = 'OutlineColor';
+		});
+
+		Library:Create('UIGradient', {
+			Color = ColorSequence.new({
+				ColorSequenceKeypoint.new(0, Color3.new(1, 1, 1)),
+				ColorSequenceKeypoint.new(1, Color3.fromRGB(212, 212, 212))
+			});
+			Rotation = 90;
+			Parent = DropdownInner;
+		});
+
+		local DropdownArrow = Library:Create('ImageLabel', {
+			AnchorPoint = Vector2.new(0, 0.5);
+			BackgroundTransparency = 1;
+			Position = UDim2.new(1, -16, 0.5, 0);
+			Size = UDim2.new(0, 12, 0, 12);
+			Image = 'http://www.roblox.com/asset/?id=6282522798';
+			ZIndex = 8;
+			Parent = DropdownInner;
+		});
+
+		local ItemList = Library:CreateLabel({
+			Position = UDim2.new(0, 5, 0, 0);
+			Size = UDim2.new(1, -5, 1, 0);
+			TextSize = 14;
+			Text = '--';
+			TextXAlignment = Enum.TextXAlignment.Left;
+			TextWrapped = true;
+			ZIndex = 7;
+			Parent = DropdownInner;
+		});
+
+		Library:OnHighlight(DropdownOuter, DropdownOuter,
+			{ BorderColor3 = 'AccentColor' },
+			{ BorderColor3 = 'Black' }
+		);
+
+		if type(Info.Tooltip) == 'string' then
+			Library:AddToolTip(Info.Tooltip, DropdownOuter)
+		end
+
+		local MAX_DROPDOWN_ITEMS = 8;
+
+		local ListOuter = Library:Create('Frame', {
+			BackgroundColor3 = Color3.new(0, 0, 0);
+			BorderColor3 = Color3.new(0, 0, 0);
+			ZIndex = 20;
+			Visible = false;
+			Parent = ScreenGui;
+		});
+
+		local function RecalculateListPosition()
+			ListOuter.Position = UDim2.fromOffset(DropdownOuter.AbsolutePosition.X, DropdownOuter.AbsolutePosition.Y + DropdownOuter.Size.Y.Offset + 1);
+		end;
+
+		local function RecalculateListSize(YSize)
+			ListOuter.Size = UDim2.fromOffset(DropdownOuter.AbsoluteSize.X, YSize or (MAX_DROPDOWN_ITEMS * 20 + 2))
+		end;
+
+		RecalculateListPosition();
+		RecalculateListSize();
+
+		DropdownOuter:GetPropertyChangedSignal('AbsolutePosition'):Connect(RecalculateListPosition);
+
+		local ListInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.MainColor;
+			BorderColor3 = Library.OutlineColor;
+			BorderMode = Enum.BorderMode.Inset;
+			BorderSizePixel = 0;
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 21;
+			Parent = ListOuter;
+		});
+
+		Library:AddToRegistry(ListInner, {
+			BackgroundColor3 = 'MainColor';
+			BorderColor3 = 'OutlineColor';
+		});
+
+		local Scrolling = Library:Create('ScrollingFrame', {
+			BackgroundTransparency = 1;
+			BorderSizePixel = 0;
+			CanvasSize = UDim2.new(0, 0, 0, 0);
+			Size = UDim2.new(1, 0, 1, 0);
+			ZIndex = 21;
+			Parent = ListInner;
+
+			TopImage = 'rbxasset://textures/ui/Scroll/scroll-middle.png',
+			BottomImage = 'rbxasset://textures/ui/Scroll/scroll-middle.png',
+
+			ScrollBarThickness = 3,
+			ScrollBarImageColor3 = Library.AccentColor,
+		});
+
+		Library:AddToRegistry(Scrolling, {
+			ScrollBarImageColor3 = 'AccentColor'
+		})
+
+		Library:Create('UIListLayout', {
+			Padding = UDim.new(0, 0);
+			FillDirection = Enum.FillDirection.Vertical;
+			SortOrder = Enum.SortOrder.LayoutOrder;
+			Parent = Scrolling;
+		});
+
+		function Dropdown:Display()
+			local Values = Dropdown.Values;
+			local Str = '';
+
+			if Info.Multi then
+				for Idx, Value in next, Values do
+					if Dropdown.Value[Value] then
+						Str = Str .. Value .. ', ';
+					end;
+				end;
+
+				Str = Str:sub(1, #Str - 2);
+			else
+				Str = Dropdown.Value or '';
+			end;
+
+			ItemList.Text = (Str == '' and '--' or Str);
+		end;
+
+		function Dropdown:GetActiveValues()
+			if Info.Multi then
+				local T = {};
+
+				for Value, Bool in next, Dropdown.Value do
+					table.insert(T, Value);
+				end;
+
+				return T;
+			else
+				return Dropdown.Value and 1 or 0;
+			end;
+		end;
+
+		function Dropdown:BuildDropdownList()
+			local Values = Dropdown.Values;
+			local Buttons = {};
+
+			for _, Element in next, Scrolling:GetChildren() do
+				if not Element:IsA('UIListLayout') then
+					Element:Destroy();
+				end;
+			end;
+
+			local Count = 0;
+
+			for Idx, Value in next, Values do
+				local Table = {};
+
+				Count = Count + 1;
+
+				local Button = Library:Create('Frame', {
+					BackgroundColor3 = Library.MainColor;
+					BorderColor3 = Library.OutlineColor;
+					BorderMode = Enum.BorderMode.Middle;
+					Size = UDim2.new(1, -1, 0, 20);
+					ZIndex = 23;
+					Active = true,
+					Parent = Scrolling;
+				});
+
+				Library:AddToRegistry(Button, {
+					BackgroundColor3 = 'MainColor';
+					BorderColor3 = 'OutlineColor';
+				});
+
+				local ButtonLabel = Library:CreateLabel({
+					Active = false;
+					Size = UDim2.new(1, -6, 1, 0);
+					Position = UDim2.new(0, 6, 0, 0);
+					TextSize = 14;
+					Text = Value;
+					TextXAlignment = Enum.TextXAlignment.Left;
+					ZIndex = 25;
+					Parent = Button;
+				});
+
+				Library:OnHighlight(Button, Button,
+					{ BorderColor3 = 'AccentColor', ZIndex = 24 },
+					{ BorderColor3 = 'OutlineColor', ZIndex = 23 }
+				);
+
+				local Selected;
+
+				if Info.Multi then
+					Selected = Dropdown.Value[Value];
+				else
+					Selected = Dropdown.Value == Value;
+				end;
+
+				function Table:UpdateButton()
+					if Info.Multi then
+						Selected = Dropdown.Value[Value];
+					else
+						Selected = Dropdown.Value == Value;
+					end;
+
+					ButtonLabel.TextColor3 = Selected and Library.AccentColor or Library.FontColor;
+					Library.RegistryMap[ButtonLabel].Properties.TextColor3 = Selected and 'AccentColor' or 'FontColor';
+				end;
+
+				ButtonLabel.InputBegan:Connect(function(Input)
+					if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+						local Try = not Selected;
+
+						if Dropdown:GetActiveValues() == 1 and (not Try) and (not Info.AllowNull) then
+						else
+							if Info.Multi then
+								Selected = Try;
+
+								if Selected then
+									Dropdown.Value[Value] = true;
+								else
+									Dropdown.Value[Value] = nil;
+								end;
+							else
+								Selected = Try;
+
+								if Selected then
+									Dropdown.Value = Value;
+								else
+									Dropdown.Value = nil;
+								end;
+
+								for _, OtherButton in next, Buttons do
+									OtherButton:UpdateButton();
+								end;
+							end;
+
+							Table:UpdateButton();
+							Dropdown:Display();
+
+							Library:SafeCallback(Dropdown.Callback, Dropdown.Value);
+							Library:SafeCallback(Dropdown.Changed, Dropdown.Value);
+
+							Library:AttemptSave();
+						end;
+					end;
+				end);
+
+				Table:UpdateButton();
+				Dropdown:Display();
+
+				Buttons[Button] = Table;
+			end;
+
+			Scrolling.CanvasSize = UDim2.fromOffset(0, (Count * 20) + 1);
+
+			local Y = math.clamp(Count * 20, 0, MAX_DROPDOWN_ITEMS * 20) + 1;
+			RecalculateListSize(Y);
+		end;
+
+		function Dropdown:SetValues(NewValues)
+			if NewValues then
+				Dropdown.Values = NewValues;
+			end;
+
+			Dropdown:BuildDropdownList();
+		end;
+
+		function Dropdown:OpenDropdown()
+			ListOuter.Visible = true;
+			Library.OpenedFrames[ListOuter] = true;
+			DropdownArrow.Rotation = 180;
+		end;
+
+		function Dropdown:CloseDropdown()
+			ListOuter.Visible = false;
+			Library.OpenedFrames[ListOuter] = nil;
+			DropdownArrow.Rotation = 0;
+		end;
+
+		function Dropdown:OnChanged(Func)
+			Dropdown.Changed = Func;
+			Func(Dropdown.Value);
+		end;
+
+		function Dropdown:SetValue(Val)
+			if Dropdown.Multi then
+				local nTable = {};
+
+				for Value, Bool in next, Val do
+					if table.find(Dropdown.Values, Value) then
+						nTable[Value] = true
+					end;
+				end;
+
+				Dropdown.Value = nTable;
+			else
+				if (not Val) then
+					Dropdown.Value = nil;
+				elseif table.find(Dropdown.Values, Val) then
+					Dropdown.Value = Val;
+				end;
+			end;
+
+			Dropdown:BuildDropdownList();
+
+			Library:SafeCallback(Dropdown.Callback, Dropdown.Value);
+			Library:SafeCallback(Dropdown.Changed, Dropdown.Value);
+		end;
+
+		DropdownOuter.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 and not Library:MouseIsOverOpenedFrame() then
+				if ListOuter.Visible then
+					Dropdown:CloseDropdown();
+				else
+					Dropdown:OpenDropdown();
+				end;
+			end;
+		end);
+
+		InputService.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+				local AbsPos, AbsSize = ListOuter.AbsolutePosition, ListOuter.AbsoluteSize;
+
+				if Mouse.X < AbsPos.X or Mouse.X > AbsPos.X + AbsSize.X
+					or Mouse.Y < (AbsPos.Y - 20 - 1) or Mouse.Y > AbsPos.Y + AbsSize.Y then
+
+					Dropdown:CloseDropdown();
+				end;
+			end;
+		end);
+
+		Dropdown:BuildDropdownList();
+		Dropdown:Display();
+
+		local Defaults = {}
+
+		if type(Info.Default) == 'string' then
+			local Idx = table.find(Dropdown.Values, Info.Default)
+			if Idx then
+				table.insert(Defaults, Idx)
+			end
+		elseif type(Info.Default) == 'table' then
+			for _, Value in next, Info.Default do
+				local Idx = table.find(Dropdown.Values, Value)
+				if Idx then
+					table.insert(Defaults, Idx)
+				end
+			end
+		elseif type(Info.Default) == 'number' and Dropdown.Values[Info.Default] ~= nil then
+			table.insert(Defaults, Info.Default)
+		end
+
+		if next(Defaults) then
+			for i = 1, #Defaults do
+				local Index = Defaults[i]
+				if Info.Multi then
+					Dropdown.Value[Dropdown.Values[Index]] = true
+				else
+					Dropdown.Value = Dropdown.Values[Index];
+				end
+
+				if (not Info.Multi) then break end
+			end
+
+			Dropdown:BuildDropdownList();
+			Dropdown:Display();
+		end
+
+		Groupbox:AddBlank(Info.BlankSize or 5);
+		Groupbox:Resize();
+
+		RainOptions[Idx] = Dropdown;
+
+		return Dropdown;
+	end;
+
+	function Funcs:AddDependencyBox()
+		local Depbox = { Dependencies = {} }
+
+		local Groupbox  = self
+		local Container = Groupbox.Container
+
+		local Holder = Library:Create('Frame', {
+			BackgroundTransparency = 1;
+			Size = UDim2.new(1, 0, 0, 0);
+			Visible = false;
+			Parent = Container;
+		})
+
+		local Frame = Library:Create('Frame', {
+			BackgroundTransparency = 1;
+			Size = UDim2.new(1, 0, 1, 0);
+			Visible = true;
+			Parent = Holder;
+		})
+
+		local Layout = Library:Create('UIListLayout', {
+			FillDirection = Enum.FillDirection.Vertical;
+			SortOrder = Enum.SortOrder.LayoutOrder;
+			Parent = Frame;
+		})
+
+		function Depbox:Resize()
+			Holder.Size = UDim2.new(1, 0, 0, Layout.AbsoluteContentSize.Y)
+			Groupbox:Resize()
+		end
+
+		Layout:GetPropertyChangedSignal('AbsoluteContentSize'):Connect(function()
+			Depbox:Resize()
+		end)
+
+		Holder:GetPropertyChangedSignal('Visible'):Connect(function()
+			Depbox:Resize()
+		end)
+
+		function Depbox:Update()
+			for _, dep in next, Depbox.Dependencies do
+				local Elem, Expected = dep[1], dep[2]
+
+				local matches
+				if Elem.Multi then
+					matches = table.find(Elem:GetActiveValues(), Expected) ~= nil
+				else
+					matches = (Elem.Value == Expected)
+				end
+
+				if not matches then
+					Holder.Visible = false
+					Depbox:Resize()
+					return
+				end
+			end
+
+			Holder.Visible = true
+			Depbox:Resize()
+		end
+
+		function Depbox:SetupDependencies(deps)
+			for _, d in next, deps do
+				assert(typeof(d) == 'table', 'SetupDependencies: dependency must be a table')
+				assert(d[1],                  'SetupDependencies: missing element')
+				assert(d[2] ~= nil,           'SetupDependencies: missing expected value')
+			end
+			Depbox.Dependencies = deps
+			Depbox:Update()
+		end
+
+		Depbox.Container = Frame
+		setmetatable(Depbox, BaseGroupbox)
+
+		table.insert(Library.DependencyBoxes, Depbox)
+
+		return Depbox
+	end
+
+	function Funcs:AddDependencyGroupbox()
+		local ParentGroupbox = self
+		local Tab            = ParentGroupbox.Tab
+
+		local DepGroupbox = { Dependencies = {} }
+
+		Tab.DependencyGroupboxes = Tab.DependencyGroupboxes or {}
+		Library.DependencyGroupboxes = Library.DependencyGroupboxes or {}
+
+		local parentFrame = (ParentGroupbox.Side == 1) and Tab.LeftSideFrame or Tab.RightSideFrame
+
+		local BoxOuter = Library:Create('Frame', {
+			BackgroundColor3 = Library.BackgroundColor;
+			BorderColor3     = Library.OutlineColor;
+			BorderMode       = Enum.BorderMode.Inset;
+			Size             = UDim2.new(1, 0, 0, 509);
+			ZIndex           = 2;
+			Parent           = parentFrame;
+		})
+
+		Library:AddToRegistry(BoxOuter, {
+			BackgroundColor3 = 'BackgroundColor';
+			BorderColor3     = 'OutlineColor';
+		})
+
+		local BoxInner = Library:Create('Frame', {
+			BackgroundColor3 = Library.BackgroundColor;
+			BorderColor3     = Color3.new(0, 0, 0);
+			Size             = UDim2.new(1, -2, 1, -2);
+			Position         = UDim2.new(0, 1, 0, 1);
+			ZIndex           = 4;
+			Parent           = BoxOuter;
+		})
+
+		Library:AddToRegistry(BoxInner, { BackgroundColor3 = 'BackgroundColor' })
+
+		local Highlight = Library:Create('Frame', {
+			BackgroundColor3 = Library.AccentColor;
+			BorderSizePixel  = 0;
+			Size             = UDim2.new(1, 0, 0, 2);
+			ZIndex           = 5;
+			Parent           = BoxInner;
+		})
+
+		Library:AddToRegistry(Highlight, { BackgroundColor3 = 'AccentColor' })
+
+		local Container = Library:Create('Frame', {
+			BackgroundTransparency = 1;
+			Position               = UDim2.new(0, 4, 0, 10);
+			Size                   = UDim2.new(1, -4, 1, -10);
+			ZIndex                 = 1;
+			Parent                 = BoxInner;
+		})
+
+		Library:Create('UIListLayout', {
+			FillDirection = Enum.FillDirection.Vertical;
+			SortOrder     = Enum.SortOrder.LayoutOrder;
+			Parent        = Container;
+		})
+
+		function DepGroupbox:Resize()
+			local y = 0
+			for _, c in next, DepGroupbox.Container:GetChildren() do
+				if not c:IsA('UIListLayout') and c.Visible then
+					y += c.Size.Y.Offset
+				end
+			end
+			local scale = (rawget(_G, "DPIScale") or (typeof(DPIScale) == "number" and DPIScale) or 1)
+			BoxOuter.Size = UDim2.new(1, 0, 0, (10 * scale + y) + 4)
+		end
+
+		function DepGroupbox:Update()
+			for _, dep in next, DepGroupbox.Dependencies do
+				local Elem, Expected = dep[1], dep[2]
+
+				local matches
+				if Elem.Multi then
+					matches = table.find(Elem:GetActiveValues(), Expected) ~= nil
+				else
+					matches = (Elem.Value == Expected)
+				end
+
+				if not matches then
+					BoxOuter.Visible = false
+					DepGroupbox:Resize()
+					return
+				end
+			end
+
+			BoxOuter.Visible = true
+			DepGroupbox:Resize()
+		end
+
+		function DepGroupbox:SetupDependencies(deps)
+			for _, d in pairs(deps) do
+				assert(typeof(d) == "table", "Dependency should be a table.")
+				assert(d[1] ~= nil,          "Dependency is missing element.")
+				assert(d[2] ~= nil,          "Dependency is missing expected value.")
+			end
+			DepGroupbox.Dependencies = deps
+			DepGroupbox:Update()
+		end
+
+		DepGroupbox.Container = Container
+		setmetatable(DepGroupbox, BaseGroupbox)
+
+		DepGroupbox:Resize()
+
+		table.insert(Tab.DependencyGroupboxes, DepGroupbox)
+		table.insert(Library.DependencyGroupboxes, DepGroupbox)
+
+		return DepGroupbox
+	end
+
+	BaseGroupbox.__index = Funcs;
+	BaseGroupbox.__namecall = function(Table, Key, ...)
+		return Funcs[Key](...);
+	end;
+end;
+
+-- < Create other UI elements >
+do
+	Library.NotificationArea = Library:Create('Frame', {
+		BackgroundTransparency = 1;
+		Position = UDim2.new(0, 0, 0, 40);
+		Size = UDim2.new(0, 300, 0, 200);
+		ZIndex = 100;
+		Parent = ScreenGui;
+	});
+
+	Library:Create('UIListLayout', {
+		Padding = UDim.new(0, 4);
+		FillDirection = Enum.FillDirection.Vertical;
+		SortOrder = Enum.SortOrder.LayoutOrder;
+		Parent = Library.NotificationArea;
+	});
+
+	local WatermarkOuter = Library:Create('Frame', {
+		BorderColor3 = Color3.new(0, 0, 0);
+		Position = UDim2.new(0, 100, 0, -25);
+		Size = UDim2.new(0, 213, 0, 20);
+		ZIndex = 200;
+		Visible = false;
+		Parent = ScreenGui;
+	});
+
+	local WatermarkInner = Library:Create('Frame', {
+		BackgroundColor3 = Library.MainColor;
+		BorderColor3 = Library.AccentColor;
+		BorderMode = Enum.BorderMode.Inset;
+		Size = UDim2.new(1, 0, 1, 0);
+		ZIndex = 201;
+		Parent = WatermarkOuter;
+	});
+
+	Library:AddToRegistry(WatermarkInner, {
+		BorderColor3 = 'AccentColor';
+	});
+
+	local InnerFrame = Library:Create('Frame', {
+		BackgroundColor3 = Color3.new(1, 1, 1);
+		BorderSizePixel = 0;
+		Position = UDim2.new(0, 1, 0, 1);
+		Size = UDim2.new(1, -2, 1, -2);
+		ZIndex = 202;
+		Parent = WatermarkInner;
+	});
+
+	local Gradient = Library:Create('UIGradient', {
+		Color = ColorSequence.new({
+			ColorSequenceKeypoint.new(0, Library:GetDarkerColor(Library.MainColor)),
+			ColorSequenceKeypoint.new(1, Library.MainColor),
+		});
+		Rotation = -90;
+		Parent = InnerFrame;
+	});
+
+	Library:AddToRegistry(Gradient, {
+		Color = function()
+			return ColorSequence.new({
+				ColorSequenceKeypoint.new(0, Library:GetDarkerColor(Library.MainColor)),
+				ColorSequenceKeypoint.new(1, Library.MainColor),
+			});
+		end
+	});
+
+	local WatermarkLabel = Library:CreateLabel({
+		Position = UDim2.new(0, 5, 0, 0);
+		Size = UDim2.new(1, -4, 1, 0);
+		TextSize = 14;
+		TextXAlignment = Enum.TextXAlignment.Left;
+		ZIndex = 203;
+		Parent = InnerFrame;
+	});
+
+	Library.Watermark = WatermarkOuter;
+	Library.WatermarkText = WatermarkLabel;
+	Library:MakeDraggable(Library.Watermark);
+
+
+
+	local KeybindOuter = Library:Create('Frame', {
+		AnchorPoint = Vector2.new(0, 0.5);
+		BorderColor3 = Color3.new(0, 0, 0);
+		Position = UDim2.new(0, 10, 0.5, 0);
+		Size = UDim2.new(0, 210, 0, 20);
+		Visible = false;
+		ZIndex = 100;
+		Parent = ScreenGui;
+	});
+
+	local KeybindInner = Library:Create('Frame', {
+		BackgroundColor3 = Library.MainColor;
+		BorderColor3 = Library.OutlineColor;
+		BorderMode = Enum.BorderMode.Inset;
+		Size = UDim2.new(1, 0, 1, 0);
+		ZIndex = 101;
+		Parent = KeybindOuter;
+	});
+
+	Library:AddToRegistry(KeybindInner, {
+		BackgroundColor3 = 'MainColor';
+		BorderColor3 = 'OutlineColor';
+	}, true);
+
+	local ColorFrame = Library:Create('Frame', {
+		BackgroundColor3 = Library.AccentColor;
+		BorderSizePixel = 0;
+		Size = UDim2.new(1, 0, 0, 2);
+		ZIndex = 102;
+		Parent = KeybindInner;
+	});
+
+	Library:AddToRegistry(ColorFrame, {
+		BackgroundColor3 = 'AccentColor';
+	}, true);
+
+	local KeybindLabel = Library:CreateLabel({
+		Size = UDim2.new(1, 0, 0, 20);
+		Position = UDim2.fromOffset(5, 2),
+		TextXAlignment = Enum.TextXAlignment.Left,
+
+		Text = 'Keybinds';
+		ZIndex = 104;
+		Parent = KeybindInner;
+	});
+
+	local KeybindContainer = Library:Create('Frame', {
+		BackgroundTransparency = 1;
+		Size = UDim2.new(1, 0, 1, -20);
+		Position = UDim2.new(0, 0, 0, 20);
+		ZIndex = 1;
+		Parent = KeybindInner;
+	});
+
+	Library:Create('UIListLayout', {
+		FillDirection = Enum.FillDirection.Vertical;
+		SortOrder = Enum.SortOrder.LayoutOrder;
+		Parent = KeybindContainer;
+	});
+
+	Library:Create('UIPadding', {
+		PaddingLeft = UDim.new(0, 5),
+		Parent = KeybindContainer,
+	})
+
+
+	local InfoLoggerOuter = Library:Create("Frame", {
+		AnchorPoint = Vector2.new(0, 0.5),
+		BorderColor3 = Color3.new(0, 0, 0),
+		Position = UDim2.new(0, 10, 0.5, 0),
+		Size = UDim2.new(0, 210, 0, 24),
+		Visible = false,
+		ZIndex = 100,
+		Parent = ScreenGui,
+	})
+
+	local InfoLoggerInner = Library:Create("Frame", {
+		BackgroundColor3 = Library.MainColor,
+		BorderColor3 = Library.OutlineColor,
+		BorderMode = Enum.BorderMode.Inset,
+		Size = UDim2.new(1, 0, 1, 0),
+		ZIndex = 101,
+		Parent = InfoLoggerOuter,
+	})
+
+	Library:AddToRegistry(InfoLoggerInner, {
+		BackgroundColor3 = "MainColor",
+		BorderColor3 = "OutlineColor",
+	}, true)
+
+	local InfoColorFrame = Library:Create("Frame", {
+		BackgroundColor3 = Library.AccentColor,
+		BorderSizePixel = 0,
+		Size = UDim2.new(1, 0, 0, 2),
+		ZIndex = 102,
+		Parent = InfoLoggerInner,
+	})
+
+	Library:AddToRegistry(InfoColorFrame, {
+		BackgroundColor3 = "AccentColor",
+	}, true)
+
+	local InfoLoggerLabel = Library:CreateLabel({
+		Size = UDim2.new(1, 0, 0, 20),
+		Position = UDim2.fromOffset(5, 2),
+		TextXAlignment = Enum.TextXAlignment.Left,
+
+		Text = "Info-logger",
+		ZIndex = 104,
+		Parent = InfoLoggerInner,
+	})
+
+	local InfoLoggerContainer = Library:Create("Frame", {
+		BackgroundTransparency = 1,
+		Size = UDim2.new(1, 0, 1, -20),
+		Position = UDim2.new(0, 0, 0, 20),
+		ZIndex = 1,
+		Parent = InfoLoggerInner,
+	})
+
+	Library:Create("UIListLayout", {
+		FillDirection = Enum.FillDirection.Vertical,
+		SortOrder = Enum.SortOrder.LayoutOrder,
+		Parent = InfoLoggerContainer,
+	})
+
+	Library:Create("UIPadding", {
+		PaddingLeft = UDim.new(0, 5),
+		Parent = InfoLoggerContainer,
+	})
+
+	Library.InfoLoggerFrame = InfoLoggerOuter
+	Library.InfoLoggerContainer = InfoLoggerContainer
+	Library.InfoLoggerData = {
+		ContainerLabels = {},
+		BlacklistList = {},
+	}
+
+	Library:MakeDraggable(InfoLoggerOuter)
+
+	Library.KeybindFrame = KeybindOuter;
+	Library.KeybindContainer = KeybindContainer;
+	Library:MakeDraggable(KeybindOuter);
+end;
+
+function Library:SetWatermarkVisibility(Bool)
+	Library.Watermark.Visible = Bool;
+end;
+
+function Library:SetWatermark(Text)
+	local X, Y = Library:GetTextBounds(Text, Library.Font, 14);
+	Library.Watermark.Size = UDim2.new(0, X + 15, 0, (Y * 1.5) + 3);
+	Library:SetWatermarkVisibility(true)
+
+	Library.WatermarkText.Text = Text;
+end;
+
+function Library:Notify(Text, Time)
+	local XSize, YSize = Library:GetTextBounds(Text, Library.Font, 14);
+
+	YSize = YSize + 7
+
+	local NotifyOuter = Library:Create('Frame', {
+		BorderColor3 = Color3.new(0, 0, 0);
+		Position = UDim2.new(0, 100, 0, 10);
+		Size = UDim2.new(0, 0, 0, YSize);
+		ClipsDescendants = true;
+		ZIndex = 100;
+		Parent = Library.NotificationArea;
+	});
+
+	local NotifyInner = Library:Create('Frame', {
+		BackgroundColor3 = Library.MainColor;
+		BorderColor3 = Library.OutlineColor;
+		BorderMode = Enum.BorderMode.Inset;
+		Size = UDim2.new(1, 0, 1, 0);
+		ZIndex = 101;
+		Parent = NotifyOuter;
+	});
+
+	Library:AddToRegistry(NotifyInner, {
+		BackgroundColor3 = 'MainColor';
+		BorderColor3 = 'OutlineColor';
+	}, true);
+
+	local InnerFrame = Library:Create('Frame', {
+		BackgroundColor3 = Color3.new(1, 1, 1);
+		BorderSizePixel = 0;
+		Position = UDim2.new(0, 1, 0, 1);
+		Size = UDim2.new(1, -2, 1, -2);
+		ZIndex = 102;
+		Parent = NotifyInner;
+	});
+
+	local Gradient = Library:Create('UIGradient', {
+		Color = ColorSequence.new({
+			ColorSequenceKeypoint.new(0, Library:GetDarkerColor(Library.MainColor)),
+			ColorSequenceKeypoint.new(1, Library.MainColor),
+		});
+		Rotation = -90;
+		Parent = InnerFrame;
+	});
+
+	Library:AddToRegistry(Gradient, {
+		Color = function()
+			return ColorSequence.new({
+				ColorSequenceKeypoint.new(0, Library:GetDarkerColor(Library.MainColor)),
+				ColorSequenceKeypoint.new(1, Library.MainColor),
+			});
+		end
+	});
+
+	local NotifyLabel = Library:CreateLabel({
+		Position = UDim2.new(0, 4, 0, 0);
+		Size = UDim2.new(1, -4, 1, 0);
+		Text = Text;
+		TextXAlignment = Enum.TextXAlignment.Left;
+		TextSize = 14;
+		ZIndex = 103;
+		Parent = InnerFrame;
+	});
+
+	local LeftColor = Library:Create('Frame', {
+		BackgroundColor3 = Library.AccentColor;
+		BorderSizePixel = 0;
+		Position = UDim2.new(0, -1, 0, -1);
+		Size = UDim2.new(0, 3, 1, 2);
+		ZIndex = 104;
+		Parent = NotifyOuter;
+	});
+
+	Library:AddToRegistry(LeftColor, {
+		BackgroundColor3 = 'AccentColor';
+	}, true);
+	local function inputBegan(input)
+		pcall(function() if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				task.spawn(function() pcall(function()
+
+						NotifyOuter:TweenSize(UDim2.new(0, 0, 0, 20), 'Out', 'Quad', 0.4, true);
+
+						task.wait(0.4);
+
+						NotifyOuter:Destroy();
+					end) end);
+			end end)
+	end
+
+	InnerFrame.InputBegan:Connect(inputBegan)
+	pcall(NotifyOuter.TweenSize, NotifyOuter, UDim2.new(0, XSize + 8 + 4, 0, YSize), 'Out', 'Quad', 0.4, true);
+
+	task.spawn(function()
+		wait(Time or 5);
+
+		pcall(NotifyOuter.TweenSize, NotifyOuter, UDim2.new(0, 0, 0, YSize), 'Out', 'Quad', 0.4, true);
+
+		wait(0.4);
+
+		NotifyOuter:Destroy();
+	end);
+end;
+
+function Library:CreateWindow(...)
+	local Arguments = { ... }
+	local Config = { AnchorPoint = Vector2.zero }
+
+	if type(...) == 'table' then
+		Config = ...;
+	else
+		Config.Title = Arguments[1]
+		Config.AutoShow = Arguments[2] or false;
+	end
+
+	if type(Config.Title) ~= 'string' then Config.Title = 'No title' end
+	if type(Config.TabPadding) ~= 'number' then Config.TabPadding = 0 end
+	if type(Config.MenuFadeTime) ~= 'number' then Config.MenuFadeTime = 0.2 end
+
+	if typeof(Config.Position) ~= 'UDim2' then Config.Position = UDim2.fromOffset(175, 50) end
+	if typeof(Config.Size) ~= 'UDim2' then Config.Size = UDim2.fromOffset(550, 600) end
+
+	if Config.Center then
+		Config.AnchorPoint = Vector2.new(0.5, 0.5)
+		Config.Position = UDim2.fromScale(0.5, 0.5)
+	end
+
+	local Window = {
+		Tabs = {};
+	};
+
+	local Outer = Library:Create('Frame', {
+		AnchorPoint = Config.AnchorPoint,
+		BackgroundColor3 = Color3.new(0, 0, 0);
+		BorderSizePixel = 0;
+		Position = Config.Position,
+		Size = Config.Size,
+		Visible = false;
+		ZIndex = 1;
+		Parent = ScreenGui;
+	});
+
+	Library:MakeDraggable(Outer, 25);
+
+	local Inner = Library:Create('Frame', {
+		BackgroundColor3 = Library.MainColor;
+		BorderColor3 = Library.AccentColor;
+		BorderMode = Enum.BorderMode.Inset;
+		Position = UDim2.new(0, 1, 0, 1);
+		Size = UDim2.new(1, -2, 1, -2);
+		ZIndex = 1;
+		Parent = Outer;
+	});
+
+	Library:AddToRegistry(Inner, {
+		BackgroundColor3 = 'MainColor';
+		BorderColor3 = 'AccentColor';
+	});
+
+	local WindowLabel = Library:CreateLabel({
+		Position = UDim2.new(0, 7, 0, 0);
+		Size = UDim2.new(0, 0, 0, 25);
+		Text = Config.Title or '';
+		TextXAlignment = Enum.TextXAlignment.Left;
+		ZIndex = 1;
+		Parent = Inner;
+	});
+
+	local MainSectionOuter = Library:Create('Frame', {
+		BackgroundColor3 = Library.BackgroundColor;
+		BorderColor3 = Library.OutlineColor;
+		Position = UDim2.new(0, 8, 0, 25);
+		BackgroundTransparency = 1;
+		Size = UDim2.new(1, -16, 1, -33);
+		ZIndex = 1;
+		Parent = Inner;
+	});
+
+	Library:AddToRegistry(MainSectionOuter, {
+		BackgroundColor3 = 'BackgroundColor';
+		BorderColor3 = 'OutlineColor';
+	});
+
+	local MainSectionInner = Library:Create('Frame', {
+		BackgroundColor3 = Library.BackgroundColor;
+		BackgroundTransparency = 1;
+		Position = UDim2.new(0, 0, 0, 0);
+		Size = UDim2.new(1, 0, 1, 0);
+		ZIndex = 1;
+		Parent = MainSectionOuter;
+	});
+
+	Library:AddToRegistry(MainSectionInner, {
+		BackgroundColor3 = 'BackgroundColor';
+	});
+
+	local TabArea = Library:Create('Frame', {
+		BackgroundTransparency = 1;
+		Position = UDim2.new(0, 8, 0, 8);
+		Size = UDim2.new(1, -16, 0, 21);
+		ZIndex = 1;
+		Parent = MainSectionInner;
+	});
+
+	local TabListLayout = Library:Create('UIListLayout', {
+		Padding = UDim.new(0, Config.TabPadding);
+		FillDirection = Enum.FillDirection.Horizontal;
+		SortOrder = Enum.SortOrder.LayoutOrder;
+		Parent = TabArea;
+	});
+
+	local TabContainer = Library:Create('Frame', {
+		BackgroundColor3 = Library.MainColor;
+		Position = UDim2.new(0, 8, 0, 30);
+		Size = UDim2.new(1, -16, 1, -38);
+		BorderSizePixel = 0;
+		ZIndex = 2;
+		Parent = MainSectionInner;
+	});
+
+
+	Library:AddToRegistry(TabContainer, {
+		BackgroundColor3 = 'MainColor';
+		BorderColor3 = 'OutlineColor';
+	});
+
+	function Window:SetWindowTitle(Title)
+		WindowLabel.Text = Title;
+	end;
+
+	function Window:AddTab(Name)
+		local Tab = {
+			Groupboxes = {};
+			Tabboxes = {};
+		};
+
+		local TabButtonWidth = Library:GetTextBounds(Name, Library.Font, 16);
+
+		local TabButton = Library:Create('Frame', {
+			BackgroundColor3 = Library.BackgroundColor;
+			BorderColor3 = Library.OutlineColor;
+			BackgroundTransparency = 1;
+			Size = UDim2.new(0, TabButtonWidth + 8 + 4, 1, 0);
+			ZIndex = 1;
+			Parent = TabArea;
+		});
+
+		Library:AddToRegistry(TabButton, {
+			BackgroundColor3 = 'BackgroundColor';
+			BorderColor3 = 'OutlineColor';
+		});
+
+		local TabButtonLabel = Library:CreateLabel({
+			Position = UDim2.new(0, 0, 0, 0);
+			Size = UDim2.new(1, 0, 1, -1);
+			Text = Name;
+			ZIndex = 1;
+			Parent = TabButton;
+		});
+
+		local Blocker = Library:Create('Frame', {
+			BackgroundColor3 = Library.MainColor;
+			BackgroundTransparency = 1;
+			BorderSizePixel = 0;
+			Position = UDim2.new(0, 0, 1, 0);
+			Size = UDim2.new(1, 0, 0, 1);
+			ZIndex = 3;
+			Parent = TabButton;
+		});
+
+		Library:AddToRegistry(Blocker, {
+			BackgroundColor3 = 'MainColor';
+		});
+
+		local TabFrame = Library:Create('Frame', {
+			Name = 'TabFrame',
+			BackgroundTransparency = 1;
+			Position = UDim2.new(0, 0, 0, 0);
+			Size = UDim2.new(1, 0, 1, 0);
+			Visible = false;
+			ZIndex = 2;
+			Parent = TabContainer;
+		});
+
+		local LeftSide = Library:Create('ScrollingFrame', {
+			BackgroundTransparency = 1;
+			BorderSizePixel = 0;
+			Position = UDim2.new(0, 8 - 1, 0, 8 - 1);
+			Size = UDim2.new(0.5, -12 + 2, 0, 507 + 2);
+			CanvasSize = UDim2.new(0, 0, 0, 0);
+			BottomImage = '';
+			TopImage = '';
+			ScrollBarThickness = 0;
+			ZIndex = 2;
+			Parent = TabFrame;
+		});
+
+		local RightSide = Library:Create('ScrollingFrame', {
+			BackgroundTransparency = 1;
+			BorderSizePixel = 0;
+			Position = UDim2.new(0.5, 4 + 1, 0, 8 - 1);
+			Size = UDim2.new(0.5, -12 + 2, 0, 507 + 2);
+			CanvasSize = UDim2.new(0, 0, 0, 0);
+			BottomImage = '';
+			TopImage = '';
+			ScrollBarThickness = 0;
+			ZIndex = 2;
+			Parent = TabFrame;
+		});
+
+		Library:Create('UIListLayout', {
+			Padding = UDim.new(0, 8);
+			FillDirection = Enum.FillDirection.Vertical;
+			SortOrder = Enum.SortOrder.LayoutOrder;
+			HorizontalAlignment = Enum.HorizontalAlignment.Center;
+			Parent = LeftSide;
+		});
+
+		Library:Create('UIListLayout', {
+			Padding = UDim.new(0, 8);
+			FillDirection = Enum.FillDirection.Vertical;
+			SortOrder = Enum.SortOrder.LayoutOrder;
+			HorizontalAlignment = Enum.HorizontalAlignment.Center;
+			Parent = RightSide;
+		});
+
+		for _, Side in next, { LeftSide, RightSide } do
+			Side:WaitForChild('UIListLayout'):GetPropertyChangedSignal('AbsoluteContentSize'):Connect(function()
+				Side.CanvasSize = UDim2.fromOffset(0, Side.UIListLayout.AbsoluteContentSize.Y);
+			end);
+		end;
+
+		function Tab:ShowTab()
+			for _, Tab in next, Window.Tabs do
+				Tab:HideTab();
+			end;
+
+			Blocker.BackgroundTransparency = 1;
+			TabButtonLabel.TextColor3 = Library.AccentColor;
+			TabButton.BackgroundColor3 = Library.MainColor;
+			Library.RegistryMap[TabButton].Properties.BackgroundColor3 = 'MainColor';
+			TabFrame.Visible = true;
+		end;
+
+		function Tab:HideTab()
+			Blocker.BackgroundTransparency = 1;
+			TabButtonLabel.TextColor3 = Color3.new(1,1,1);
+			TabButton.BackgroundColor3 = Library.BackgroundColor;
+			Library.RegistryMap[TabButton].Properties.BackgroundColor3 = 'BackgroundColor';
+			TabFrame.Visible = false;
+		end;
+
+		function Tab:SetLayoutOrder(Position)
+			TabButton.LayoutOrder = Position;
+			TabListLayout:ApplyLayout();
+		end;
+
+		function Tab:AddGroupbox(Info)
+			local Groupbox = {};
+
+			local BoxOuter = Library:Create('Frame', {
+				BackgroundColor3 = Library.BackgroundColor;
+				BorderColor3 = Library.OutlineColor;
+				BackgroundTransparency = 0.75;
+				BorderMode = Enum.BorderMode.Inset;
+				Size = UDim2.new(1, 0, 0, 507 + 2);
+				ZIndex = 2;
+				Parent = Info.Side == 1 and LeftSide or RightSide;
+			});
+
+			Library:AddToRegistry(BoxOuter, {
+				BackgroundColor3 = 'BackgroundColor';
+				BorderColor3 = 'OutlineColor';
+			});
+
+			local BoxInner = Library:Create('Frame', {
+				BackgroundColor3 = Library.BackgroundColor;
+				BorderColor3 = Color3.new(0, 0, 0);
+				BackgroundTransparency = 0.75;
+
+				-- BorderMode = Enum.BorderMode.Inset;
+				Size = UDim2.new(1, -2, 1, -2);
+				Position = UDim2.new(0, 1, 0, 1);
+				ZIndex = 4;
+				Parent = BoxOuter;
+			});
+
+			Library:AddToRegistry(BoxInner, {
+				BackgroundColor3 = 'BackgroundColor';
+			});
+
+			local Highlight = Library:Create('Frame', {
+				BackgroundColor3 = Library.AccentColor;
+				BorderSizePixel = 0;
+				Size = UDim2.new(1, 0, 0, 2);
+				ZIndex = 5;
+				Parent = BoxInner;
+			});
+
+			Library:AddToRegistry(Highlight, {
+				BackgroundColor3 = 'AccentColor';
+			});
+
+			local GroupboxLabel = Library:CreateLabel({
+				Size = UDim2.new(1, 0, 0, 18);
+				Position = UDim2.new(0, 4, 0, 2);
+				TextSize = 14;
+				Text = Info.Name;
+				TextXAlignment = Enum.TextXAlignment.Left;
+				ZIndex = 5;
+				Parent = BoxInner;
+			});
+
+			local Container = Library:Create('Frame', {
+				BackgroundTransparency = 1;
+				Position = UDim2.new(0, 4, 0, 20);
+				Size = UDim2.new(1, -4, 1, -20);
+				ZIndex = 1;
+				Parent = BoxInner;
+			});
+
+			Library:Create('UIListLayout', {
+				FillDirection = Enum.FillDirection.Vertical;
+				SortOrder = Enum.SortOrder.LayoutOrder;
+				Parent = Container;
+			});
+
+			function Groupbox:Resize()
+				local Size = 0;
+
+				for _, Element in next, Groupbox.Container:GetChildren() do
+					if (not Element:IsA('UIListLayout')) and Element.Visible then
+						Size = Size + Element.Size.Y.Offset;
+					end;
+				end;
+
+				BoxOuter.Size = UDim2.new(1, 0, 0, 20 + Size + 2 + 2);
+			end;
+
+			Groupbox.Container = Container;
+			setmetatable(Groupbox, BaseGroupbox);
+
+			Groupbox:AddBlank(3);
+			Groupbox:Resize();
+
+			Tab.Groupboxes[Info.Name] = Groupbox;
+
+			return Groupbox;
+		end;
+
+		function Tab:AddLeftGroupbox(Name)
+			return Tab:AddGroupbox({ Side = 1; Name = Name; });
+		end;
+
+		function Tab:AddRightGroupbox(Name)
+			return Tab:AddGroupbox({ Side = 2; Name = Name; });
+		end;
+
+		function Tab:AddTabbox(Info)
+			local Tabbox = {
+				Tabs = {};
+			};
+
+			local BoxOuter = Library:Create('Frame', {
+				BackgroundColor3 = Library.BackgroundColor;
+				BorderColor3 = Library.OutlineColor;
+				BorderMode = Enum.BorderMode.Inset;
+				Size = UDim2.new(1, 0, 0, 0);
+				ZIndex = 2;
+				Parent = Info.Side == 1 and LeftSide or RightSide;
+			});
+
+			Library:AddToRegistry(BoxOuter, {
+				BackgroundColor3 = 'BackgroundColor';
+				BorderColor3 = 'OutlineColor';
+			});
+
+			local BoxInner = Library:Create('Frame', {
+				BackgroundColor3 = Library.BackgroundColor;
+				BorderColor3 = Color3.new(0, 0, 0);
+				-- BorderMode = Enum.BorderMode.Inset;
+				Size = UDim2.new(1, -2, 1, -2);
+				Position = UDim2.new(0, 1, 0, 1);
+				ZIndex = 4;
+				Parent = BoxOuter;
+			});
+
+			Library:AddToRegistry(BoxInner, {
+				BackgroundColor3 = 'BackgroundColor';
+			});
+
+			local Highlight = Library:Create('Frame', {
+				BackgroundColor3 = Library.AccentColor;
+				BorderSizePixel = 0;
+				Size = UDim2.new(1, 0, 0, 2);
+				ZIndex = 10;
+				Parent = BoxInner;
+			});
+
+			Library:AddToRegistry(Highlight, {
+				BackgroundColor3 = 'AccentColor';
+			});
+
+			local TabboxButtons = Library:Create('Frame', {
+				BackgroundTransparency = 1;
+				Position = UDim2.new(0, 0, 0, 1);
+				Size = UDim2.new(1, 0, 0, 18);
+				ZIndex = 5;
+				Parent = BoxInner;
+			});
+
+			Library:Create('UIListLayout', {
+				FillDirection = Enum.FillDirection.Horizontal;
+				HorizontalAlignment = Enum.HorizontalAlignment.Left;
+				SortOrder = Enum.SortOrder.LayoutOrder;
+				Parent = TabboxButtons;
+			});
+
+			function Tabbox:AddTab(Name)
+				local Tab = {};
+
+				local Button = Library:Create('Frame', {
+					BackgroundColor3 = Library.MainColor;
+					BorderColor3 = Color3.new(0, 0, 0);
+					Size = UDim2.new(0.5, 0, 1, 0);
+					ZIndex = 6;
+					Parent = TabboxButtons;
+				});
+
+				Library:AddToRegistry(Button, {
+					BackgroundColor3 = 'MainColor';
+				});
+
+				local ButtonLabel = Library:CreateLabel({
+					Size = UDim2.new(1, 0, 1, 0);
+					TextSize = 14;
+					Text = Name;
+					TextXAlignment = Enum.TextXAlignment.Center;
+					ZIndex = 7;
+					Parent = Button;
+				});
+
+				local Block = Library:Create('Frame', {
+					BackgroundColor3 = Library.BackgroundColor;
+					BorderSizePixel = 0;
+					Position = UDim2.new(0, 0, 1, 0);
+					Size = UDim2.new(1, 0, 0, 1);
+					Visible = false;
+					ZIndex = 9;
+					Parent = Button;
+				});
+
+				Library:AddToRegistry(Block, {
+					BackgroundColor3 = 'BackgroundColor';
+				});
+
+				local Container = Library:Create('Frame', {
+					BackgroundTransparency = 1;
+					Position = UDim2.new(0, 4, 0, 20);
+					Size = UDim2.new(1, -4, 1, -20);
+					ZIndex = 1;
+					Visible = false;
+					Parent = BoxInner;
+				});
+
+				Library:Create('UIListLayout', {
+					FillDirection = Enum.FillDirection.Vertical;
+					SortOrder = Enum.SortOrder.LayoutOrder;
+					Parent = Container;
+				});
+
+				function Tab:Show()
+					for _, Tab in next, Tabbox.Tabs do
+						Tab:Hide();
+					end;
+
+					Container.Visible = true;
+					Block.Visible = true;
+
+					Button.BackgroundColor3 = Library.BackgroundColor;
+					Library.RegistryMap[Button].Properties.BackgroundColor3 = 'BackgroundColor';
+
+					Tab:Resize();
+				end;
+
+				function Tab:Hide()
+					Container.Visible = false;
+					Block.Visible = false;
+
+					Button.BackgroundColor3 = Library.MainColor;
+					Library.RegistryMap[Button].Properties.BackgroundColor3 = 'MainColor';
+				end;
+
+				function Tab:Resize()
+					local TabCount = 0;
+
+					for _, Tab in next, Tabbox.Tabs do
+						TabCount = TabCount + 1;
+					end;
+
+					for _, Button in next, TabboxButtons:GetChildren() do
+						if not Button:IsA('UIListLayout') then
+							Button.Size = UDim2.new(1 / TabCount, 0, 1, 0);
+						end;
+					end;
+
+					if (not Container.Visible) then
+						return;
+					end;
+
+					local Size = 0;
+
+					for _, Element in next, Tab.Container:GetChildren() do
+						if (not Element:IsA('UIListLayout')) and Element.Visible then
+							Size = Size + Element.Size.Y.Offset;
+						end;
+					end;
+
+					BoxOuter.Size = UDim2.new(1, 0, 0, 20 + Size + 2 + 2);
+				end;
+
+				Button.InputBegan:Connect(function(Input)
+					if Input.UserInputType == Enum.UserInputType.MouseButton1 and not Library:MouseIsOverOpenedFrame() then
+						Tab:Show();
+						Tab:Resize();
+					end;
+				end);
+
+				Tab.Container = Container;
+				Tabbox.Tabs[Name] = Tab;
+
+				setmetatable(Tab, BaseGroupbox);
+
+				Tab:AddBlank(3);
+				Tab:Resize();
+
+				-- Show first tab (number is 2 cus of the UIListLayout that also sits in that instance)
+				if #TabboxButtons:GetChildren() == 2 then
+					Tab:Show();
+				end;
+
+				return Tab;
+			end;
+
+			Tab.Tabboxes[Info.Name or ''] = Tabbox;
+
+			return Tabbox;
+		end;
+
+		function Tab:AddLeftTabbox(Name)
+			return Tab:AddTabbox({ Name = Name, Side = 1; });
+		end;
+
+		function Tab:AddRightTabbox(Name)
+			return Tab:AddTabbox({ Name = Name, Side = 2; });
+		end;
+
+		TabButton.InputBegan:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseButton1 then
+				Tab:ShowTab();
+			end;
+		end);
+
+		-- This was the first tab added, so we show it by default.
+		if #TabContainer:GetChildren() == 1 then
+			Tab:ShowTab();
+		end;
+
+		Window.Tabs[Name] = Tab;
+		return Tab;
+	end;
+
+	local ModalElement = Library:Create('TextButton', {
+		BackgroundTransparency = 1;
+		Size = UDim2.new(0, 0, 0, 0);
+		Visible = true;
+		Text = '';
+		Modal = false;
+		Parent = ScreenGui;
+	});
+
+	local TransparencyCache = {};
+	local Toggled = false;
+	local Fading = false;
+
+	function Library:Toggle()
+		if Fading then
+			return;
+		end;
+
+		local FadeTime = Config.MenuFadeTime;
+		Fading = true;
+		Toggled = (not Toggled);
+		uiOpen = Toggled;
+		ModalElement.Modal = Toggled;
+
+
+
+		for _, Desc in next, Outer:GetDescendants() do
+			local Properties = {};
+
+			if Desc:IsA('ImageLabel') then
+				table.insert(Properties, 'ImageTransparency');
+				table.insert(Properties, 'BackgroundTransparency');
+			elseif Desc:IsA('TextLabel') or Desc:IsA('TextBox') then
+				table.insert(Properties, 'TextTransparency');
+			elseif Desc:IsA('Frame') or Desc:IsA('ScrollingFrame') then
+				table.insert(Properties, 'BackgroundTransparency');
+			elseif Desc:IsA('UIStroke') then
+				table.insert(Properties, 'Transparency');
+			end;
+
+			local Cache = TransparencyCache[Desc];
+
+			if (not Cache) then
+				Cache = {};
+				TransparencyCache[Desc] = Cache;
+			end;
+
+			for _, Prop in next, Properties do
+				if not Cache[Prop] then
+					Cache[Prop] = Desc[Prop];
+				end;
+
+				if Cache[Prop] == 1 then
+					continue;
+				end;
+
+				TweenService:Create(Desc, TweenInfo.new(FadeTime, Enum.EasingStyle.Linear), { [Prop] = Toggled and Cache[Prop] or 1 }):Play();
+			end;
+		end;
+
+		task.wait(FadeTime);
+
+		Outer.Visible = Toggled;
+
+		Fading = false;
+	end
+
+	Library:GiveSignal(InputService.InputBegan:Connect(function(Input, Processed)
+		if type(Library.ToggleKeybind) == 'table' and Library.ToggleKeybind.Type == 'KeyPicker' then
+			if Input.UserInputType == Enum.UserInputType.Keyboard and Input.KeyCode.Name == Library.ToggleKeybind.Value then
+				task.spawn(Library.Toggle)
+			end
+		elseif Input.KeyCode == Enum.KeyCode.RightControl or (Input.KeyCode == Enum.KeyCode.RightShift and (not Processed)) then
+			task.spawn(Library.Toggle)
+		end
+	end))
+
+	if Config.AutoShow then task.spawn(Library.Toggle) end
+
+	Window.Holder = Outer;
+
+	return Window;
+end;
+
+local function OnPlayerChange()
+	local PlayerList = GetPlayersString();
+
+	for _, Value in next, RainOptions do
+		if Value.Type == 'Dropdown' and Value.SpecialType == 'Player' then
+			Value:SetValues(PlayerList);
+		end;
+	end;
+end;
+
+function Library:SetInfoLoggerVisibility(Value)
+	Library.InfoLoggerFrame.Visible = Value
+end
+
+
+function Library:UpdateInfoLoggerSize()
+	if Library.InfoLoggerFrame.Visible then
+		local YSize = 0
+		local XSize = 0
+
+		for _, Label in next, Library.InfoLoggerContainer:GetChildren() do
+			if Label:IsA("TextLabel") and Label.Visible then
+				YSize = YSize + 18
+				if Label.TextBounds.X > XSize then
+					XSize = Label.TextBounds.X
+				end
+			end
+		end
+
+		Library.InfoLoggerFrame.Size = UDim2.new(0, math.max(XSize + 10, 210), 0, YSize + 23)
+	end;
+end
+
+-- It's ugly but I don't care for anything proper right now
+function Library:AddTextToInfoLogger(Text, CopyText)
+	local InfoContainerLabel = Library:CreateLabel({
+		TextXAlignment = Enum.TextXAlignment.Left,
+		Size = UDim2.new(1, 0, 0, 18),
+		TextSize = 13,
+		Visible = false,
+		ZIndex = 110,
+		Parent = Library.InfoLoggerContainer,
+	}, true)
+
+	if (#Library.InfoLoggerData.ContainerLabels + 1) > 15 then
+		-- Get first element
+		local FirstElement = Library.InfoLoggerData.ContainerLabels[1]
+		if FirstElement then
+			-- Destroy the last element
+			FirstElement:Destroy()
+
+			-- Remove element from table
+			table.remove(Library.InfoLoggerData.ContainerLabels, 1)
+		end
+	end
+
+	InfoContainerLabel.Text = Text;
+
+	if CopyText then
+		InfoContainerLabel.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 then
+				Library:Notify("Set your clipboard to designated copyable text.");
+				setclipboard(CopyText);
+			end;
+		end);   
+	end;
+
+	InfoContainerLabel.Visible = true
+	InfoContainerLabel.TextColor3 = Library.FontColor
+
+	Library.InfoLoggerData.ContainerLabels[#Library.InfoLoggerData.ContainerLabels + 1] = InfoContainerLabel
+	Library.RegistryMap[InfoContainerLabel].Properties.TextColor3 = "FontColor"
+	Library:UpdateInfoLoggerSize();
+end
+
+Players.PlayerAdded:Connect(OnPlayerChange);
+Players.PlayerRemoving:Connect(OnPlayerChange);
+getgenv().Library = Library;
+return Library
